@@ -1,0 +1,35 @@
+/* Basics */
+
+@black: #000000;
+@black-transparent-80: fade(@black, 80%);
+@black-transparent-40: fade(@black, 40%);
+@white: #FFFFFF;
+@white-transparent: fade(@white, 80%);
+
+/* Solids */
+@jw-charcoal: #252525;
+@jw-red: #FF0046;
+@jw-blue: #0B7EF4;
+@jw-slate: #AAB4C8;
+@jw-gray: #D9DDE6;
+@jw-light-gray: #ECEEF2;
+@jw-white: #F2F5F9;
+@jw-midnight: #475470;
+@jw-scarlet: #97052D;
+@jw-navy: #0F4E90;
+@jw-pink: #FF4664;
+@jw-teal: #2BBECF;
+@jw-violet: #9000BE;
+@jw-purple: #7864FF;
+@jw-gold: #FF9400;
+@jw-goldenrod: #FFB600;
+@jw-sun: #FFD700;
+@jw-grassgreen: #00C669;
+@jw-springgreen: #00F096;
+
+/* Blends */
+@jw-midnight-charcoal: mix(@jw-charcoal, @jw-midnight); // #363D4B;
+@jw-slate-gray: mix(@jw-slate, @jw-gray); // #C2C9D7;
+@jw-midnight-gray: mix(@jw-midnight, @jw-gray); // #9099AB;
+@jw-midnight-slate: mix(@jw-midnight, @jw-slate); // #79849C;
+@jw-blue-white: mix(@jw-blue, @jw-white, 5%); // #E6EFF9;
