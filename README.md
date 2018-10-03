@@ -63,6 +63,20 @@ You can override an icon's color or size with CSS:
 
 ## Contributing to Hook Source Code
 
+### Branching Guidelines
+
+**Feature work in progress:**
+
+`wip.DES-100.feature-name`
+
+**Feature work QA-ed and ready for release:**
+
+`release.DES-100.feature-name`
+
+**Bug fixes / minor updates:**
+
+`patch.DES-101.bug-fix-description`
+
 ### Running Locally
 To run this project on your machine:
 ```
