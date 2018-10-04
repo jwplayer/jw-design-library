@@ -1,6 +1,9 @@
 # JW Design Library (Hook)
 
-This repository contains a reference for global styles & icons used in JW Player products.
+![owners](https://img.shields.io/badge/owners-Design--Team-brightgreen.svg)
+![contributors](https://img.shields.io/badge/contributors-Portal--NL-yellow.svg)
+
+> This repository contains a reference for global styles & icons used in JW Player products.
 
 ## How to Reference Hook
 ### Styles
