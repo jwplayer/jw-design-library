@@ -27,7 +27,12 @@ module.exports = function (grunt) {
 
   config.svgstore = {
     dashboard: {
-      files: { 'icons/sprites/icons-dashboard.svg' : ['icons/dashboard/**/*.svg'] }
+      files: { 'icons/sprites/icons-dashboard.svg' : ['icons/dashboard/**/*.svg'] },
+      options: {
+        cleanup: true,
+        cleanupdefs: true,
+        includeTitleElement: false
+      }
     },
     player: {
       files: { 'icons/sprites/icons-player.svg' : ['icons/player/**/*.svg'] }
