@@ -3,96 +3,96 @@
 
 /* Data Patterns - Palettes */
 
-.paletteA-classes(@i: length(@palette-a)) when (@i > 0) {
+.paletteA-classes(@i: length(@jw-palette-a)) when (@i > 0) {
     .paletteA-classes(@i - 1);
-    @palette: extract(@palette-a, @i);
+    @jw-palette: extract(@jw-palette-a, @i);
     .data-palette-a@{i} {
-        fill: @palette;
-        color: @palette;
+        fill: @jw-palette;
+        color: @jw-palette;
     }
 }
 .paletteA-classes();
 
-.paletteB-classes(@i: length(@palette-b)) when (@i > 0) {
+.paletteB-classes(@i: length(@jw-palette-b)) when (@i > 0) {
     .paletteB-classes(@i - 1);
-    @palette: extract(@palette-b, @i);
+    @jw-palette: extract(@jw-palette-b, @i);
     .data-palette-b@{i} {
-        fill: @palette;
-        color: @palette;
+        fill: @jw-palette;
+        color: @jw-palette;
     }
 }
 .paletteB-classes();
 
-.paletteC-classes(@i: length(@palette-c)) when (@i > 0) {
+.paletteC-classes(@i: length(@jw-palette-c)) when (@i > 0) {
     .paletteC-classes(@i - 1);
-    @palette: extract(@palette-c, @i);
+    @jw-palette: extract(@jw-palette-c, @i);
     .data-palette-c@{i} {
-        fill: @palette;
-        color: @palette;
+        fill: @jw-palette;
+        color: @jw-palette;
     }
 }
 .paletteC-classes();
 
 /* Data Patterns - Single Hues */
 
-.singleHueA-classes(@i: length(@single-hue-a)) when (@i > 0) {
+.singleHueA-classes(@i: length(@jw-single-hue-a)) when (@i > 0) {
     .singleHueA-classes(@i - 1);
-    @single-hue: extract(@single-hue-a, @i);
+    @jw-single-hue: extract(@jw-single-hue-a, @i);
     .data-single-hue-a@{i} {
-        fill: @single-hue;
-        color: @single-hue;
+        fill: @jw-single-hue;
+        color: @jw-single-hue;
     }
 }
 .singleHueA-classes();
 
-.singleHueB-classes(@i: length(@single-hue-b)) when (@i > 0) {
+.singleHueB-classes(@i: length(@jw-single-hue-b)) when (@i > 0) {
     .singleHueB-classes(@i - 1);
-    @single-hue: extract(@single-hue-b, @i);
+    @jw-single-hue: extract(@jw-single-hue-b, @i);
     .data-single-hue-b@{i} {
-        fill: @single-hue;
-        color: @single-hue;
+        fill: @jw-single-hue;
+        color: @jw-single-hue;
     }
 }
 .singleHueB-classes();
 
-.singleHueC-classes(@i: length(@single-hue-c)) when (@i > 0) {
+.singleHueC-classes(@i: length(@jw-single-hue-c)) when (@i > 0) {
     .singleHueC-classes(@i - 1);
-    @single-hue: extract(@single-hue-c, @i);
+    @jw-single-hue: extract(@jw-single-hue-c, @i);
     .data-single-hue-c@{i} {
-        fill: @single-hue;
-        color: @single-hue;
+        fill: @jw-single-hue;
+        color: @jw-single-hue;
     }
 }
 .singleHueC-classes();
 
 /* Data Patterns - Color Scales */
 
-.colorScaleA-classes(@i: length(@color-scale-a)) when (@i > 0) {
+.colorScaleA-classes(@i: length(@jw-color-scale-a)) when (@i > 0) {
     .colorScaleA-classes(@i - 1);
-    @color-scale: extract(@color-scale-a, @i);
+    @jw-color-scale: extract(@jw-color-scale-a, @i);
     .data-color-scale-a@{i} {
-        fill: @color-scale;
-        color: @color-scale;
+        fill: @jw-color-scale;
+        color: @jw-color-scale;
     }
 }
 .colorScaleA-classes();
 
-.colorScaleB-classes(@i: length(@color-scale-b)) when (@i > 0) {
+.colorScaleB-classes(@i: length(@jw-color-scale-b)) when (@i > 0) {
     .colorScaleB-classes(@i - 1);
-    @color-scale: extract(@color-scale-b, @i);
+    @jw-color-scale: extract(@jw-color-scale-b, @i);
     .data-color-scale-b@{i} {
-        fill: @color-scale;
-        color: @color-scale;
+        fill: @jw-color-scale;
+        color: @jw-color-scale;
     }
 }
 .colorScaleB-classes();
 
-.colorScaleC-classes(@i: length(@color-scale-c)) when (@i > 0) {
+.colorScaleC-classes(@i: length(@jw-color-scale-c)) when (@i > 0) {
     .colorScaleC-classes(@i - 1);
-    @color-scale: extract(@color-scale-c, @i);
+    @jw-color-scale: extract(@jw-color-scale-c, @i);
     .data-color-scale-c@{i} {
-        fill: @color-scale;
-        color: @color-scale;
+        fill: @jw-color-scale;
+        color: @jw-color-scale;
     }
 }
 .colorScaleC-classes();
