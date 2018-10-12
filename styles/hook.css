@@ -1,5 +1,7 @@
 /* Basics */
-/* Solids */
+/* Primary Colors */
+/* Hover for Primary Colors */
+/* Secondary Colors */
 /* Blends */
 /* Data Color Patterns
 
@@ -122,8 +124,8 @@
   color: #e86a5c;
 }
 .data-palette-c4 {
-  fill: #cbce69;
-  color: #cbce69;
+  fill: #cb3e69;
+  color: #cb3e69;
 }
 .data-palette-c5 {
   fill: #9d2076;
