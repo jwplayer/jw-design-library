@@ -36,6 +36,9 @@ module.exports = function (grunt) {
     },
     player: {
       files: { 'icons/sprites/icons-player.svg' : ['icons/player/**/*.svg'] }
+    },
+    logos: {
+      files: { 'icons/sprites/logos.svg' : ['icons/logos/**/*.svg'] }
     }
   };
 
