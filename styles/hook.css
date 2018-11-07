@@ -39,6 +39,14 @@
   width: 32px;
   height: 32px;
 }
+.ds-logo-full {
+  width: 104px;
+  height: 38px;
+}
+.ds-logo-mark {
+  width: 24px;
+  height: 25px;
+}
 /* Data Patterns - Palettes */
 .data-palette-a1 {
   fill: #f7bdad;
