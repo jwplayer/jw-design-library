@@ -1,98 +1,107 @@
 @import 'brand-colors';
 @import 'data-colors';
 
+/* Font Smoothing Support */
+.font-smoothing(on) {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-smoothing(off) {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
 /* Data Patterns - Palettes */
 
-.paletteA-classes(@i: length(@jw-palette-a)) when (@i > 0) {
+.paletteA-classes(@i: length(@ds-palette-a)) when (@i > 0) {
     .paletteA-classes(@i - 1);
-    @jw-palette: extract(@jw-palette-a, @i);
+    @ds-palette: extract(@ds-palette-a, @i);
     .data-palette-a@{i} {
-        fill: @jw-palette;
-        color: @jw-palette;
+        fill: @ds-palette;
+        color: @ds-palette;
     }
 }
 .paletteA-classes();
 
-.paletteB-classes(@i: length(@jw-palette-b)) when (@i > 0) {
+.paletteB-classes(@i: length(@ds-palette-b)) when (@i > 0) {
     .paletteB-classes(@i - 1);
-    @jw-palette: extract(@jw-palette-b, @i);
+    @ds-palette: extract(@ds-palette-b, @i);
     .data-palette-b@{i} {
-        fill: @jw-palette;
-        color: @jw-palette;
+        fill: @ds-palette;
+        color: @ds-palette;
     }
 }
 .paletteB-classes();
 
-.paletteC-classes(@i: length(@jw-palette-c)) when (@i > 0) {
+.paletteC-classes(@i: length(@ds-palette-c)) when (@i > 0) {
     .paletteC-classes(@i - 1);
-    @jw-palette: extract(@jw-palette-c, @i);
+    @ds-palette: extract(@ds-palette-c, @i);
     .data-palette-c@{i} {
-        fill: @jw-palette;
-        color: @jw-palette;
+        fill: @ds-palette;
+        color: @ds-palette;
     }
 }
 .paletteC-classes();
 
 /* Data Patterns - Single Hues */
 
-.singleHueA-classes(@i: length(@jw-single-hue-a)) when (@i > 0) {
+.singleHueA-classes(@i: length(@ds-single-hue-a)) when (@i > 0) {
     .singleHueA-classes(@i - 1);
-    @jw-single-hue: extract(@jw-single-hue-a, @i);
+    @ds-single-hue: extract(@ds-single-hue-a, @i);
     .data-single-hue-a@{i} {
-        fill: @jw-single-hue;
-        color: @jw-single-hue;
+        fill: @ds-single-hue;
+        color: @ds-single-hue;
     }
 }
 .singleHueA-classes();
 
-.singleHueB-classes(@i: length(@jw-single-hue-b)) when (@i > 0) {
+.singleHueB-classes(@i: length(@ds-single-hue-b)) when (@i > 0) {
     .singleHueB-classes(@i - 1);
-    @jw-single-hue: extract(@jw-single-hue-b, @i);
+    @ds-single-hue: extract(@ds-single-hue-b, @i);
     .data-single-hue-b@{i} {
-        fill: @jw-single-hue;
-        color: @jw-single-hue;
+        fill: @ds-single-hue;
+        color: @ds-single-hue;
     }
 }
 .singleHueB-classes();
 
-.singleHueC-classes(@i: length(@jw-single-hue-c)) when (@i > 0) {
+.singleHueC-classes(@i: length(@ds-single-hue-c)) when (@i > 0) {
     .singleHueC-classes(@i - 1);
-    @jw-single-hue: extract(@jw-single-hue-c, @i);
+    @ds-single-hue: extract(@ds-single-hue-c, @i);
     .data-single-hue-c@{i} {
-        fill: @jw-single-hue;
-        color: @jw-single-hue;
+        fill: @ds-single-hue;
+        color: @ds-single-hue;
     }
 }
 .singleHueC-classes();
 
 /* Data Patterns - Color Scales */
 
-.colorScaleA-classes(@i: length(@jw-color-scale-a)) when (@i > 0) {
+.colorScaleA-classes(@i: length(@ds-color-scale-a)) when (@i > 0) {
     .colorScaleA-classes(@i - 1);
-    @jw-color-scale: extract(@jw-color-scale-a, @i);
+    @ds-color-scale: extract(@ds-color-scale-a, @i);
     .data-color-scale-a@{i} {
-        fill: @jw-color-scale;
-        color: @jw-color-scale;
+        fill: @ds-color-scale;
+        color: @ds-color-scale;
     }
 }
 .colorScaleA-classes();
 
-.colorScaleB-classes(@i: length(@jw-color-scale-b)) when (@i > 0) {
+.colorScaleB-classes(@i: length(@ds-color-scale-b)) when (@i > 0) {
     .colorScaleB-classes(@i - 1);
-    @jw-color-scale: extract(@jw-color-scale-b, @i);
+    @ds-color-scale: extract(@ds-color-scale-b, @i);
     .data-color-scale-b@{i} {
-        fill: @jw-color-scale;
-        color: @jw-color-scale;
+        fill: @ds-color-scale;
+        color: @ds-color-scale;
     }
 }
 .colorScaleB-classes();
 
-.colorScaleC-classes(@i: length(@jw-color-scale-c)) when (@i > 0) {
+.colorScaleC-classes(@i: length(@ds-color-scale-c)) when (@i > 0) {
     .colorScaleC-classes(@i - 1);
-    @jw-color-scale: extract(@jw-color-scale-c, @i);
+    @ds-color-scale: extract(@ds-color-scale-c, @i);
     .data-color-scale-c@{i} {
-        fill: @jw-color-scale;
-        color: @jw-color-scale;
+        fill: @ds-color-scale;
+        color: @ds-color-scale;
     }
 }
 .colorScaleC-classes();
