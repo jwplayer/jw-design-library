@@ -26,9 +26,9 @@ You can also include plain CSS the old-fashioned way by referencing all minified
 The icons folder contains two SVG sprites, `icons-player` and `icons-dashboard`, that can be easily referenced and customized with CSS.  
 
 #### Usage
-Simply create an svg element with a class of `jw-icon` in your HTML:
+Simply create an svg element with a class of `ds-icon` in your HTML:
 ```
-<svg class="jw-icon">
+<svg class="ds-icon">
   <use href="/path_to_hook/icons/sprite_name.svg#icon_name"></use>
 </svg>
 ```
@@ -43,21 +43,21 @@ UI icons by default are black and occupy a square artboard on an 8px grid. Add o
 
 |    Class    | Size |
 | ----------- | ---- |
-| jw-icon-xs  | 8px |
-| jw-icon-sm  | 16px |
-| jw-icon-med | 24px |
-| jw-icon-lg  | 32px |
+| ds-icon-xs  | 8px |
+| ds-icon-sm  | 16px |
+| ds-icon-med | 24px |
+| ds-icon-lg  | 32px |
 
 Append the class to the svg itself:
 ```
-<svg class="jw-icon jw-icon-med">
+<svg class="ds-icon ds-icon-med">
   <use href="/path_to_hook/icons/sprite_name.svg#icon_name"></use>
 </svg>
 ```
 
 You can override an icon's color or size with CSS:
 ```
-.jw-icon {
+.ds-icon {
     fill: #7bb4e5;
     width: 10px;
     height: 10px;
