@@ -23,7 +23,7 @@ Or simply reference only the files you need:
 ```
 
 #### Option 2: CDN-Hosted, Minified CSS
-You can also include plain CSS the old-fashioned way in the document `<head>`. Please keep in mind that this option is **plain CSS**, which will **only output** the selectors and styles for items in the `components` folder (like icons & logos). This does not come with variables and mixins.
+You can also include minified CSS in the document `<head>`. Please keep in mind that this option is **plain CSS**, which will **only output** the selectors and styles for items in the `components` folder (like icons & logos). This does not come with variables and mixins.
 
 ```html
 <link rel="stylesheet" type="text/css" href="https://hook.jwplayer.com/core/hook.min.css">
