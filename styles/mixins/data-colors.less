@@ -1,15 +1,3 @@
-@import 'brand-colors';
-@import 'data-colors';
-
-/* Font Smoothing Support */
-.font-smoothing(on) {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.font-smoothing(off) {
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto;
-}
 /* Data Patterns - Palettes */
 
 .paletteA-classes(@i: length(@ds-palette-a)) when (@i > 0) {
@@ -20,7 +8,6 @@
         color: @ds-palette;
     }
 }
-.paletteA-classes();
 
 .paletteB-classes(@i: length(@ds-palette-b)) when (@i > 0) {
     .paletteB-classes(@i - 1);
@@ -30,7 +17,6 @@
         color: @ds-palette;
     }
 }
-.paletteB-classes();
 
 .paletteC-classes(@i: length(@ds-palette-c)) when (@i > 0) {
     .paletteC-classes(@i - 1);
@@ -40,7 +26,7 @@
         color: @ds-palette;
     }
 }
-.paletteC-classes();
+
 
 /* Data Patterns - Single Hues */
 
@@ -52,7 +38,6 @@
         color: @ds-single-hue;
     }
 }
-.singleHueA-classes();
 
 .singleHueB-classes(@i: length(@ds-single-hue-b)) when (@i > 0) {
     .singleHueB-classes(@i - 1);
@@ -62,7 +47,6 @@
         color: @ds-single-hue;
     }
 }
-.singleHueB-classes();
 
 .singleHueC-classes(@i: length(@ds-single-hue-c)) when (@i > 0) {
     .singleHueC-classes(@i - 1);
@@ -72,7 +56,6 @@
         color: @ds-single-hue;
     }
 }
-.singleHueC-classes();
 
 /* Data Patterns - Color Scales */
 
@@ -84,7 +67,6 @@
         color: @ds-color-scale;
     }
 }
-.colorScaleA-classes();
 
 .colorScaleB-classes(@i: length(@ds-color-scale-b)) when (@i > 0) {
     .colorScaleB-classes(@i - 1);
@@ -94,7 +76,6 @@
         color: @ds-color-scale;
     }
 }
-.colorScaleB-classes();
 
 .colorScaleC-classes(@i: length(@ds-color-scale-c)) when (@i > 0) {
     .colorScaleC-classes(@i - 1);
@@ -104,4 +85,3 @@
         color: @ds-color-scale;
     }
 }
-.colorScaleC-classes();
