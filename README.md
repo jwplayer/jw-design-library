@@ -9,7 +9,7 @@
 ### Styles
 Hook styles can be included in two ways:
 
-##### Option 1: Pull Less Into Build
+#### Option 1: Pull Less Into Build
 Import Hook in it's entirety, for example:
 ```less
 @import 'jw-design-library/styles/hook';
@@ -22,7 +22,7 @@ Or simply reference only the files you need:
 @import 'jw-design-library/styles/mixins/global';
 ```
 
-##### Option 2: CDN-Hosted, Minified CSS
+#### Option 2: CDN-Hosted, Minified CSS
 You can also include plain CSS the old-fashioned way in the document `<head>`. Please keep in mind that this option is **plain CSS**, which will **only output** the selectors and styles for items in the `components` folder (like icons & logos). This does not come with variables and mixins.
 
 ```html
