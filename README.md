@@ -3,95 +3,58 @@
 ![owners](https://img.shields.io/badge/owners-Design--Team-brightgreen.svg)
 ![contributors](https://img.shields.io/badge/contributors-Portal--NL-yellow.svg)
 
-> This repository contains a reference for global styles & icons used in JW Player products.
+> This repository contains a reference for global styles & icons used in JW Player products. Usage guidelines and code snippets for the following can be found on the [JW Design Site](https://design.jwplayer.com/docs/#/).
 
-## How to Reference Hook
+## Use Hook in Your Project
 ### Styles
 Hook styles can be included in two ways:
 
-#### 1. Pull LESS into Build Process
-If you're using LESS with Webpack, you'll need to include Hook styles in your build in order to reference variables properly. To do this, import Hook before your other LESS files as follows:
-```
-@import 'path_to_hook/styles/hook.less';
-@import 'path_to_your_other_styles/main.less';
-```
-**- or -**
-#### 2. Include Pre-Minified CSS Stylesheet
-You can also include plain CSS the old-fashioned way by referencing all minified styles in `hook.min.css`. Reference the standalone stylesheet in the document `<head>` as follows:
-```
-<link rel="stylesheet" type="text/css" href="path_to_hook/styles/hook.min.css">
+#### Option 1: Pull Less Into Build
+Import Hook in it's entirety, for example:
+```less
+@import 'jw-design-library/styles/hook';
+@import './less/your_other_styles';
 ```
 
-### Icons
-The icons folder contains two SVG sprites, `icons-player` and `icons-dashboard`, that can be easily referenced and customized with CSS.  
-
-#### Usage
-Simply create an svg element with a class of `ds-icon` in your HTML:
-```
-<svg class="ds-icon">
-  <use href="/path_to_hook/icons/sprite_name.svg#icon_name"></use>
-</svg>
+Or simply reference only the files you need:
+```less
+@import 'jw-design-library/styles/variables/fonts';
+@import 'jw-design-library/styles/mixins/global';
 ```
 
-* `path_to_hook`: the relative path to where Hook is included in your project
-* `sprite_name`: the name of the sprite (_icons-dashboard_ or _icons-player_)
-* `icon_name`: is the icon name, which will display the corresponding icon (all names can be found in the icons folder or in the table in preview-mode)
+#### Option 2: CDN-Hosted, Minified CSS
+You can also include minified CSS in the document `<head>`. Please keep in mind that this option is **plain CSS**, which will **only output** the selectors and styles for items in the `components` folder (like icons & logos). This does not come with variables and mixins.
 
-
-#### Sizing & Colors
-UI icons by default are black and occupy a square artboard on an 8px grid. Add one of the following classes to specify an alternate size:
-
-|    Class    | Size |
-| ----------- | ---- |
-| ds-icon-xs  | 8px |
-| ds-icon-sm  | 16px |
-| ds-icon-med | 24px |
-| ds-icon-lg  | 32px |
-
-Append the class to the svg itself:
+```html
+<link rel="stylesheet" type="text/css" href="https://hook.jwplayer.com/core/hook.min.css">
 ```
-<svg class="ds-icon ds-icon-med">
-  <use href="/path_to_hook/icons/sprite_name.svg#icon_name"></use>
-</svg>
-```
+View our full list of hosted styles at [hook.jwplayer.com](http://hook.jwplayer.com/).
 
-You can override an icon's color or size with CSS:
-```
-.ds-icon {
-    fill: #7bb4e5;
-    width: 10px;
-    height: 10px;
-}
-```
+### Typography
+To use Hook fonts, simply invoke the import mixin by calling `.ds-font-import()` in your Less.  **(We recommend doing this only once in your main stylesheet to avoid extraneous requests.)**  View usage guidelines [here](https://design.jwplayer.com/docs/#/patterns/typography).
 
-## Contributing to Hook Source Code
+### Iconography
+The icons folder contains two SVG sprites, `icons-player` and `icons-dashboard`, that can be easily referenced and customized with CSS.  View usage guidelines [here](https://design.jwplayer.com/docs/#/patterns/iconography).
 
-### Branching Guidelines
-
-**Feature work in progress:**
-
-`wip.DES-100.feature-name`
-
-**Feature work QA-ed and ready for release:**
-
-`release.DES-100.feature-name`
-
-**Bug fixes / minor updates:**
-
-`patch.DES-101.bug-fix-description`
+## Contribute to Hook
+Feature request? Feel free to open a PR and assign it to [Kim Hart](https://github.com/kimhart) or [Monica Parra](https://github.com/monibons). Follow the guidelines below to contribute:
+### Branch Namespacing
+- **Feature work in progress:** `wip.DES-100.feature-name`
+- **Feature work QA-ed and ready for release:** `release.DES-100.feature-name`
+- **Bug fixes / minor updates:** `patch.DES-101.bug-fix-description`
 
 ### Running Locally
-To run this project on your machine:
+To run this project on your machine & watch/compile any changes:
 ```
 npm install
 grunt
 ```
-This will automatically watch and update the CSS + icon sprites as you develop.
 
-#### Adding a New Stylesheet
+### Adding a New Stylesheet
 1. Add your LESS stylesheet to the `styles` folder
-2. Import it in the `hook.less` master file as follows: `@import 'path/to/your/file';`
+2. Import it in the `hook.less` master file with the appropriate path
 
-#### Adding a New Icon
+### Adding a New Icon
 1. Determine if your new icon belongs to the player or dashboard and add the SVG to the appropriate folder
 2. Grunt will auto-generate a new sprite with all icons
+
