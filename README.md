@@ -38,23 +38,23 @@ The icons folder contains two SVG sprites, `icons-player` and `icons-dashboard`,
 
 ## Contribute to Hook
 Feature request? Feel free to open a PR and assign it to [Kim Hart](https://github.com/kimhart) or [Monica Parra](https://github.com/monibons). Follow the guidelines below to contribute:
-#### Branch Namespacing
+### Branch Namespacing
 - **Feature work in progress:** `wip.DES-100.feature-name`
 - **Feature work QA-ed and ready for release:** `release.DES-100.feature-name`
 - **Bug fixes / minor updates:** `patch.DES-101.bug-fix-description`
 
-#### Running Locally
+### Running Locally
 To run this project on your machine & watch/compile any changes:
 ```
 npm install
 grunt
 ```
 
-#### Adding a New Stylesheet
+### Adding a New Stylesheet
 1. Add your LESS stylesheet to the `styles` folder
 2. Import it in the `hook.less` master file with the appropriate path
 
-#### Adding a New Icon
+### Adding a New Icon
 1. Determine if your new icon belongs to the player or dashboard and add the SVG to the appropriate folder
 2. Grunt will auto-generate a new sprite with all icons
 
