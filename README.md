@@ -31,7 +31,7 @@ You can also include minified CSS in the document `<head>`. Please keep in mind 
 View our full list of hosted styles at [hook.jwplayer.com](http://hook.jwplayer.com/).
 
 ### Typography
-To use Hook fonts, simply invoke the import mixin by calling `.ds-font-import()` in your Less.  **(We recommend doing this only once in your main stylesheet to avoid extraneous requests.)**  View usage guidelines [here](https://design.jwplayer.com/docs/#/patterns/typography).
+To use Hook fonts, simply invoke the import mixin by calling `.ds-font-imports()` in your Less.  **(We recommend doing this only once in your main stylesheet to avoid extraneous requests.)**  View usage guidelines [here](https://design.jwplayer.com/docs/#/patterns/typography).
 
 ### Iconography
 The icons folder contains two SVG sprites, `icons-player` and `icons-dashboard`, that can be easily referenced and customized with CSS.  View usage guidelines [here](https://design.jwplayer.com/docs/#/patterns/iconography).
