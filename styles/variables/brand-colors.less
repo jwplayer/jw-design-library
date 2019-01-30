@@ -1,34 +1,28 @@
-/* Basics */
+/* Primary Colors */
+@ds-dahlia: #EC0041;
+@ds-dahlia-fade: fade(@ds-dahlia, 70%);
+@ds-dahlia-dark-1: darken(@ds-dahlia, 20%);
+@ds-dahlia-dark-2: darken(@ds-dahlia, 30%);
+
+@ds-fog: #D8DDE6;
+@ds-fog-fade: fade(@ds-fog, 70%);
+@ds-fog-dark-1: darken(@ds-fog, 20%);
+@ds-fog-dark-2: darken(@ds-fog, 30%);
+
+@ds-midnight: #475470;
+@ds-midnight-fade: fade(@ds-midnight, 70%);
+@ds-midnight-dark-1: darken(@ds-midnight, 20%);
+@ds-midnight-dark-2: darken(@ds-midnight, 30%);
+
+@ds-abyss: #2F3542;
+@ds-abyss-fade: fade(@ds-abyss, 70%);
+@ds-abyss-dark-1: darken(@ds-abyss, 20%);
+@ds-abyss-dark-2: darken(@ds-abyss, 30%);
+
+// Supportive System Colors
 @ds-black: #000000;
 @ds-white: #FFFFFF;
-
-/* Primary Colors */
-@ds-charcoal: #252525;
-@ds-red: #FF0046;
-@ds-blue: #0B7EF4;
-@ds-midnight: #475470;
-@ds-slate: #AAB4C8;
-@ds-gray: #D9DDE6;
-@ds-light-gray: #ECEEF2;
-
-/* Hover for Primary Colors */
-@ds-blue-hover: darken(@ds-blue, 8%);
-@ds-red-hover: darken(@ds-red, 8%);
-@ds-slate-hover: darken(@ds-slate, 8%);
-
-/* Secondary Colors */
-@ds-pink: #FF4664;
-@ds-teal: #2BBECF;
-@ds-violet: #9000BE;
-@ds-purple: #7864FF;
-@ds-gold: #FF9400;
-@ds-sun: #FFD700;
-@ds-grassgreen: #00C669;
-@ds-springgreen: #00F096;
-
-/* Blends */
-@ds-midnight-charcoal: mix(@ds-charcoal, @ds-midnight); // #363D4B;
-@ds-slate-gray: mix(@ds-slate, @ds-gray); // #C2C9D7;
-@ds-midnight-gray: mix(@ds-midnight, @ds-gray); // #9099AB;
-@ds-midnight-slate: mix(@ds-midnight, @ds-slate); // #79849C;
-@ds-blue-white: mix(@ds-blue, @ds-white, 5%); // #E6EFF9;
+@ds-blue: #0A75E3;
+@ds-red: #E60000; // destructive - high risk
+@ds-orange: #FFA50B; // medium risk
+@ds-green: #0B892D; // affirmative
