@@ -2,11 +2,7 @@
 /* Sizes */
 /* Weights - Custom */
 /* Weights - Data */
-/* Basics */
 /* Primary Colors */
-/* Hover for Primary Colors */
-/* Secondary Colors */
-/* Blends */
 /* Data Color Patterns
 
 /* Palette A */
@@ -29,9 +25,13 @@
   height: 16px;
   vertical-align: middle;
 }
-.ds-icon.ds-icon-xs {
+.ds-icon.ds-icon-xxs {
   width: 8px;
   height: 8px;
+}
+.ds-icon.ds-icon-xs {
+  width: 12px;
+  height: 12px;
 }
 .ds-icon.ds-icon-sm {
   width: 16px;
