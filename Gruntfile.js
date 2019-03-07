@@ -50,18 +50,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-svgstore');
 
-  grunt.registerTask('default', '', function() {
+  grunt.registerTask('default', '', [
+    'clean:all',
+    'svgstore',
+    'less',
+    'cssmin'
+  ]);
 
-    var tasks = [
-      'clean:all',
-      'svgstore',
-      'less',
-      'cssmin',
-      'watch'
-    ];
-
-    grunt.task.run(tasks);
-
-  });
-
+  grunt.registerTask('dev', '', [ 'default', 'watch' ]);
 };
