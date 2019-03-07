@@ -39,7 +39,7 @@ module.exports = grunt => {
         includeTitleElement: false,
         prefix: 'ds-icon-',
         svg: {
-          style: 'display:none'
+          style: 'width:0;height:0;visibility:hidden;'
         }
       },
 
