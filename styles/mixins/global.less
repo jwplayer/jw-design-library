@@ -1,24 +1,25 @@
-/* Custom & data font imports */
+// Custom & data font imports
 .ds-font-imports() {
   @import (css) url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
   @import (css) url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
   @import (css) url('https://fonts.googleapis.com/css?family=Inconsolata');
 }
 
-/* Font Smoothing Support */
+// Font Smoothing Support
 .ds-font-smoothing(on) {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .ds-font-smoothing(off) {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto;
 }
 
-/* Layout Helpers */
+// Layout Helpers
 .ds-square(@value) {
-  width: @value;
   height: @value;
+  width: @value;
 }
 
 .ds-flex(@align: flex-start, @justify: flex-start) {
