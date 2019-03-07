@@ -1,53 +1,94 @@
-module.exports = function (grunt) {
-  'use strict';
-  var config = {};
-  config.pkg = grunt.file.readJSON('package.json');
+module.exports = grunt => {
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
 
-  config.watch = {
-    files: ['styles/mixins/**/*.less', 'styles/**/*.less', 'icons/dashboard/**/*.svg', 'icons/player/**/*.svg'],
-    tasks: ['default']
-  };
+    clean:  {
+      all: [
+        'icons/sprites',
+        'styles/hook.css',
+        'styles/hook.min.css'
+      ]
+    },
 
-  config.clean =  {
-    all: ['styles/hook.css', 'styles/hook.min.css', 'icons/sprites']
-  };
+    cssmin: {
+      options: {
+        keepSpecialComments: 0
+      },
 
-  config.less = {
-    build: {
-      files: { 'styles/hook.css' : 'styles/hook.less' }
-    }
-  };
+      build: {
+        dest: 'styles/hook.min.css',
+        src: 'styles/hook.css'
+      }
+    },
 
-  config.cssmin = {
-    build: {
-      options: { keepSpecialComments: 0 },
-      files: { 'styles/hook.min.css': 'styles/hook.css' }
-    }
-  };
+    less: {
+      options: {
+        strictMath: true
+      },
 
-  config.svgstore = {
-    dashboard: {
-      files: { 'icons/sprites/icons-dashboard.svg' : ['icons/dashboard/**/*.svg'] },
+      build: {
+        dest: 'styles/hook.css',
+        src: 'styles/hook.less'
+      }
+    },
+
+    svgstore: {
       options: {
         cleanup: true,
         cleanupdefs: true,
         includeTitleElement: false,
         prefix: 'ds-icon-',
         svg: {
-          id: 'ds-sprites--icons-dashboard',
           style: 'display:none'
+        }
+      },
+
+      dashboard: {
+        dest: 'icons/sprites/icons-dashboard.svg',
+        src: 'icons/dashboard/**/*.svg',
+        options: {
+          svg: {
+            id: 'ds-sprites--icons-dashboard'
+          }
+        }
+      },
+
+      logos: {
+        dest: 'icons/sprites/logos.svg',
+        src: 'icons/logos/**/*.svg',
+        options: {
+          svg: {
+            id: 'ds-sprites--icons-logos'
+          }
+        }
+      },
+
+      player: {
+        dest: 'icons/sprites/icons-player.svg',
+        src: 'icons/player/**/*.svg',
+        options: {
+          svg: {
+            id: 'ds-sprites--icons-player'
+          }
         }
       }
     },
-    player: {
-      files: { 'icons/sprites/icons-player.svg' : ['icons/player/**/*.svg'] }
-    },
-    logos: {
-      files: { 'icons/sprites/logos.svg' : ['icons/logos/**/*.svg'] }
-    }
-  };
 
-  grunt.initConfig(config);
+    watch: {
+      sprites: {
+        files: [
+          'icons/dashboard/**/*.svg',
+          'icons/player/**/*.svg'
+        ],
+        tasks: ['svgstore']
+      },
+
+      styles: {
+        files: [ 'styles/**/*.less' ],
+        tasks: [ 'less', 'cssmin' ]
+      }
+    }
+  });
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -62,5 +103,10 @@ module.exports = function (grunt) {
     'cssmin'
   ]);
 
-  grunt.registerTask('dev', '', [ 'default', 'watch' ]);
+  grunt.registerTask('dev', '', [
+    'less',
+    'cssmin',
+    'svgstore',
+    'watch'
+  ]);
 };
