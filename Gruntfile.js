@@ -31,7 +31,12 @@ module.exports = function (grunt) {
       options: {
         cleanup: true,
         cleanupdefs: true,
-        includeTitleElement: false
+        includeTitleElement: false,
+        prefix: 'ds-icon-',
+        svg: {
+          id: 'ds-sprites--icons-dashboard',
+          style: 'display:none'
+        }
       }
     },
     player: {
