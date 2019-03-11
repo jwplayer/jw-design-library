@@ -1,0 +1,103 @@
+{
+	"color": {
+		"background": {
+			"button": {
+				"primary": {
+					"base": { "value": "{color.brand.dahlia.base.value}" },
+					"hover": { "value": "{color.brand.dahlia.dark.1.value}" },
+					"active": { "value": "{color.brand.dahlia.dark.2.value}" }
+				},
+
+				"secondary": {
+					"dark": {
+						"hover": { "value": "{color.system.white.value}" },
+						"active": { "value": "{color.brand.fog.base.value}" }
+					},
+
+					"light": {
+						"hover": { "value": "{color.brand.abyss.base.value}" },
+						"active": { "value": "{color.brand.abyss.dark.1.value}" }
+					}
+				},
+
+				"tertiary": {
+					"dark": {
+						"hover": { "value": "{color.brand.midnight.base.value}" },
+						"active": { "value": "{color.brand.midnight.dark.1.value}" }
+					},
+
+					"light": {
+						"hover": { "value": "{color.brand.fog.fade.value}" },
+						"active": { "value": "{color.brand.fog.base.value}" }
+					}
+				}
+			}
+		},
+
+		"border": {
+			"button": {
+				"secondary": {
+					"dark": { "value": "{color.text.button.secondary.dark.base.value}" },
+					"light": { "value": "{color.text.button.secondary.light.base.value}" }
+				}
+			}
+		},
+
+		"text": {
+			"button": {
+				"primary": { "value": "{color.system.white.value}" },
+
+				"secondary": {
+					"dark": {
+						"base": { "value": "{color.system.white.value}" },
+						"hover": { "value": "{color.brand.abyss.base.value}" },
+						"active": { "value": "{color.brand.abyss.base.value}" }
+					},
+
+					"light": {
+						"base": { "value": "{color.brand.abyss.base.value}" },
+						"hover": { "value": "{color.system.white.value}" },
+						"active": { "value": "{color.system.white.value}" }
+					}
+				},
+
+				"tertiary": {
+					"dark": { "value": "{color.brand.fog.fade.value}" },
+					"light": { "value": "{color.brand.abyss.base.value}" }
+				}
+			}
+		}
+	},
+
+	"border": {
+		"radius": {
+			"button": { "value": "3px" }
+		},
+
+		"style": {
+			"button": {
+				"secondary": { "value": "solid" }
+			}
+		},
+
+		"width": {
+			"button": {
+				"secondary": { "value": "1px" }
+			}
+		}
+	},
+
+	"font": {
+		"family": {
+			"button": { "value": "{font.family.custom.value}" }
+		},
+
+		"size": {
+			"button": { "value": "13px" }
+		},
+
+		"weight": {
+			"button": { "value": "{font.weight.custom.semibold.value}" }
+		}
+	}
+}
