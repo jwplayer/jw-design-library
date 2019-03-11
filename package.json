@@ -1,6 +1,6 @@
 {
   "name": "jw-design-library",
-  "version": "1.0.0",
+  "version": "4.0.1",
   "description": "A design library of global styles and icons for JW Player products",
   "main": "index.js",
   "scripts": {
