@@ -91,6 +91,36 @@
 					}
 				}
 			]
+		},
+
+		"icons": {
+			"transforms": ["attribute/cti", "name/cti/kebab"],
+			"buildPath": "dist/icons/",
+			"prefix": "ds",
+			"files": [
+				{
+					"destination": "dashboard.svg",
+					"format": "svg/sprite",
+					"filter": {
+						"attributes": {
+							"category": "asset",
+							"type": "icon",
+							"item": "dashboard"
+						}
+					}
+				},
+				{
+					"destination": "player.svg",
+					"format": "svg/sprite",
+					"filter": {
+						"attributes": {
+							"category": "asset",
+							"type": "icon",
+							"item": "player"
+						}
+					}
+				}
+			]
 		}
 	}
 }
