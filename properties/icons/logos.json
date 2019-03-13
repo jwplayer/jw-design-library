@@ -1,0 +1,12 @@
+{
+	"asset": {
+		"icon": {
+			"logo": {
+				"jwplayer": {
+					"full": { "value": "assets/icons/logos/jw-logo-full.svg" },
+					"mark": { "value": "assets/icons/logos/jw-logo-mark.svg" }
+				}
+			}
+		}
+	}
+}

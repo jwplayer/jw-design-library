@@ -99,7 +99,7 @@
 			"prefix": "ds",
 			"files": [
 				{
-					"destination": "dashboard.svg",
+					"destination": "sprites-dashboard.svg",
 					"format": "svg/sprite",
 					"filter": {
 						"attributes": {
@@ -110,13 +110,24 @@
 					}
 				},
 				{
-					"destination": "player.svg",
+					"destination": "sprites-player.svg",
 					"format": "svg/sprite",
 					"filter": {
 						"attributes": {
 							"category": "asset",
 							"type": "icon",
 							"item": "player"
+						}
+					}
+				},
+				{
+					"destination": "sprites-logos.svg",
+					"format": "svg/sprite",
+					"filter": {
+						"attributes": {
+							"category": "asset",
+							"type": "icon",
+							"item": "logo"
 						}
 					}
 				}

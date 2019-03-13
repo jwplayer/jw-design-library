@@ -4,7 +4,8 @@
   "description": "A design library of global styles and icons for JW Player products",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "build": "$npm_execpath run clean && node build.js"
   },
   "repository": {
     "type": "git",
@@ -18,15 +19,8 @@
   "homepage": "https://github.com/jwplayer/jw-design-library#readme",
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "grunt": "^1.0.3",
-    "grunt-cli": "^1.3.1",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-less": "^2.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "less": "^3.8.1",
     "style-dictionary": "^2.7.0",
-    "svg-sprite": "^1.5.0",
-    "svgo": "^1.2.0"
+    "svgo": "^1.2.0",
+    "sync-rpc": "^1.3.4"
   }
 }
