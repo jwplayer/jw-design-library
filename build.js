@@ -1,75 +1,32 @@
-const styleDictionary = require('style-dictionary').extend('./config.json');
-const path = require('path');
-const fs = require('fs');
-const SVGO = require('svgo');
 const cheerio = require('cheerio');
-
-const svgo = new SVGO({
-	plugins: [
-		{ cleanupAttrs: true },
-		{ removeDoctype: true },
-		{ removeXMLProcInst: true },
-		{ removeComments: true },
-		{ removeMetadata: true },
-		{ removeTitle: true },
-		{ removeDesc: true },
-		{ removeUselessDefs: true },
-		{ removeEditorsNSData: true },
-		{ removeEmptyAttrs: true },
-		{ removeHiddenElems: true },
-		{ removeEmptyText: true },
-		{ removeEmptyContainers: true },
-		{ removeViewBox: false },
-		{ cleanupEnableBackground: true },
-		{ convertStyleToAttrs: true },
-		{ convertColors: true },
-		{ convertPathData: true },
-		{ convertTransform: true },
-		{ removeUnknownsAndDefaults: true },
-		{ removeNonInheritableGroupAttrs: true },
-		{ removeUselessStrokeAndFill: true },
-		{ removeUnusedNS: true },
-		{ cleanupIDs: true },
-		{ cleanupNumericValues: true },
-		{ moveElemsAttrsToGroup: true },
-		{ moveGroupAttrsToElems: true },
-		{ collapseGroups: true },
-		{ removeRasterImages: false },
-		{ mergePaths: true },
-		{ convertShapeToPath: true },
-		{ sortAttrs: true },
-		{ removeDimensions: true },
-		{ removeAttrs: {attrs: '(stroke|fill)'} }
-	]
-});
+const forceSync = require('sync-rpc');
+const fs = require('fs');
+const optimizeSVG = forceSync(require.resolve('./optimize-svg'));
+const path = require('path');
+const styleDictionary = require('style-dictionary').extend('./config.json');
 
 styleDictionary.registerFormat({
 	name: 'svg/sprite',
-	formatter: (dictionary, config) => {
-		return (async () => {
-			let items = dictionary.allProperties.map(async ({ name, value }) => {
-				const file = fs.readFileSync(path.resolve(value), 'utf8');
-				return new Promise((resolve, reject) => {
-					return svgo.optimize(file).then(({ data }) => resolve(data));
-				});
+	formatter: ({ allProperties }, config) => {
+		let items = [];
+
+		allProperties.forEach(({ name, value }) => {
+			const file = fs.readFileSync(path.resolve(value), 'utf8');
+			items.push({ name, data: optimizeSVG({ id: name, file }) });
+		});
+
+		items = items.map(item => {
+			// Using cheerio to provide a minimal amount of safety
+			let $ = cheerio.load(item.data, { xmlMode: true });
+			$.root().find('svg').each((i, icon) => {
+				icon.tagName = 'symbol';
+				return icon;
 			});
 
-			// const results = await Promise.all(promises);
-			// results.forEach(({ data }) => {
-			// 	const $ = cheerio.load(data, { xmlMode: true });
-			// 	$.root().find('icon').each((i, icon) => {
-			// 		icon.tagName = 'symbol';
-			// 		$(icon).attr('id', name);
-			// 		return icon;
-			// 	});
+			return $.root().html();
+		}).join('');
 
-			// 	sprites.push($.root().html());
-			// });
-
-			await Promise.all(items).then(v => sprites = v);
-			console.log(sprites);
-			return sprites;
-		})();
+		return `<svg xmlns="http://www.w3.org/2000/svg">${items}</svg>`;
 	}
 });
 
