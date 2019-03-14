@@ -1,33 +1,60 @@
-const cheerio = require('cheerio');
-const forceSync = require('sync-rpc');
+const yaml = require('js-yaml');
 const fs = require('fs');
-const optimizeSVG = forceSync(require.resolve('./optimize-svg'));
-const path = require('path');
-const styleDictionary = require('style-dictionary').extend('./config.json');
+const glob = require('glob');
+const config = yaml.safeLoad(fs.readFileSync('./config.yaml'));
+const deepExtend = require('style-dictionary/lib/utils/deepExtend');
+const svgSpriteFormatter = require('./scripts/formatters/svg-sprite');
+const javascriptEs6ArraysFormatter = require('./scripts/formatters/javascript-es6-arrays');
+const lessVariablesListsFormatter = require('./scripts/formatters/less-lists');
+
+// Need to combine properties files
+// Replicating functionality in lib/utils/combineJSON.js
+var properties = {};
+var files = [];
+
+// If there are includes, add them to the properties object first,
+// then delete include from the config. This is replicating
+// functionality in lib/extend.js
+if (config.include && _.isArray(options.include)) {
+  config.include.forEach(function(file) {
+    deepExtend([properties, yaml.safeLoad(fs.readFileSync(file))]);
+  });
+  config.include = null;
+}
+
+// Create a flat array of files based on glob
+config.source.forEach(function(src) {
+  files = files.concat(glob.sync(src, {}));
+});
+
+// Merge all the properties files together
+files.forEach(function(file) {
+  deepExtend([properties, yaml.safeLoad(fs.readFileSync(file))]);
+});
+
+// Add the newly created properties object to the config
+config.properties = properties;
+// Remove the source of the config so that the style dictionary
+// doesn't try to combine those files because they aren't JSON
+config.source = null;
+
+// Now we can extend style dictionary like normal
+const styleDictionary = require('style-dictionary').extend(config);
 
 styleDictionary.registerFormat({
 	name: 'svg/sprite',
-	formatter: ({ allProperties }, config) => {
-		let items = [];
+	formatter: svgSpriteFormatter
+});
 
-		allProperties.forEach(({ name, value }) => {
-			const file = fs.readFileSync(path.resolve(value), 'utf8');
-			items.push({ name, data: optimizeSVG({ id: name, file }) });
-		});
+styleDictionary.registerFormat({
+	name: 'javascript/es6/arrays',
+	formatter: javascriptEs6ArraysFormatter
+});
 
-		items = items.map(item => {
-			// Using cheerio to provide a minimal amount of safety
-			let $ = cheerio.load(item.data, { xmlMode: true });
-			$.root().find('svg').each((i, icon) => {
-				icon.tagName = 'symbol';
-				return icon;
-			});
 
-			return $.root().html();
-		}).join('');
-
-		return `<svg xmlns="http://www.w3.org/2000/svg">${items}</svg>`;
-	}
+styleDictionary.registerFormat({
+	name: 'less/variables/lists',
+	formatter: lessVariablesListsFormatter
 });
 
 styleDictionary.buildAllPlatforms();

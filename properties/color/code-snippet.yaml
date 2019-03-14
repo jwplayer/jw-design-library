@@ -1,0 +1,28 @@
+color:
+  code:
+    background:
+      value: '{color.brand.abyss.value}'
+
+    background-inline:
+      value: '{color.brand.fog.value}'
+
+    text:
+      value: '{color.system.white.value}'
+
+    text-inline:
+      value: '{color.brand.abyss.value}'
+
+    green:
+      value: '#98C379'
+
+    purple:
+      value: '#C678DD'
+
+    blue:
+      value: '#61AFEF'
+
+    pink:
+      value: '#E06C75'
+
+    orange:
+      value: '#D19A66'

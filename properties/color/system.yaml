@@ -1,0 +1,17 @@
+color:
+  system:
+    black:
+      value: '#000000'
+    blue:
+      value: '#0A75E3'
+    green:
+      value: '#0AAC29'
+      comment: affirmative
+    orange:
+      value: '#FFBA43'
+      comment: medium risk
+    red:
+      value: '#FF0000'
+      comment: destructive - high risk
+    white:
+      value: '#FFFFFF'

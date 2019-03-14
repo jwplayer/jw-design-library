@@ -3,14 +3,14 @@
 
 
 "@types/node@*":
-  version "11.11.2"
-  resolved "https://npm-registry.longtailvideo.com/@types%2fnode/-/node-11.11.2.tgz#873d2c3f3824212cc16130074699e1bcb38c0231"
-  integrity sha512-iEaHiDNkHv4Jrm9O5T37OYEUwjJesiyt6ZlhLFK0sbo4CLD0jyCOB4Pc2F9iD3MbW2397SLNxZKdDGntGaBjQQ==
+  version "11.11.3"
+  resolved "https://npm-registry.longtailvideo.com/@types%2fnode/-/node-11.11.3.tgz#7c6b0f8eaf16ae530795de2ad1b85d34bf2f5c58"
+  integrity sha512-wp6IOGu1lxsfnrD+5mX6qwSwWuqsdkKKxTN4aQc4wByHAKZJf9/D4KXPQ1POUjEbnCP5LMggB0OEFNY9OTsMqg==
 
 "@types/q@^1.5.1":
-  version "1.5.1"
-  resolved "https://npm-registry.longtailvideo.com/@types%2fq/-/q-1.5.1.tgz#48fd98c1561fe718b61733daed46ff115b496e18"
-  integrity sha512-eqz8c/0kwNi/OEHQfvIuJVLTst3in0e7uTKeuY+WL/zfKn0xVujOTp42bS/vUUokhK5P2BppLd9JXMOMHcgbjA==
+  version "1.5.2"
+  resolved "https://npm-registry.longtailvideo.com/@types%2fq/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
+  integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
@@ -340,7 +340,7 @@ is-symbol@^1.0.2:
   dependencies:
     has-symbols "^1.0.0"
 
-js-yaml@^3.12.0:
+js-yaml@^3.12.0, js-yaml@^3.12.2:
   version "3.12.2"
   resolved "https://npm-registry.longtailvideo.com/js-yaml/-/js-yaml-3.12.2.tgz#ef1d067c5a9d9cb65bd72f285b5d8105c77f14fc"
   integrity sha512-QHn/Lh/7HhZ/Twc7vJYQTkjuCa0kaCcDcjK5Zlk2rvnUpy7DxMJ23+Jc2dcyvltwQVg1nygAVlB2oRDFHoRS5Q==
