@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 13 Mar 2019 19:58:16 GMT
+ * Generated on Thu, 14 Mar 2019 21:00:45 GMT
  */
 
 export const DsColorDataScaleMango1 = "#1c7464";

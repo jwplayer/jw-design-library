@@ -1,10 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Wed, 13 Mar 2019 19:58:16 GMT
+ * Generated on Thu, 14 Mar 2019 21:00:45 GMT
  */
 
 export const DsColorSystemBlack = "#000000";
-export const DsColorSystemTransparent = "#000000";
 export const DsColorSystemBlue = "#0a75e3";
 export const DsColorSystemGreen = "#0aac29"; // affirmative
 export const DsColorSystemOrange = "#ffba43"; // medium risk

@@ -8,7 +8,7 @@
 			"type": "node",
 			"request": "launch",
 			"useWSL": true,
-			"name": "Launch Program",
+			"name": "Build Style Dictionary assets",
 			"program": "${workspaceFolder}\\build.js"
 		}
 	]
