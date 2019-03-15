@@ -1,0 +1,132 @@
+asset:
+  icon:
+    player:
+      airplay-off:
+        value: dictionary/assets/icons/player/airplay-off.svg
+
+      airplay-on:
+        value: dictionary/assets/icons/player/airplay-on.svg
+
+      arrow:
+        left:
+          value: dictionary/assets/icons/player/arrow-left.svg
+
+        right:
+          value: dictionary/assets/icons/player/arrow-right.svg
+
+      audio-tracks:
+        value: dictionary/assets/icons/player/audio-tracks.svg
+
+      buffer:
+        value: dictionary/assets/icons/player/buffer.svg
+
+      captions-off:
+        value: dictionary/assets/icons/player/captions-off.svg
+
+      captions-on:
+        value: dictionary/assets/icons/player/captions-on.svg
+
+      chromecast-off:
+        value: dictionary/assets/icons/player/chromecast-off.svg
+
+      chromecast-on:
+        value: dictionary/assets/icons/player/chromecast-on.svg
+
+      close:
+        value: dictionary/assets/icons/player/close.svg
+
+      discover:
+        value: dictionary/assets/icons/player/discover.svg
+
+      dvr:
+        value: dictionary/assets/icons/player/dvr.svg
+
+      email:
+        value: dictionary/assets/icons/player/email.svg
+
+      embed:
+        value: dictionary/assets/icons/player/embed.svg
+
+      facebook:
+        value: dictionary/assets/icons/player/facebook.svg
+
+      fullscreen-not:
+        value: dictionary/assets/icons/player/fullscreen-not.svg
+
+      fullscreen:
+        value: dictionary/assets/icons/player/fullscreen.svg
+
+      google:
+        value: dictionary/assets/icons/player/google.svg
+
+      link:
+        value: dictionary/assets/icons/player/link.svg
+
+      linkedIn:
+        value: dictionary/assets/icons/player/linkedIn.svg
+
+      live:
+        value: dictionary/assets/icons/player/live.svg
+
+      next:
+        value: dictionary/assets/icons/player/next.svg
+
+      pause:
+        value: dictionary/assets/icons/player/pause.svg
+
+      pinterest:
+        value: dictionary/assets/icons/player/pinterest.svg
+
+      play:
+        value: dictionary/assets/icons/player/play.svg
+
+      playback-error:
+        value: dictionary/assets/icons/player/playback-error.svg
+
+      playlist:
+        value: dictionary/assets/icons/player/playlist.svg
+
+      quality-25:
+        value: dictionary/assets/icons/player/quality-25.svg
+
+      quality-50:
+        value: dictionary/assets/icons/player/quality-50.svg
+
+      quality-75:
+        value: dictionary/assets/icons/player/quality-75.svg
+
+      quality-100:
+        value: dictionary/assets/icons/player/quality-100.svg
+
+      reddit:
+        value: dictionary/assets/icons/player/reddit.svg
+
+      replay:
+        value: dictionary/assets/icons/player/replay.svg
+
+      rewind-10:
+        value: dictionary/assets/icons/player/rewind-10.svg
+
+      settings:
+        value: dictionary/assets/icons/player/settings.svg
+
+      share:
+        value: dictionary/assets/icons/player/share.svg
+
+      stop:
+        value: dictionary/assets/icons/player/stop.svg
+
+      tumblr:
+        value: dictionary/assets/icons/player/tumblr.svg
+
+      twitter:
+        value: dictionary/assets/icons/player/twitter.svg
+
+      volume-0:
+        value: dictionary/assets/icons/player/volume-0.svg
+
+      volume-50:
+        value: dictionary/assets/icons/player/volume-50.svg
+
+      volume-100:
+        value: dictionary/assets/icons/player/volume-100.svg

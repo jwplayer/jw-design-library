@@ -1,8 +1,0 @@
-asset:
-  icon:
-    logo:
-      jwplayer:
-        value: assets/icons/logos/jw-logo-full.svg
-
-      jwplayer-mark:
-        value: assets/icons/logos/jw-logo-mark.svg
