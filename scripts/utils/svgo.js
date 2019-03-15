@@ -1,7 +1,7 @@
-/* This module is required to make SVGO behave like a synchronous function.
-   Since style-dictionary is only synchronous, we need to deal with it on our
-   side. I should probably look into how Grunt and Gulp handle SVGO...
-*/
+/** This module is required to make SVGO behave like a synchronous function.
+ *  Since style-dictionary is only synchronous, we need to deal with it on our
+ * side. I should probably look into how Grunt and Gulp handle SVGO...
+ */
 
 const SVGO = require('svgo');
 
@@ -43,8 +43,8 @@ const svgoPlugins = [
 	{ sortAttrs: true }
 ];
 
-function init(connection) {
-	return function({ id, file }) {
+module.exports = function(connection) {
+	return ({ id, file }) => {
 		const svgo = new SVGO({
 			plugins: [
 				...svgoPlugins,
@@ -52,7 +52,5 @@ function init(connection) {
 			]
 		});
 		return svgo.optimize(file).then(({ data }) => data);
-	}
-}
-
-module.exports = init;
+	};
+};

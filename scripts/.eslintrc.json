@@ -1,0 +1,221 @@
+{
+    "root": true,
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2018
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "valid-jsdoc": [ "warn" ],
+        "comma-dangle": 0,
+        "no-cond-assign": [ "warn" ],
+        "no-constant-condition": [ "warn" ],
+        "no-control-regex": [ "warn" ],
+        "no-console": [ "warn" ],
+        "no-debugger": [ "warn" ],
+        "no-dupe-args": [ "warn" ],
+        "no-dupe-keys": [ "warn" ],
+        "no-duplicate-case": [ "warn" ],
+        "no-empty": [ "warn" ],
+        "no-empty-character-class": [ "warn" ],
+        "no-ex-assign": [ "warn" ],
+        "no-extra-boolean-cast": [ "warn" ],
+        "no-extra-parens": 0,
+        "no-extra-semi": [ "warn" ],
+        "no-func-assign": [ "warn" ],
+        "no-inner-declarations": [ "warn" ],
+        "no-invalid-regexp": [ "warn" ],
+        "no-irregular-whitespace": [ "warn" ],
+        "no-unsafe-negation": [ "warn" ],
+        "no-obj-calls": [ "warn" ],
+        "no-regex-spaces": [ "warn" ],
+        "no-sparse-arrays": [ "warn" ],
+        "no-unreachable": [ "warn" ],
+        "use-isnan": [ "warn" ],
+        "valid-typeof": [ "warn" ],
+        "block-scoped-var": 0,
+        "complexity": 0,
+        "consistent-return": 0,
+        "curly": [ "warn" ],
+        "default-case": [ "warn" ],
+        "dot-notation": [ "warn" ],
+        "eqeqeq": [ "warn" ],
+        "guard-for-in": [ "warn" ],
+        "no-alert": [ "warn" ],
+        "no-caller": [ "warn" ],
+        "no-div-regex": [ "warn" ],
+        "no-else-return": [ "warn" ],
+        "no-eq-null": [ "warn" ],
+        "no-eval": [ "warn" ],
+        "no-extend-native": [ "warn" ],
+        "no-extra-bind": [ "warn" ],
+        "no-fallthrough": [ "warn" ],
+        "no-floating-decimal": [ "warn" ],
+        "no-implied-eval": [ "warn" ],
+        "no-iterator": [ "warn" ],
+        "no-labels": [ "warn" ],
+        "no-lone-blocks": [ "warn" ],
+        "no-loop-func": [ "warn" ],
+        "no-multi-spaces": [ "warn" ],
+        "no-multi-str": [ "warn" ],
+        "no-global-assign": [ "warn" ],
+        "no-new": [ "warn" ],
+        "no-new-func": [ "warn" ],
+        "no-new-wrappers": [ "warn" ],
+        "no-octal": [ "warn" ],
+        "no-octal-escape": [ "warn" ],
+        "no-param-reassign": 0,
+        "no-process-env": [ "warn" ],
+        "no-proto": [ "warn" ],
+        "no-redeclare": [ "warn" ],
+        "no-return-assign": [ "warn" ],
+        "no-script-url": [ "warn" ],
+        "no-self-compare": [ "warn" ],
+        "no-sequences": [ "warn" ],
+        "no-throw-literal": [ "warn" ],
+        "no-unused-expressions": 1,
+        "no-var": [ "warn" ],
+        "no-void": [ "warn" ],
+        "no-with": [ "warn" ],
+        "wrap-iife": [ "warn" ],
+        "yoda": [ "warn" ],
+        "strict": 0,
+        "no-delete-var": [ "warn" ],
+        "no-label-var": [ "warn" ],
+        "no-shadow": [ "warn" ],
+        "no-shadow-restricted-names": [ "warn" ],
+        "no-undef": [ "warn" ],
+        "no-undef-init": [ "warn" ],
+        "no-unused-vars": [ "warn" ],
+        "no-use-before-define": 0,
+        "indent": [
+            "error",
+            "tab",
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "brace-style": 1,
+        "comma-spacing": [
+            "warn",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ],
+        "eol-last": [ "error" ],
+        "func-names": 0,
+        "func-style": 0,
+        "key-spacing": [
+            1,
+            {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "new-parens": 1,
+        "padding-line-between-statements": 0,
+        "no-array-constructor": 1,
+        "no-inline-comments": 0,
+        "no-lonely-if": 1,
+        "no-mixed-spaces-and-tabs": 1,
+        "no-multiple-empty-lines": [
+            1,
+            {
+                "max": 2
+            }
+        ],
+        "no-nested-ternary": 1,
+        "no-new-object": 1,
+        "func-call-spacing": 1,
+        "no-ternary": 0,
+        "no-trailing-spaces": 0,
+        "no-underscore-dangle": 0,
+        "one-var": [
+            2,
+            "never"
+        ],
+        "operator-assignment": [
+            0,
+            "never"
+        ],
+        "quote-props": [
+            1,
+            "as-needed",
+            {
+                "keywords": true
+            }
+        ],
+        "quotes": [
+            1,
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "semi-spacing": [
+            1,
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "sort-vars": 0,
+        "space-before-blocks": [
+            1,
+            "always"
+        ],
+        "space-before-function-paren": [
+            0,
+            {
+                "anonymous": "always",
+                "named": "never"
+            }
+        ],
+        "space-in-parens": [
+            1,
+            "never"
+        ],
+        "space-infix-ops": 1,
+        "space-unary-ops": [
+            1,
+            {
+                "words": true,
+                "nonwords": false
+            }
+        ],
+        "spaced-comment": [
+            1,
+            "always"
+        ],
+        "wrap-regex": 0,
+        "generator-star-spacing": [
+            2,
+            "before"
+        ],
+        "max-depth": [
+            2,
+            5
+        ],
+        "max-params": 0,
+        "max-statements": 0,
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "keyword-spacing": 2
+    }
+}
