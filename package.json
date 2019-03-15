@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "$npm_execpath run clean && node build.js"
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",

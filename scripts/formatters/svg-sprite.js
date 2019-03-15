@@ -6,7 +6,7 @@ const path = require('path');
 const readline = require('readline');
 
 module.exports = {
-	name: 'svg/sprite',
+	name: 'svg/sprites',
 	formatter: function({ allProperties }, config) {
 		const symbols = allProperties.reduce((icons, { name, value }) => {
 			process.stdout.write('.');

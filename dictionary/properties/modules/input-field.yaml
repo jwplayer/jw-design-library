@@ -1,0 +1,96 @@
+color:
+  background:
+    input-field:
+      input:
+        base:
+          value: '{color.system.white.value}'
+
+        disabled:
+          value: '{color.brand.fog.value}'
+
+  border:
+    input-field:
+      input:
+        base:
+          value: '{color.brand.fog-dark.value}'
+
+        disabled:
+          value: '{color.brand.fog.value}'
+
+        error:
+          value: '{color.system.red.value}'
+
+        focus:
+          value: '{color.system.blue.value}'
+
+  text:
+    input-field:
+      hint:
+        base:
+          value: '{color.brand.fog.value}'
+
+        error:
+          value: '{color.system.red.value}'
+
+      input:
+        base:
+          value: '{color.system.black.value}'
+
+        placeholder:
+          base:
+            value: '{color.brand.fog-dark.value}'
+
+          disabled:
+            value: '{color.brand.fog-dark.value}'
+
+      label:
+        base:
+          value: '{color.system.black.value}'
+
+        disabled:
+          value: '{color.brand.fog.value}'
+
+font:
+  family:
+    input-field:
+      value: '{font.family.custom.value}'
+
+  size:
+    input-field:
+      hint:
+        value: 0.6875
+
+      input:
+        value: 0.8125
+
+      label:
+        value: 0.9375
+
+  weight:
+    input-field:
+      hint:
+        base:
+          value: '{font.weight.custom.regular.value}'
+
+        error:
+          value: '{font.weight.custom.semibold.value}'
+
+      input:
+        value: '{font.weight.custom.regular.value}'
+
+      label:
+        value: '{font.weight.custom.regular.value}'
+
+size:
+  height:
+    input-field:
+      input:
+        value: 2
+
+  padding-bottom:
+    input-field:
+      input:
+        value: 0.5
+
+      label:
+        value: 0.5
