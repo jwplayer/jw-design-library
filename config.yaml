@@ -1,115 +1,129 @@
 source:
-  - properties/**/*.yaml
+  - dictionary/properties/**/*.yaml
+
 platforms:
   less:
     prefix: ds
     buildPath: dist/less/
     transformGroup: less
+    transforms:
+      - attribute/cti
+      - name/cti/kebab
+      - time/seconds
+      - content/icon
+      - size/rem
+      - color/css
+
     files:
-    - destination: data-colors.less
-      format: less/variables
-      filter:
-        attributes:
-          category: color
-          type: data
+      - destination: data-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: data
 
-    - destination: brand-colors.less
-      format: less/variables
-      filter:
-        attributes:
-          category: color
-          type: brand
-
-    - destination: color-ramps.less
-      format: less/variables/lists
-      filter:
-        attributes:
-          category: color
-          type: ramp
-
-    - destination: system-colors.less
-      format: less/variables
-      filter:
-        attributes:
-          category: color
-          type: system
-
-    - destination: fonts.less
-      format: less/variables
-      filter:
-        attributes:
-          category: font
-
-    - destination: button.less
-      format: less/variables
-      filter:
-        attributes:
-          item: button
-
-  js:
-    buildPath: dist/js/
-    transformGroup: js
-    prefix: ds
-    files:
-    - destination: brand-colors.esm.js
-      format: javascript/es6
-      filter:
+      - destination: brand-colors.less
+        format: less/variables
+        filter:
           attributes:
             category: color
             type: brand
 
-    - destination: data-colors.esm.js
-      format: javascript/es6
-      filter:
-        attributes:
-          category: color
-          type: data
+      - destination: color-ramps.less
+        format: less/variables/lists
+        filter:
+          attributes:
+            category: color
+            type: ramp
 
-    - destination: system-colors.esm.js
-      format: javascript/es6
-      filter:
-        attributes:
-          category: color
-          type: system
+      - destination: system-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: system
 
-    - destination: color-ramps.esm.js
-      format: javascript/es6/arrays
-      filter:
-        attributes:
-          category: color
-          type: ramp
+      - destination: fonts.less
+        format: less/variables
+        filter:
+          attributes:
+            category: font
+
+      - destination: button.less
+        format: less/variables
+        filter:
+          attributes:
+            item: button
+
+  js:
+    buildPath: dist/js/
+    transforms:
+      - attribute/cti
+      - name/cti/camel
+      - size/rem
+      - color/css
+
+    prefix: ds
+    files:
+      - destination: brand-colors.esm.js
+        format: javascript/es6
+        filter:
+            attributes:
+              category: color
+              type: brand
+
+      - destination: data-colors.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: data
+
+      - destination: system-colors.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: system
+
+      - destination: color-ramps.esm.js
+        format: javascript/es6/arrays
+        filter:
+          attributes:
+            category: color
+            type: ramp
 
   icons:
     buildPath: dist/icons/
     prefix: ds
     transforms:
-    - attribute/cti
-    - name/cti/kebab
+      - attribute/cti
+      - name/cti/kebab
 
     files:
-    - destination: sprites-dashboard.svg
-      format: svg/sprite
-      id: asset-icon-spritesheet-dashboard
-      filter:
-        attributes:
-          category: asset
-          type: icon
-          item: dashboard
+      - destination: sprites-dashboard.svg
+        format: svg/sprite
+        id: asset-icon-spritesheet-dashboard
+        filter:
+          attributes:
+            category: asset
+            type: icon
+            item: dashboard
 
-    - destination: sprites-player.svg
-      format: svg/sprite
-      id: asset-icon-spritesheet-player
-      filter:
-        attributes:
-          category: asset
-          type: icon
-          item: player
+      - destination: sprites-player.svg
+        format: svg/sprite
+        id: asset-icon-spritesheet-player
+        filter:
+          attributes:
+            category: asset
+            type: icon
+            item: player
 
-    - destination: sprites-logos.svg
-      format: svg/sprite
-      id: asset-icon-spritesheet-logo
-      filter:
-        attributes:
-          category: asset
-          type: icon
-          item: logo
+      - destination: sprites-logos.svg
+        format: svg/sprite
+        id: asset-icon-spritesheet-logo
+        filter:
+          attributes:
+            category: asset
+            type: icon
+            item: logo

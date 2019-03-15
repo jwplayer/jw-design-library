@@ -1,0 +1,187 @@
+asset:
+  icon:
+    dashboard:
+      add:
+        value: dictionary/assets/icons/dashboard/add.svg
+
+      airplay:
+        value: dictionary/assets/icons/dashboard/airplay.svg
+
+      analytics:
+        value: dictionary/assets/icons/dashboard/analytics.svg
+
+      arrow:
+        down:
+          value: dictionary/assets/icons/dashboard/arrow-down.svg
+
+        left:
+          value: dictionary/assets/icons/dashboard/arrow-left.svg
+
+        right:
+          value: dictionary/assets/icons/dashboard/arrow-right.svg
+
+        up:
+          value: dictionary/assets/icons/dashboard/arrow-up.svg
+
+      calendar:
+        value: dictionary/assets/icons/dashboard/calendar.svg
+
+      checkbox-indeterminate:
+        value: dictionary/assets/icons/dashboard/checkbox-indeterminate.svg
+
+      checkmark:
+        value: dictionary/assets/icons/dashboard/checkmark.svg
+
+      chevron:
+        down:
+          value: dictionary/assets/icons/dashboard/chevron-down.svg
+
+        left:
+          value: dictionary/assets/icons/dashboard/chevron-left.svg
+
+        right:
+          value: dictionary/assets/icons/dashboard/chevron-right.svg
+
+        up:
+          value: dictionary/assets/icons/dashboard/chevron-up.svg
+
+      chromecast:
+        value: dictionary/assets/icons/dashboard/chromecast.svg
+
+      collapse-expand:
+        value: dictionary/assets/icons/dashboard/collapse-expand.svg
+
+      copy:
+        value: dictionary/assets/icons/dashboard/copy.svg
+
+      credit-card:
+        value: dictionary/assets/icons/dashboard/credit-card.svg
+
+      cross:
+        value: dictionary/assets/icons/dashboard/cross.svg
+
+      customize:
+        value: dictionary/assets/icons/dashboard/customize.svg
+
+      device:
+        desktop:
+          value: dictionary/assets/icons/dashboard/device-desktop.svg
+
+        landscape:
+          value: dictionary/assets/icons/dashboard/device-landscape.svg
+
+        portrait:
+          value: dictionary/assets/icons/dashboard/device-portrait.svg
+
+      document:
+        value: dictionary/assets/icons/dashboard/document.svg
+
+      download:
+        value: dictionary/assets/icons/dashboard/download.svg
+
+      drag:
+        value: dictionary/assets/icons/dashboard/drag.svg
+
+      edit:
+        value: dictionary/assets/icons/dashboard/edit.svg
+
+      embed:
+        value: dictionary/assets/icons/dashboard/embed.svg
+
+      external-link:
+        value: dictionary/assets/icons/dashboard/external-link.svg
+
+      full-screen:
+        off:
+          value: dictionary/assets/icons/dashboard/full-screen-off.svg
+
+        on:
+          value: dictionary/assets/icons/dashboard/full-screen-on.svg
+
+      grid:
+        value: dictionary/assets/icons/dashboard/grid.svg
+
+      help:
+        value: dictionary/assets/icons/dashboard/help.svg
+
+      home:
+        value: dictionary/assets/icons/dashboard/home.svg
+
+      key:
+        value: dictionary/assets/icons/dashboard/key.svg
+
+      labs:
+        value: dictionary/assets/icons/dashboard/labs.svg
+
+      link:
+        value: dictionary/assets/icons/dashboard/link.svg
+
+      list:
+        big:
+          value: dictionary/assets/icons/dashboard/list-big.svg
+
+        small:
+          value: dictionary/assets/icons/dashboard/list-small.svg
+
+      lock:
+        value: dictionary/assets/icons/dashboard/lock.svg
+
+      mail:
+        value: dictionary/assets/icons/dashboard/mail.svg
+
+      monetize:
+        value: dictionary/assets/icons/dashboard/monetize.svg
+
+      more:
+        value: dictionary/assets/icons/dashboard/more.svg
+
+      phone:
+        value: dictionary/assets/icons/dashboard/phone.svg
+
+      play:
+        value: dictionary/assets/icons/dashboard/play.svg
+
+      preview:
+        value: dictionary/assets/icons/dashboard/preview.svg
+
+      publish:
+        value: dictionary/assets/icons/dashboard/publish.svg
+
+      recommendations:
+        value: dictionary/assets/icons/dashboard/recommendations.svg
+
+      search:
+        value: dictionary/assets/icons/dashboard/search.svg
+
+      settings:
+        value: dictionary/assets/icons/dashboard/settings.svg
+
+      share:
+        value: dictionary/assets/icons/dashboard/share.svg
+
+      sort:
+        value: dictionary/assets/icons/dashboard/sort.svg
+
+      split:
+        value: dictionary/assets/icons/dashboard/split.svg
+
+      thumbnail:
+        value: dictionary/assets/icons/dashboard/thumbnail.svg
+
+      tool:
+        value: dictionary/assets/icons/dashboard/tool.svg
+
+      trash:
+        value: dictionary/assets/icons/dashboard/trash.svg
+
+      trim:
+        value: dictionary/assets/icons/dashboard/trim.svg
+
+      undo:
+        value: dictionary/assets/icons/dashboard/undo.svg
+
+      upload:
+        value: dictionary/assets/icons/dashboard/upload.svg
+
+      warning:
+        value: dictionary/assets/icons/dashboard/warning.svg

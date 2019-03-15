@@ -1,11 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Thu, 14 Mar 2019 21:00:45 GMT
+ * Generated on Fri, 15 Mar 2019 16:03:18 GMT
  */
 
-export const DsColorSystemBlack = "#000000";
-export const DsColorSystemBlue = "#0a75e3";
-export const DsColorSystemGreen = "#0aac29"; // affirmative
-export const DsColorSystemOrange = "#ffba43"; // medium risk
-export const DsColorSystemRed = "#ff0000"; // destructive - high risk
-export const DsColorSystemWhite = "#ffffff";
+export const dsColorSystemBlack = "#000000";
+export const dsColorSystemBlue = "#0a75e3";
+export const dsColorSystemGreen = "#0aac29"; // affirmative
+export const dsColorSystemOrange = "#ffba43"; // medium risk
+export const dsColorSystemRed = "#ff0000"; // destructive - high risk
+export const dsColorSystemWhite = "#ffffff";
