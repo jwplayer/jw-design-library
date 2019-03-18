@@ -1,0 +1,43 @@
+color:
+  data:
+    scale:
+      pear:
+        1:
+          value: '#C56077'
+        2:
+          value: '#DE8F84'
+        3:
+          value: '#E7A491'
+        4:
+          value: '#EFBDA2'
+        5:
+          value: '#FFEAD0'
+        6:
+          value: '#F2D0A0'
+        7:
+          value: '#ECC188'
+        8:
+          value: '#E4B672'
+        9:
+          value: '#D49C44'
+
+  ramp:
+    data:
+      scale:
+        pear:
+          5:
+            value:
+            - '{color.data.scale.pear.1.value}'
+            - '{color.data.scale.pear.3.value}'
+            - '{color.data.scale.pear.5.value}'
+            - '{color.data.scale.pear.7.value}'
+            - '{color.data.scale.pear.9.value}'
+          7:
+            value:
+            - '{color.data.scale.pear.1.value}'
+            - '{color.data.scale.pear.2.value}'
+            - '{color.data.scale.pear.4.value}'
+            - '{color.data.scale.pear.5.value}'
+            - '{color.data.scale.pear.6.value}'
+            - '{color.data.scale.pear.8.value}'
+            - '{color.data.scale.pear.9.value}'

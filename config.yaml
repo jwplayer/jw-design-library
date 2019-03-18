@@ -6,22 +6,7 @@ platforms:
     prefix: ds
     buildPath: dist/less/
     transformGroup: less
-    transforms:
-      - attribute/cti
-      - name/cti/kebab
-      - time/seconds
-      - content/icon
-      - size/rem
-      - color/css
-
     files:
-      - destination: data-colors.less
-        format: less/variables
-        filter:
-          attributes:
-            category: color
-            type: data
-
       - destination: brand-colors.less
         format: less/variables
         filter:
@@ -29,8 +14,8 @@ platforms:
             category: color
             type: brand
 
-      - destination: color-ramps.less
-        format: less/variables/lists
+      - destination: data-colors.less
+        format: less/variables
         filter:
           attributes:
             category: color
@@ -43,23 +28,10 @@ platforms:
             category: color
             type: system
 
-      - destination: fonts.less
-        format: less/variables
-        filter:
-          attributes:
-            category: font
-
   components:
     prefix: ds
     buildPath: dist/less/components/
     transformGroup: less
-    transforms:
-      - attribute/cti
-      - name/cti/kebab
-      - time/seconds
-      - content/icon
-      - size/rem
-      - color/css
     files:
       - destination: button.less
         format: less/variables
@@ -81,12 +53,7 @@ platforms:
 
   js:
     buildPath: dist/js/
-    transforms:
-      - attribute/cti
-      - name/cti/camel
-      - size/rem
-      - color/css
-
+    transformGroup: js
     prefix: ds
     files:
       - destination: brand-colors.esm.js
@@ -103,8 +70,8 @@ platforms:
             category: color
             type: system
 
-      - destination: color-ramps.esm.js
-        format: javascript/es6/arrays
+      - destination: data-colors.esm.js
+        format: javascript/es6
         filter:
           attributes:
             category: color
@@ -116,7 +83,6 @@ platforms:
     transforms:
       - attribute/cti
       - name/cti/kebab
-
     files:
       - destination: sprites-dashboard.svg
         format: svg/sprites

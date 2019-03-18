@@ -1,0 +1,61 @@
+color:
+  data:
+    palette:
+      apricot:
+        1:
+          value: '#5A1D7E'
+        2:
+          value: '#9D2076'
+        3:
+          value: '#AA2673'
+        4:
+          value: '#BE326E'
+        5:
+          value: '#CB3E69'
+        6:
+          value: '#DC5362'
+        7:
+          value: '#E86A5C'
+        8:
+          value: '#EF7959'
+        9:
+          value: '#F48D58'
+        10:
+          value: '#F69958'
+        11:
+          value: '#F7C966'
+
+  ramp:
+    data:
+      palette:
+        apricot:
+          2:
+            value:
+            - '{color.data.palette.apricot.6.value}'
+            - '{color.data.palette.apricot.11.value}'
+          3:
+            value:
+            - '{color.data.palette.apricot.1.value}'
+            - '{color.data.palette.apricot.6.value}'
+            - '{color.data.palette.apricot.11.value}'
+          4:
+            value:
+            - '{color.data.palette.apricot.1.value}'
+            - '{color.data.palette.apricot.4.value}'
+            - '{color.data.palette.apricot.8.value}'
+            - '{color.data.palette.apricot.11.value}'
+          5:
+            value:
+            - '{color.data.palette.apricot.1.value}'
+            - '{color.data.palette.apricot.3.value}'
+            - '{color.data.palette.apricot.6.value}'
+            - '{color.data.palette.apricot.9.value}'
+            - '{color.data.palette.apricot.11.value}'
+          6:
+            value:
+            - '{color.data.palette.apricot.1.value}'
+            - '{color.data.palette.apricot.2.value}'
+            - '{color.data.palette.apricot.5.value}'
+            - '{color.data.palette.apricot.7.value}'
+            - '{color.data.palette.apricot.10.value}'
+            - '{color.data.palette.apricot.11.value}'

@@ -2,13 +2,20 @@
 /* eslint-disable no-var */
 require('./scripts/utils/mock-require');
 
-const lessList = require('./scripts/formatters/less-lists');
-const javascriptEs6Arrays = require('./scripts/formatters/javascript-es6-arrays');
-const svgSprite = require('./scripts/formatters/svg-sprite');
+const svgSpriteFormat = require('./scripts/formatters/svg-sprite');
+const contentArrayToList = require('./scripts/transformers/content-array-to-list');
+const contentListToJsArray = require('./scripts/transformers/content-list-to-js-array');
+const jsTransformGroup = require('./scripts/transform-groups/js-transform-group');
+const lessTransformGroup = require('./scripts/transform-groups/less-transform-group');
 const styleDictionary = require('style-dictionary').extend('./config.yaml');
 
-styleDictionary.registerFormat(lessList);
-styleDictionary.registerFormat(javascriptEs6Arrays);
-styleDictionary.registerFormat(svgSprite);
+
+styleDictionary.registerTransform(contentArrayToList);
+styleDictionary.registerTransform(contentListToJsArray);
+
+styleDictionary.registerTransformGroup(lessTransformGroup);
+styleDictionary.registerTransformGroup(jsTransformGroup);
+
+styleDictionary.registerFormat(svgSpriteFormat);
 
 styleDictionary.buildAllPlatforms();
