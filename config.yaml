@@ -28,29 +28,6 @@ platforms:
             category: color
             type: system
 
-  components:
-    prefix: ds
-    buildPath: dist/less/components/
-    transformGroup: less
-    files:
-      - destination: button.less
-        format: less/variables
-        filter:
-          attributes:
-            item: button
-
-      - destination: input-field.less
-        format: less/variables
-        filter:
-          attributes:
-            item: input-field
-
-      - destination: dropdown.less
-        format: less/variables
-        filter:
-          attributes:
-            item: dropdown
-
   js:
     buildPath: dist/js/
     transformGroup: js
