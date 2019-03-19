@@ -54,8 +54,8 @@ platforms:
             category: color
             type: ramp
 
-  icons:
-    buildPath: dist/icons/
+  sprites:
+    buildPath: dist/sprites/
     prefix: ds
     transforms:
       - attribute/cti
@@ -63,27 +63,24 @@ platforms:
     files:
       - destination: sprites-dashboard.svg
         format: svg/sprites
-        id: asset-icon-spritesheet-dashboard
+        id: sprites-dashboard
         filter:
           attributes:
-            category: asset
-            type: icon
-            item: dashboard
+            category: icon
+            type: dashboard
 
       - destination: sprites-player.svg
         format: svg/sprites
-        id: asset-icon-spritesheet-player
+        id: sprites-player
         filter:
           attributes:
-            category: asset
-            type: icon
-            item: player
+            category: icon
+            type: player
 
       - destination: sprites-logos.svg
         format: svg/sprites
-        id: asset-icon-spritesheet-logo
+        id: sprites-logo
         filter:
           attributes:
-            category: asset
-            type: icon
-            item: logo
+            category: icon
+            type: logo

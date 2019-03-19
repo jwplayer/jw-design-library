@@ -43,7 +43,7 @@ const svgoPlugins = [
 	{ sortAttrs: true }
 ];
 
-module.exports = function(connection) {
+module.exports = function() {
 	return ({ id, file }) => {
 		const svgo = new SVGO({
 			plugins: [

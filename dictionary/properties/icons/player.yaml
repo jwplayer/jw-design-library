@@ -1,132 +1,117 @@
-asset:
-  icon:
-    player:
-      airplay-off:
-        value: dictionary/assets/icons/player/airplay-off.svg
+icon:
+  player:
+    airplay-off:
+      value: dictionary/assets/icons/player/airplay-off.svg
 
-      airplay-on:
-        value: dictionary/assets/icons/player/airplay-on.svg
+    airplay-on:
+      value: dictionary/assets/icons/player/airplay-on.svg
 
-      arrow:
-        left:
-          value: dictionary/assets/icons/player/arrow-left.svg
+    arrow:
+      down:
+          value: dictionary/assets/icons/player/arrow-down.svg
 
-        right:
-          value: dictionary/assets/icons/player/arrow-right.svg
+      left:
+        value: dictionary/assets/icons/player/arrow-left.svg
 
-      audio-tracks:
-        value: dictionary/assets/icons/player/audio-tracks.svg
+      right:
+        value: dictionary/assets/icons/player/arrow-right.svg
 
-      buffer:
-        value: dictionary/assets/icons/player/buffer.svg
+    audio-tracks:
+      value: dictionary/assets/icons/player/audio-tracks.svg
 
-      captions-off:
+    buffer:
+      value: dictionary/assets/icons/player/buffer.svg
+
+    captions:
+      off:
         value: dictionary/assets/icons/player/captions-off.svg
 
-      captions-on:
+      on:
         value: dictionary/assets/icons/player/captions-on.svg
 
-      chromecast-off:
-        value: dictionary/assets/icons/player/chromecast-off.svg
+    close:
+      value: dictionary/assets/icons/player/close.svg
 
-      chromecast-on:
-        value: dictionary/assets/icons/player/chromecast-on.svg
+    email:
+      value: dictionary/assets/icons/player/email.svg
 
-      close:
-        value: dictionary/assets/icons/player/close.svg
+    embed:
+      value: dictionary/assets/icons/player/embed.svg
 
-      discover:
-        value: dictionary/assets/icons/player/discover.svg
+    facebook:
+      value: dictionary/assets/icons/player/facebook.svg
 
-      dvr:
-        value: dictionary/assets/icons/player/dvr.svg
+    fullscreen-not:
+      value: dictionary/assets/icons/player/fullscreen-not.svg
 
-      email:
-        value: dictionary/assets/icons/player/email.svg
+    fullscreen:
+      value: dictionary/assets/icons/player/fullscreen.svg
 
-      embed:
-        value: dictionary/assets/icons/player/embed.svg
+    google:
+      value: dictionary/assets/icons/player/google.svg
 
-      facebook:
-        value: dictionary/assets/icons/player/facebook.svg
+    jw-logo:
+      value: dictionary/assets/icons/player/jw-logo.svg
 
-      fullscreen-not:
-        value: dictionary/assets/icons/player/fullscreen-not.svg
+    link:
+      value: dictionary/assets/icons/player/link.svg
 
-      fullscreen:
-        value: dictionary/assets/icons/player/fullscreen.svg
+    linkedIn:
+      value: dictionary/assets/icons/player/linkedIn.svg
 
-      google:
-        value: dictionary/assets/icons/player/google.svg
+    more-videos:
+      value: dictionary/assets/icons/player/more-videos.svg
 
-      link:
-        value: dictionary/assets/icons/player/link.svg
+    next:
+      value: dictionary/assets/icons/player/next.svg
 
-      linkedIn:
-        value: dictionary/assets/icons/player/linkedIn.svg
+    pause:
+      value: dictionary/assets/icons/player/pause.svg
 
-      live:
-        value: dictionary/assets/icons/player/live.svg
+    pinterest:
+      value: dictionary/assets/icons/player/pinterest.svg
 
-      next:
-        value: dictionary/assets/icons/player/next.svg
+    play:
+      value: dictionary/assets/icons/player/play.svg
 
-      pause:
-        value: dictionary/assets/icons/player/pause.svg
+    playback-error:
+      value: dictionary/assets/icons/player/playback-error.svg
 
-      pinterest:
-        value: dictionary/assets/icons/player/pinterest.svg
+    playback-rate:
+      value: dictionary/assets/icons/player/playback-rate.svg
 
-      play:
-        value: dictionary/assets/icons/player/play.svg
+    quality-100:
+      value: dictionary/assets/icons/player/quality-100.svg
 
-      playback-error:
-        value: dictionary/assets/icons/player/playback-error.svg
+    reddit:
+      value: dictionary/assets/icons/player/reddit.svg
 
-      playlist:
-        value: dictionary/assets/icons/player/playlist.svg
+    replay:
+      value: dictionary/assets/icons/player/replay.svg
 
-      quality-25:
-        value: dictionary/assets/icons/player/quality-25.svg
+    rewind-10:
+      value: dictionary/assets/icons/player/rewind-10.svg
 
-      quality-50:
-        value: dictionary/assets/icons/player/quality-50.svg
+    settings:
+      value: dictionary/assets/icons/player/settings.svg
 
-      quality-75:
-        value: dictionary/assets/icons/player/quality-75.svg
+    share:
+      value: dictionary/assets/icons/player/share.svg
 
-      quality-100:
-        value: dictionary/assets/icons/player/quality-100.svg
+    stop:
+      value: dictionary/assets/icons/player/stop.svg
 
-      reddit:
-        value: dictionary/assets/icons/player/reddit.svg
+    tumblr:
+      value: dictionary/assets/icons/player/tumblr.svg
 
-      replay:
-        value: dictionary/assets/icons/player/replay.svg
+    twitter:
+      value: dictionary/assets/icons/player/twitter.svg
 
-      rewind-10:
-        value: dictionary/assets/icons/player/rewind-10.svg
+    volume-0:
+      value: dictionary/assets/icons/player/volume-0.svg
 
-      settings:
-        value: dictionary/assets/icons/player/settings.svg
+    volume-50:
+      value: dictionary/assets/icons/player/volume-50.svg
 
-      share:
-        value: dictionary/assets/icons/player/share.svg
-
-      stop:
-        value: dictionary/assets/icons/player/stop.svg
-
-      tumblr:
-        value: dictionary/assets/icons/player/tumblr.svg
-
-      twitter:
-        value: dictionary/assets/icons/player/twitter.svg
-
-      volume-0:
-        value: dictionary/assets/icons/player/volume-0.svg
-
-      volume-50:
-        value: dictionary/assets/icons/player/volume-50.svg
-
-      volume-100:
-        value: dictionary/assets/icons/player/volume-100.svg
+    volume-100:
+      value: dictionary/assets/icons/player/volume-100.svg

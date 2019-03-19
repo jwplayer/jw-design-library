@@ -7,13 +7,14 @@ const readline = require('readline');
 
 module.exports = {
 	name: 'svg/sprites',
-	formatter: function({ allProperties }, config) {
-		const symbols = allProperties.reduce((icons, { name, value }) => {
+	formatter: function(dictionary, config) {
+		const symbols = dictionary.allProperties.reduce((icons, prop) => {
 			process.stdout.write('.');
-			const file = fs.readFileSync(path.resolve(value), 'utf8');
+			const file = fs.readFileSync(path.resolve(prop.value), 'utf8');
 
 			// Using cheerio to provide a minimal amount of safety
-			let $ = cheerio.load(optimizeSVG({ id: name, file }), { xmlMode: true });
+			const optimizedSVG = optimizeSVG({ id: prop.name, file });
+			let $ = cheerio.load(optimizedSVG, { xmlMode: true });
 			$.root().find('svg').each((i, icon) => {
 				icon.tagName = 'symbol';
 				return icon;
@@ -35,6 +36,6 @@ module.exports = {
 		readline.clearLine(process.stdout);
 		readline.cursorTo(process.stdout, 0);
 
-		return `<svg xmlns="http://www.w3.org/2000/svg" ${svgId ? `id="${svgId}"` : ''} style="display:none">\n\t${symbols}\n</svg>`;
+		return `<svg xmlns="http://www.w3.org/2000/svg" id="${svgId}" style="display:none">\n\t${symbols}\n</svg>`;
 	}
 };
