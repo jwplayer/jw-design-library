@@ -4,13 +4,13 @@ font:
       value: 'Arial, sans-serif'
 
     code:
-      value: "'Inconsolata', monospace"
+      value: '"Inconsolata", monospace'
 
     custom:
-      value: "'Open Sans', Arial, sans-serif"
+      value: '"Open Sans", Arial, sans-serif'
 
     data:
-      value: "'Lato', 'Open Sans', Arial, sans-serif"
+      value: '"Lato", "Open Sans", Arial, sans-serif'
 
   size:
     base:
