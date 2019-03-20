@@ -7,9 +7,11 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"useWSL": true,
 			"name": "Build Style Dictionary assets",
-			"program": "${workspaceFolder}\\build.js"
+			"program": "${workspaceFolder}\\build.js",
+			"windows": {
+				"useWSL": true
+			}
 		}
 	]
 }
