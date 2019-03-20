@@ -1,0 +1,57 @@
+color:
+  data:
+    hue:
+      red:
+        1:
+          value: '#CD3138'
+        2:
+          value: '#DA5550'
+        3:
+          value: '#DD5D56'
+        4:
+          value: '#E26961'
+        5:
+          value: '#E57369'
+        6:
+          value: '#EA8176'
+        7:
+          value: '#EF8F84'
+        8:
+          value: '#F2988D'
+        9:
+          value: '#F6A499'
+        10:
+          value: '#F8ABA0'
+        11:
+          value: '#FFC6BD'
+
+  ramp:
+    data:
+      hue:
+        red:
+          3:
+            value:
+            - '{color.data.hue.red.1.value}'
+            - '{color.data.hue.red.6.value}'
+            - '{color.data.hue.red.11.value}'
+          4:
+            value:
+            - '{color.data.hue.red.1.value}'
+            - '{color.data.hue.red.4.value}'
+            - '{color.data.hue.red.8.value}'
+            - '{color.data.hue.red.11.value}'
+          5:
+            value:
+            - '{color.data.hue.red.1.value}'
+            - '{color.data.hue.red.3.value}'
+            - '{color.data.hue.red.6.value}'
+            - '{color.data.hue.red.9.value}'
+            - '{color.data.hue.red.11.value}'
+          6:
+            value:
+            - '{color.data.hue.red.1.value}'
+            - '{color.data.hue.red.2.value}'
+            - '{color.data.hue.red.5.value}'
+            - '{color.data.hue.red.7.value}'
+            - '{color.data.hue.red.10.value}'
+            - '{color.data.hue.red.11.value}'

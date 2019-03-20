@@ -1,0 +1,61 @@
+color:
+  data:
+    palette:
+      plum:
+        1:
+          value: '#263995'
+        2:
+          value: '#784496'
+        3:
+          value: '#854896'
+        4:
+          value: '#9A5095'
+        5:
+          value: '#A85895'
+        6:
+          value: '#BB6595'
+        7:
+          value: '#CA7396'
+        8:
+          value: '#D47E98'
+        9:
+          value: '#DE8C9B'
+        10:
+          value: '#E3949D'
+        11:
+          value: '#F7BDAD'
+
+  ramp:
+    data:
+      palette:
+        plum:
+          2:
+            value:
+            - '{color.data.palette.plum.6.value}'
+            - '{color.data.palette.plum.11.value}'
+          3:
+            value:
+            - '{color.data.palette.plum.1.value}'
+            - '{color.data.palette.plum.6.value}'
+            - '{color.data.palette.plum.11.value}'
+          4:
+            value:
+            - '{color.data.palette.plum.1.value}'
+            - '{color.data.palette.plum.4.value}'
+            - '{color.data.palette.plum.8.value}'
+            - '{color.data.palette.plum.11.value}'
+          5:
+            value:
+            - '{color.data.palette.plum.1.value}'
+            - '{color.data.palette.plum.3.value}'
+            - '{color.data.palette.plum.6.value}'
+            - '{color.data.palette.plum.9.value}'
+            - '{color.data.palette.plum.11.value}'
+          6:
+            value:
+            - '{color.data.palette.plum.1.value}'
+            - '{color.data.palette.plum.2.value}'
+            - '{color.data.palette.plum.5.value}'
+            - '{color.data.palette.plum.7.value}'
+            - '{color.data.palette.plum.10.value}'
+            - '{color.data.palette.plum.11.value}'

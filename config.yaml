@@ -1,0 +1,101 @@
+source:
+  - dictionary/properties/**/*.yaml
+log: warn
+platforms:
+  less:
+    prefix: ds
+    buildPath: dist/less/
+    transformGroup: less
+    files:
+      - destination: brand-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: brand
+
+      - destination: data-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: ramp
+
+      - destination: system-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: system
+
+      - destination: code-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: code
+
+  js:
+    buildPath: dist/js/
+    transformGroup: js
+    prefix: ds
+    files:
+      - destination: brand-colors.esm.js
+        format: javascript/es6
+        filter:
+            attributes:
+              category: color
+              type: brand
+
+      - destination: system-colors.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: system
+
+      - destination: data-colors.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: ramp
+
+      - destination: code-colors.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: code
+
+  sprites:
+    buildPath: dist/sprites/
+    prefix: ds
+    transforms:
+      - attribute/cti
+      - name/cti/kebab
+
+    files:
+      - destination: sprites-dashboard.svg
+        format: svg/sprites
+        id: sprites-dashboard
+        filter:
+          attributes:
+            category: icon
+            type: dashboard
+
+      - destination: sprites-player.svg
+        format: svg/sprites
+        id: sprites-player
+        filter:
+          attributes:
+            category: icon
+            type: player
+
+      - destination: sprites-logos.svg
+        format: svg/sprites
+        id: sprites-logo
+        filter:
+          attributes:
+            category: icon
+            type: logo
