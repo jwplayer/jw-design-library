@@ -3,6 +3,7 @@
 		"naumovs.color-highlight",
 		"redhat.vscode-yaml",
 		"tuxtina.json2yaml",
-		"radium-v.better-less"
+		"radium-v.better-less",
+		"dbaeumer.vscode-eslint"
 	]
 }

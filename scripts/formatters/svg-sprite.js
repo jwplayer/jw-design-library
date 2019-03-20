@@ -9,17 +9,20 @@ module.exports = {
 	name: 'svg/sprites',
 	formatter: function(dictionary, config) {
 		const symbols = dictionary.allProperties.reduce((icons, prop) => {
+			// draw the dot
 			process.stdout.write('.');
 			const file = fs.readFileSync(path.resolve(prop.value), 'utf8');
 
-			// Using cheerio to provide a minimal amount of safety
+			// Run the icon through SVGO
 			const optimizedSVG = optimizeSVG({ id: prop.name, file });
 
-			const spritePath = `${path.resolve(config.buildPath)}/${this.id}/${prop.name}.svg`;
+			// Save the optimized standalone icon
+			const spritePath = `/${path.resolve.apply(null, ['dist', ...prop.path])}.svg`;
 			fs.mkdirp(path.dirname(spritePath), err => {
 				fs.writeFileSync(spritePath, optimizedSVG);
 			});
 
+			// Using cheerio to provide a minimal amount of safety
 			let $ = cheerio.load(optimizedSVG, { xmlMode: true });
 			$.root().find('svg').each((i, icon) => {
 				$(icon).attr('xmlns', null);
@@ -28,10 +31,13 @@ module.exports = {
 			});
 
 			icons.push($.root().html());
-
 			return icons;
 		}, []).join('\n\t');
 
+		readline.clearLine(process.stdout);
+		readline.cursorTo(process.stdout, 0);
+
+		// Generate the SVG wrapper's ID
 		let svgId;
 		if (this.id) {
 			svgId = this.id;
@@ -39,9 +45,6 @@ module.exports = {
 				svgId = [config.prefix, svgId].join('-');
 			}
 		}
-
-		readline.clearLine(process.stdout);
-		readline.cursorTo(process.stdout, 0);
 
 		return `<svg xmlns="http://www.w3.org/2000/svg" id="${svgId}" style="display:none">\n\t${symbols}\n</svg>`;
 	}

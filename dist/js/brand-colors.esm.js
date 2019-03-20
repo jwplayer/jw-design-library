@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 20 Mar 2019 18:40:23 GMT
+ * Generated on Wed, 20 Mar 2019 19:39:42 GMT
  */
 
 export const dsColorBrandDahlia = "#ec0041";

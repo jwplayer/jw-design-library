@@ -9,18 +9,17 @@ icon:
     analytics:
       value: dictionary/assets/icons/dashboard/analytics.svg
 
-    arrow:
-      down:
-        value: dictionary/assets/icons/dashboard/arrow-down.svg
+    arrow-down:
+      value: dictionary/assets/icons/dashboard/arrow-down.svg
 
-      left:
-        value: dictionary/assets/icons/dashboard/arrow-left.svg
+    arrow-left:
+      value: dictionary/assets/icons/dashboard/arrow-left.svg
 
-      right:
-        value: dictionary/assets/icons/dashboard/arrow-right.svg
+    arrow-right:
+      value: dictionary/assets/icons/dashboard/arrow-right.svg
 
-      up:
-        value: dictionary/assets/icons/dashboard/arrow-up.svg
+    arrow-up:
+      value: dictionary/assets/icons/dashboard/arrow-up.svg
 
     calendar:
       value: dictionary/assets/icons/dashboard/calendar.svg
@@ -31,18 +30,17 @@ icon:
     checkmark:
       value: dictionary/assets/icons/dashboard/checkmark.svg
 
-    chevron:
-      down:
-        value: dictionary/assets/icons/dashboard/chevron-down.svg
+    chevron-down:
+      value: dictionary/assets/icons/dashboard/chevron-down.svg
 
-      left:
-        value: dictionary/assets/icons/dashboard/chevron-left.svg
+    chevron-left:
+      value: dictionary/assets/icons/dashboard/chevron-left.svg
 
-      right:
-        value: dictionary/assets/icons/dashboard/chevron-right.svg
+    chevron-right:
+      value: dictionary/assets/icons/dashboard/chevron-right.svg
 
-      up:
-        value: dictionary/assets/icons/dashboard/chevron-up.svg
+    chevron-up:
+      value: dictionary/assets/icons/dashboard/chevron-up.svg
 
     chromecast:
       value: dictionary/assets/icons/dashboard/chromecast.svg
@@ -62,15 +60,14 @@ icon:
     customize:
       value: dictionary/assets/icons/dashboard/customize.svg
 
-    device:
-      desktop:
-        value: dictionary/assets/icons/dashboard/device-desktop.svg
+    device-desktop:
+      value: dictionary/assets/icons/dashboard/device-desktop.svg
 
-      landscape:
-        value: dictionary/assets/icons/dashboard/device-landscape.svg
+    device-landscape:
+      value: dictionary/assets/icons/dashboard/device-landscape.svg
 
-      portrait:
-        value: dictionary/assets/icons/dashboard/device-portrait.svg
+    device-portrait:
+      value: dictionary/assets/icons/dashboard/device-portrait.svg
 
     document:
       value: dictionary/assets/icons/dashboard/document.svg
@@ -90,12 +87,11 @@ icon:
     external-link:
       value: dictionary/assets/icons/dashboard/external-link.svg
 
-    full-screen:
-      off:
-        value: dictionary/assets/icons/dashboard/full-screen-off.svg
+    full-screen-off:
+      value: dictionary/assets/icons/dashboard/full-screen-off.svg
 
-      on:
-        value: dictionary/assets/icons/dashboard/full-screen-on.svg
+    full-screen-on:
+      value: dictionary/assets/icons/dashboard/full-screen-on.svg
 
     grid:
       value: dictionary/assets/icons/dashboard/grid.svg
@@ -115,12 +111,11 @@ icon:
     link:
       value: dictionary/assets/icons/dashboard/link.svg
 
-    list:
-      big:
-        value: dictionary/assets/icons/dashboard/list-big.svg
+    list-big:
+      value: dictionary/assets/icons/dashboard/list-big.svg
 
-      small:
-        value: dictionary/assets/icons/dashboard/list-small.svg
+    list-small:
+      value: dictionary/assets/icons/dashboard/list-small.svg
 
     lock:
       value: dictionary/assets/icons/dashboard/lock.svg

@@ -11,10 +11,8 @@ const styleDictionary = require('style-dictionary').extend('./config.yaml');
 
 styleDictionary.registerTransform(contentArrayToList);
 styleDictionary.registerTransform(contentListToJsArray);
-
 styleDictionary.registerTransformGroup(lessTransformGroup);
 styleDictionary.registerTransformGroup(jsTransformGroup);
-
 styleDictionary.registerFormat(svgSpriteFormat);
 
 styleDictionary.buildAllPlatforms();
