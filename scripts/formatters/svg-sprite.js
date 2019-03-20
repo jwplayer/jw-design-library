@@ -1,6 +1,6 @@
 const cheerio = require('cheerio');
+const fs = require('fs-extra');
 const forceSync = require('sync-rpc');
-const fs = require('fs');
 const optimizeSVG = forceSync(require.resolve('../utils/svgo'));
 const path = require('path');
 const readline = require('readline');
@@ -14,8 +14,15 @@ module.exports = {
 
 			// Using cheerio to provide a minimal amount of safety
 			const optimizedSVG = optimizeSVG({ id: prop.name, file });
+
+			const spritePath = `${path.resolve(config.buildPath)}/${this.id}/${prop.name}.svg`;
+			fs.mkdirp(path.dirname(spritePath), err => {
+				fs.writeFileSync(spritePath, optimizedSVG);
+			});
+
 			let $ = cheerio.load(optimizedSVG, { xmlMode: true });
 			$.root().find('svg').each((i, icon) => {
+				$(icon).attr('xmlns', null);
 				icon.tagName = 'symbol';
 				return icon;
 			});

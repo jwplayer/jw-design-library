@@ -39,7 +39,6 @@ const svgoPlugins = [
 	{ removeUselessStrokeAndFill: true },
 	{ removeViewBox: false },
 	{ removeXMLProcInst: true },
-	{ removeXMLNS: true },
 	{ sortAttrs: true }
 ];
 
@@ -48,7 +47,7 @@ module.exports = function() {
 		const svgo = new SVGO({
 			plugins: [
 				...svgoPlugins,
-				{ addAttributesToSVGElement: { attribute: `id=${id}` } }
+				{ addAttributesToSVGElement: { attribute: `id="${id}"` } }
 			]
 		});
 		return svgo.optimize(file).then(({ data }) => data);

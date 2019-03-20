@@ -9,7 +9,6 @@ const jsTransformGroup = require('./scripts/transform-groups/js-transform-group'
 const lessTransformGroup = require('./scripts/transform-groups/less-transform-group');
 const styleDictionary = require('style-dictionary').extend('./config.yaml');
 
-
 styleDictionary.registerTransform(contentArrayToList);
 styleDictionary.registerTransform(contentListToJsArray);
 
