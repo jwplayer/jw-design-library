@@ -1,0 +1,49 @@
+color:
+  brand:
+    dahlia:
+      value: '#EC0041'
+
+    dahlia-fade:
+      value: '#EC00414D'
+
+    dahlia-dark:
+      value: '#BD0034'
+
+    dahlia-darker:
+      value: '#a5002e'
+
+    fog:
+      value: '#D8DDE6'
+
+    fog-fade:
+      value: '#D8DDE64D'
+
+    fog-dark:
+      value: '#A0ACC2'
+
+    fog-darker:
+      value: '#8797B2'
+
+    midnight:
+      value: '#475470'
+
+    midnight-fade:
+      value: '#4754704D'
+
+    midnight-dark:
+      value: '#39435A'
+
+    midnight-darker:
+      value: '#323B4E'
+
+    abyss:
+      value: '#2F3542'
+
+    abyss-fade:
+      value: '#2F35424D'
+
+    abyss-dark:
+      value: '#262A35'
+
+    abyss-darker:
+      value: '#21252E'

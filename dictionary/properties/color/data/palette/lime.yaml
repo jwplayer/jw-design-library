@@ -1,0 +1,61 @@
+color:
+  data:
+    palette:
+      lime:
+        1:
+          value: '#131B60'
+        2:
+          value: '#004A93'
+        3:
+          value: '#00569C'
+        4:
+          value: '#0069A7'
+        5:
+          value: '#0077AC'
+        6:
+          value: '#008DAF'
+        7:
+          value: '#00A3AC'
+        8:
+          value: '#00B1A7'
+        9:
+          value: '#00C19F'
+        10:
+          value: '#00CB9A'
+        11:
+          value: '#A3EE87'
+
+  ramp:
+    data:
+      palette:
+        lime:
+          2:
+            value:
+            - '{color.data.palette.lime.6.value}'
+            - '{color.data.palette.lime.11.value}'
+          3:
+            value:
+            - '{color.data.palette.lime.1.value}'
+            - '{color.data.palette.lime.6.value}'
+            - '{color.data.palette.lime.11.value}'
+          4:
+            value:
+            - '{color.data.palette.lime.1.value}'
+            - '{color.data.palette.lime.4.value}'
+            - '{color.data.palette.lime.8.value}'
+            - '{color.data.palette.lime.11.value}'
+          5:
+            value:
+            - '{color.data.palette.lime.1.value}'
+            - '{color.data.palette.lime.3.value}'
+            - '{color.data.palette.lime.6.value}'
+            - '{color.data.palette.lime.9.value}'
+            - '{color.data.palette.lime.11.value}'
+          6:
+            value:
+            - '{color.data.palette.lime.1.value}'
+            - '{color.data.palette.lime.2.value}'
+            - '{color.data.palette.lime.5.value}'
+            - '{color.data.palette.lime.7.value}'
+            - '{color.data.palette.lime.10.value}'
+            - '{color.data.palette.lime.11.value}'
