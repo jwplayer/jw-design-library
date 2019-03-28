@@ -48,7 +48,7 @@ platforms:
     - attribute/cti
 
     files:
-      - destination: font-face.css
+      - destination: fonts.css
         format: font-face
         filter:
           attributes:
