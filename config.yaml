@@ -35,6 +35,26 @@ platforms:
             category: color
             type: code
 
+      - destination: fonts.less
+        format: less/variables
+        filter:
+          attributes:
+            category: global
+            type: font
+
+  font-face:
+    buildPath: dist/css/
+    transforms:
+    - attribute/cti
+
+    files:
+      - destination: font-face.css
+        format: font-face
+        filter:
+          attributes:
+            category: asset
+            type: font
+
   js:
     buildPath: dist/js/
     transformGroup: js

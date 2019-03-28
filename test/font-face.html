@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Font-Face Test</title>
+	<link rel="stylesheet" href="../dist/css/font-face.css">
+</head>
+<body>
+	<style>
+		div {
+			--font-style: normal;
+			--font-weight: 400;
+			--font-family: monospace;
+			font-style: var(--font-style);
+			font-weight: var(--font-weight);
+			font-size: 16px;
+			font-family: var(--font-family);
+			line-height: 1.5;
+			margin: 10px;
+		}
+
+		[class^=inconsolata] {
+			--font-family: "Inconsolata";
+		}
+
+		[class^=lato] {
+			--font-family: "Lato";
+		}
+
+		[class^=opensans] {
+			--font-family: "Open Sans";
+		}
+
+		[class*=regular] {
+			--font-style: normal;
+			--font-weight: 400;
+		}
+
+		[class*=italic] {
+			--font-style: italic;
+		}
+
+		[class*=hairline] {
+			--font-weight: 100;
+		}
+
+		[class*=light] {
+			--font-weight: 300;
+		}
+
+		[class*=bold] {
+			--font-weight: 700;
+		}
+
+		[class*=semibold] {
+			--font-weight: 600;
+		}
+
+		[class*=extrabold] {
+			--font-weight: 800;
+		}
+
+		[class*=black] {
+			--font-weight: 900;
+		}
+
+		.pass {
+			background: green;
+			color: #FFF;
+		}
+
+		.fail {
+			background: red;
+			color: #FFF;
+		}
+	</style>
+
+	<div class="inconsolata-bold">Inconsolata Bold</div>
+	<div class="inconsolata-regular">Inconsolata Regular</div>
+	<div class="lato-black">Lato Black</div>
+	<div class="lato-blackitalic">Lato Black Italic</div>
+	<div class="lato-bold">Lato Bold</div>
+	<div class="lato-bolditalic">Lato Bold Italic</div>
+	<div class="lato-hairline">Lato Hairline</div>
+	<div class="lato-hairlineitalic">Lato Hairline Italic</div>
+	<div class="lato-italic">Lato Italic</div>
+	<div class="lato-light">Lato Light</div>
+	<div class="lato-lightitalic">Lato Light Italic</div>
+	<div class="lato-regular">Lato Regular</div>
+	<div class="opensans-bold">Open Sans Bold</div>
+	<div class="opensans-bolditalic">Open Sans Bold Italic</div>
+	<div class="opensans-extrabold">Open Sans Extrabold</div>
+	<div class="opensans-extrabolditalic">Open Sans Extrabold Italic</div>
+	<div class="opensans-italic">Open Sans Italic</div>
+	<div class="opensans-light">Open Sans light</div>
+	<div class="opensans-lightitalic">Open Sans light Italic</div>
+	<div class="opensans-regular">Open Sans Regular</div>
+	<div class="opensans-semibold">Open Sans Semibold</div>
+	<div class="opensans-semibolditalic">Open Sans Semibold Italic</div>
+
+<script>
+	const items = document.querySelectorAll('div');
+	const context = document.createElement("canvas").getContext("2d");
+	const text = "abcdefghijklmnopqrstuvwxyz0123456789";
+
+	window.addEventListener('load', () => {
+		items.forEach(d => {
+			const computedStyle = window.getComputedStyle(d, null);
+			const fontFamily = computedStyle.getPropertyValue('--font-family');
+			const fontWeight = computedStyle.getPropertyValue('--font-weight');
+			const fontStyle = computedStyle.getPropertyValue('--font-style');
+
+			context.font = `${fontStyle} ${fontWeight} 72px monospace`;
+			let baselineSize = context.measureText(text).width;
+
+			context.font = `${fontStyle} ${fontWeight} 72px ${fontFamily}, monospace`;
+			let newSize = context.measureText(text).width;
+
+			if (newSize !== baselineSize) {
+				d.classList.add('pass');
+				return;
+			}
+			d.classList.add('fail');
+		});
+	});
+
+	</script>
+</body>
+</html>

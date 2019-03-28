@@ -1,41 +1,42 @@
-font:
-  family:
-    base:
-      value: 'Arial, sans-serif'
+global:
+  font:
+    family:
+      base:
+        value: Arial, sans-serif
 
-    code:
-      value: '"Inconsolata", monospace'
+      code:
+        value: '"Inconsolata", monospace'
 
-    custom:
-      value: '"Open Sans", Arial, sans-serif'
+      custom:
+        value: '"Open Sans", Arial, sans-serif'
 
-    data:
-      value: '"Lato", "Open Sans", Arial, sans-serif'
+      data:
+        value: '"Lato", "Open Sans", Arial, sans-serif'
 
-  size:
-    base:
-      value: 15px
+    size:
+      base:
+        value: 15px
 
-  weight:
-    custom:
-      light:
-        value: '300'
+    weight:
+      custom:
+        light:
+          value: 300
 
-      regular:
-        value: '400'
+        regular:
+          value: 400
 
-      semibold:
-        value: '600'
+        semibold:
+          value: 600
 
-      bold:
-        value: '700'
+        bold:
+          value: 700
 
-    data:
-      regular:
-        value: '400'
+      data:
+        regular:
+          value: 400
 
-      bold:
-        value: '700'
+        bold:
+          value: 700
 
-      black:
-        value: '900'
+        black:
+          value: 900
