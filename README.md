@@ -57,6 +57,16 @@ In your stylesheet, you can import the color variables like this:
   [variables](http://lesscss.org/features/#variables-feature-import-statements)
   to shorten import paths.
 
+#### Fonts
+Font face blocks are provided in a CSS file since there's no Less-specific
+content in the output. If you use `dist/css/fonts.css` then you must copy or
+resolve the paths for the font files (`dist/fonts/`), or things won't work!
+
+To include this file as a Less file, use it like this:
+```less
+@import (less) "jw-design-library/dist/css/fonts.css";
+```
+
 ### Use with JavaScript
 Color variables are available as exports (`dist/js/`). Brand and system colors
 are individual strings that can be used with a library like
@@ -118,6 +128,10 @@ style-dictionary config. Here's a really quick rundown:
 * `formatters/svg-sprite` runs each matched icon through SVGO, then converts the
   SVG into a `<symbol>`. After all icons in the group are optimized, a wrapper is
   added and the SVG file is output.
+* `formatters/font-face` uses the structure found in `font-face.yaml` to
+output `@font-face` declarations in CSS. All font files referenced in the
+dictionary are copied to `dist/fonts`. If you use `fonts.css` then you must copy
+or resolve the paths for the font files, or things won't work!
 * `transformers/content-array-to-list`: Converts property values into
   comma-separated lists. This is used to output data colors for Less.
   ```yaml
