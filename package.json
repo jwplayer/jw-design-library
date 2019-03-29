@@ -5,6 +5,9 @@
   "license": "ISC",
   "homepage": "https://github.com/jwplayer/jw-design-library#readme",
   "repository": "git@github.com:jwplayer/jw-design-library.git",
+  "files": [
+    "/dist"
+  ],
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
     "js-yaml": "^3.12.2",
