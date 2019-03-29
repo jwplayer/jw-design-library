@@ -1,0 +1,112 @@
+asset:
+  font:
+    inconsolata:
+      regular:
+        value: dictionary/assets/fonts/inconsolata/inconsolata-regular
+        family: Inconsolata
+        style: normal
+        weight: 400
+        formats:
+        - woff2
+        - ttf
+
+      bold:
+        value: dictionary/assets/fonts/inconsolata/inconsolata-bold
+        family: Inconsolata
+        style: normal
+        weight: 700
+        formats:
+        - woff2
+        - ttf
+
+    open-sans:
+      light:
+        value: dictionary/assets/fonts/open-sans/opensans-light
+        family: Open Sans
+        style: normal
+        weight: 300
+        formats:
+        - woff2
+        - ttf
+
+      regular:
+        value: dictionary/assets/fonts/open-sans/opensans-regular
+        family: Open Sans
+        style: normal
+        weight: 400
+        formats:
+        - woff2
+        - ttf
+
+      italic:
+        value: dictionary/assets/fonts/open-sans/opensans-italic
+        family: Open Sans
+        style: italic
+        weight: 400
+        formats:
+        - woff2
+        - ttf
+
+      semibold:
+        value: dictionary/assets/fonts/open-sans/opensans-semibold
+        family: Open Sans
+        style: normal
+        weight: 600
+        formats:
+        - woff2
+        - ttf
+
+      bold:
+        value: dictionary/assets/fonts/open-sans/opensans-bold
+        family: Open Sans
+        style: normal
+        weight: 700
+        formats:
+        - woff2
+        - ttf
+
+      extrabold:
+        value: dictionary/assets/fonts/open-sans/opensans-extrabold
+        family: Open Sans
+        style: normal
+        weight: 800
+        formats:
+        - woff2
+        - ttf
+
+    lato:
+      light:
+        value: dictionary/assets/fonts/lato/lato-light
+        family: Lato
+        style: normal
+        weight: 300
+        formats:
+        - woff2
+        - ttf
+
+      regular:
+        value: dictionary/assets/fonts/lato/lato-regular
+        family: Lato
+        style: normal
+        weight: 400
+        formats:
+        - woff2
+        - ttf
+
+      bold:
+        value: dictionary/assets/fonts/lato/lato-bold
+        family: Lato
+        style: normal
+        weight: 700
+        formats:
+        - woff2
+        - ttf
+
+      black:
+        value: dictionary/assets/fonts/lato/lato-black
+        family: Lato
+        style: normal
+        weight: 900
+        formats:
+        - woff2
+        - ttf

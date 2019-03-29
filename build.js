@@ -3,6 +3,7 @@
 require('./scripts/utils/mock-require');
 
 const svgSpriteFormat = require('./scripts/formatters/svg-sprite');
+const fontFace = require('./scripts/formatters/font-face');
 const contentArrayToList = require('./scripts/transformers/content-array-to-list');
 const contentListToJsArray = require('./scripts/transformers/content-list-to-js-array');
 const jsTransformGroup = require('./scripts/transform-groups/js-transform-group');
@@ -14,5 +15,6 @@ styleDictionary.registerTransform(contentListToJsArray);
 styleDictionary.registerTransformGroup(lessTransformGroup);
 styleDictionary.registerTransformGroup(jsTransformGroup);
 styleDictionary.registerFormat(svgSpriteFormat);
+styleDictionary.registerFormat(fontFace);
 
 styleDictionary.buildAllPlatforms();
