@@ -1,16 +1,14 @@
 const fs = require('fs-extra');
 const path = require('path');
+const ttf2woff = require('ttf2woff');
+const woff2 = require('woff2');
 
 const cwd = process.cwd();
 
 const fontFormats = {
 	'woff': 'woff',
 	'woff2': 'woff2',
-	'ttf': 'truetype',
-	'otf': 'opentype',
-	'eot': 'embedded-opentype',
-	'svg': 'svg',
-	'svgz': 'svgz'
+	'ttf': 'truetype'
 };
 
 module.exports = {
@@ -24,7 +22,16 @@ module.exports = {
 
 			formats.forEach(ext => {
 				fs.mkdirp(path.dirname(destFile), err => {
-					fs.copyFileSync(`${value}.${ext}`, `${destFile}.${ext}`);
+					const input = fs.readFileSync(`${value}.ttf`);
+					let output;
+
+					if (ext === 'woff') {
+						output = ttf2woff(new Uint8Array(input)).buffer;
+					} else if (ext === 'woff2') {
+						output = woff2.encode(input).buffer;
+					}
+
+					fs.writeFileSync(`${destFile}.${ext}`, Buffer.from(output));
 				});
 			});
 

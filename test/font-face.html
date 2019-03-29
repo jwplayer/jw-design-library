@@ -5,63 +5,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Font-Face Test</title>
-	<link rel="stylesheet" href="../dist/css/fonts.css">
+	<link rel="stylesheet" href="/dist/css/fonts.css">
 	<style>
 		div {
-			--font-style: normal;
-			--font-weight: 400;
-			--font-family: monospace;
-			font-style: var(--font-style);
-			font-weight: var(--font-weight);
+			font-style: normal;
+			font-weight: 400;
+			font-family: monospace;
 			font-size: 16px;
-			font-family: var(--font-family);
 			line-height: 1.5;
 			margin: 10px;
 		}
 
 		[class^=inconsolata] {
-			--font-family: "Inconsolata";
+			font-family: "Inconsolata";
 		}
 
 		[class^=lato] {
-			--font-family: "Lato";
+			font-family: "Lato";
 		}
 
 		[class^=opensans] {
-			--font-family: "Open Sans";
+			font-family: "Open Sans";
 		}
 
 		[class*=regular] {
-			--font-style: normal;
-			--font-weight: 400;
+			font-style: normal;
+			font-weight: 400;
 		}
 
 		[class*=italic] {
-			--font-style: italic;
+			font-style: italic;
 		}
 
 		[class*=hairline] {
-			--font-weight: 100;
+			font-weight: 100;
 		}
 
 		[class*=light] {
-			--font-weight: 300;
+			font-weight: 300;
 		}
 
 		[class*=bold] {
-			--font-weight: 700;
+			font-weight: 700;
 		}
 
 		[class*=semibold] {
-			--font-weight: 600;
+			font-weight: 600;
 		}
 
 		[class*=extrabold] {
-			--font-weight: 800;
+			font-weight: 800;
 		}
 
 		[class*=black] {
-			--font-weight: 900;
+			font-weight: 900;
 		}
 
 		.pass {
@@ -75,29 +72,43 @@
 		}
 	</style>
 	<script>
-		window.addEventListener('load', () => {
+		setTimeout(function() {
 			const items = document.querySelectorAll('div');
 			const context = document.createElement("canvas").getContext("2d");
 			const text = "abcdefghijklmnopqrstuvwxyz0123456789";
-			items.forEach(d => {
+			for (let i = 0; i < items.length; i++) {
+				const d = items[i];
 				const computedStyle = window.getComputedStyle(d, null);
-				const fontFamily = computedStyle.getPropertyValue('--font-family');
-				const fontWeight = computedStyle.getPropertyValue('--font-weight');
-				const fontStyle = computedStyle.getPropertyValue('--font-style');
+				const fontFamily = computedStyle.getPropertyValue('font-family');
+				const fontWeight = computedStyle.getPropertyValue('font-weight');
+				const fontStyle = computedStyle.getPropertyValue('font-style');
 
-				context.font = `${fontStyle} ${fontWeight} 72px monospace`;
+				context.font = [
+					fontStyle,
+					fontWeight,
+					'72px',
+					'monospace'
+				].join(' ');
 				let baselineSize = context.measureText(text).width;
 
-				context.font = `${fontStyle} ${fontWeight} 72px ${fontFamily}, monospace`;
+				context.font = [
+					fontStyle,
+					fontWeight,
+					'72px',
+					[
+						fontFamily,
+						'monospace'
+					].join(', ')
+				].join(' ');
 				let newSize = context.measureText(text).width;
 
 				if (newSize !== baselineSize) {
 					d.classList.add('pass');
-					return;
+				} else {
+					d.classList.add('fail');
 				}
-				d.classList.add('fail');
-			});
-		});
+			}
+		}, 1000)
 	</script>
 </head>
 <body>

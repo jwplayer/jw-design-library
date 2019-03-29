@@ -8,7 +8,7 @@ asset:
         weight: 400
         formats:
         - woff2
-        - ttf
+        - woff
 
       bold:
         value: dictionary/assets/fonts/inconsolata/inconsolata-bold
@@ -17,7 +17,7 @@ asset:
         weight: 700
         formats:
         - woff2
-        - ttf
+        - woff
 
     open-sans:
       light:
@@ -27,7 +27,7 @@ asset:
         weight: 300
         formats:
         - woff2
-        - ttf
+        - woff
 
       regular:
         value: dictionary/assets/fonts/open-sans/opensans-regular
@@ -36,7 +36,7 @@ asset:
         weight: 400
         formats:
         - woff2
-        - ttf
+        - woff
 
       italic:
         value: dictionary/assets/fonts/open-sans/opensans-italic
@@ -45,7 +45,7 @@ asset:
         weight: 400
         formats:
         - woff2
-        - ttf
+        - woff
 
       semibold:
         value: dictionary/assets/fonts/open-sans/opensans-semibold
@@ -54,7 +54,7 @@ asset:
         weight: 600
         formats:
         - woff2
-        - ttf
+        - woff
 
       bold:
         value: dictionary/assets/fonts/open-sans/opensans-bold
@@ -63,7 +63,7 @@ asset:
         weight: 700
         formats:
         - woff2
-        - ttf
+        - woff
 
       extrabold:
         value: dictionary/assets/fonts/open-sans/opensans-extrabold
@@ -72,7 +72,7 @@ asset:
         weight: 800
         formats:
         - woff2
-        - ttf
+        - woff
 
     lato:
       light:
@@ -82,7 +82,7 @@ asset:
         weight: 300
         formats:
         - woff2
-        - ttf
+        - woff
 
       regular:
         value: dictionary/assets/fonts/lato/lato-regular
@@ -91,7 +91,7 @@ asset:
         weight: 400
         formats:
         - woff2
-        - ttf
+        - woff
 
       bold:
         value: dictionary/assets/fonts/lato/lato-bold
@@ -100,7 +100,7 @@ asset:
         weight: 700
         formats:
         - woff2
-        - ttf
+        - woff
 
       black:
         value: dictionary/assets/fonts/lato/lato-black
@@ -109,4 +109,4 @@ asset:
         weight: 900
         formats:
         - woff2
-        - ttf
+        - woff
