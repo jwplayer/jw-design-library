@@ -4,7 +4,7 @@ color:
       value: '#EC0041'
 
     dahlia-fade:
-      value: '#EC00414D'
+      value: '#FBCCD9'
 
     dahlia-dark:
       value: '#BD0034'
@@ -16,7 +16,7 @@ color:
       value: '#D8DDE6'
 
     fog-fade:
-      value: '#D8DDE64D'
+      value: '#F3F5F8'
 
     fog-dark:
       value: '#A0ACC2'
@@ -28,7 +28,7 @@ color:
       value: '#475470'
 
     midnight-fade:
-      value: '#4754704D'
+      value: '#DADDE2'
 
     midnight-dark:
       value: '#39435A'
@@ -40,7 +40,7 @@ color:
       value: '#2F3542'
 
     abyss-fade:
-      value: '#2F35424D'
+      value: '#D5D7D9'
 
     abyss-dark:
       value: '#262A35'

@@ -33,7 +33,7 @@ balanced-match@^1.0.0:
 
 bindings@^1.2.1:
   version "1.5.0"
-  resolved "https://npm-registry.longtailvideo.com/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
+  resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
   integrity sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
   dependencies:
     file-uri-to-path "1.0.0"
@@ -242,7 +242,7 @@ esprima@^4.0.0:
 
 file-uri-to-path@1.0.0:
   version "1.0.0"
-  resolved "https://npm-registry.longtailvideo.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
+  resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
   integrity sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
 
 fs-extra@^6.0.1:
@@ -391,7 +391,7 @@ mdn-data@~1.1.0:
 
 microbuffer@^1.0.0:
   version "1.0.0"
-  resolved "https://npm-registry.longtailvideo.com/microbuffer/-/microbuffer-1.0.0.tgz#8b3832ed40c87d51f47bb234913a698a756d19d2"
+  resolved "https://registry.yarnpkg.com/microbuffer/-/microbuffer-1.0.0.tgz#8b3832ed40c87d51f47bb234913a698a756d19d2"
   integrity sha1-izgy7UDIfVH0e7I0kTppinVtGdI=
 
 minimatch@^3.0.4:
@@ -425,7 +425,7 @@ mkdirp@~0.5.1:
 
 nan@^2.2.1:
   version "2.13.2"
-  resolved "https://npm-registry.longtailvideo.com/nan/-/nan-2.13.2.tgz#f51dc7ae66ba7d5d55e1e6d4d8092e802c9aefe7"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.13.2.tgz#f51dc7ae66ba7d5d55e1e6d4d8092e802c9aefe7"
   integrity sha512-TghvYc72wlMGMVMluVo9WRJc0mB8KxxF/gZ4YYFy7V2ZQX9l7rgbPg7vjS9mt6U5HXODVFVI2bOduCzwOMv/lw==
 
 ncp@~0.4.2:
@@ -482,7 +482,7 @@ once@^1.3.0:
 
 pako@^1.0.0:
   version "1.0.10"
-  resolved "https://npm-registry.longtailvideo.com/pako/-/pako-1.0.10.tgz#4328badb5086a426aa90f541977d4955da5c9732"
+  resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.10.tgz#4328badb5086a426aa90f541977d4955da5c9732"
   integrity sha512-0DTvPVU3ed8+HNXOu5Bs+o//Mbdj9VNQMUOe9oKCwh8l0GNwpTDMKCWbRjgtD291AWnkAgkqA/LOnQS8AmS1tw==
 
 parse5@^3.0.1:
@@ -615,7 +615,7 @@ tinycolor2@^1.4.1:
 
 ttf2woff@^2.0.1:
   version "2.0.1"
-  resolved "https://npm-registry.longtailvideo.com/ttf2woff/-/ttf2woff-2.0.1.tgz#871832240024b09db9570904c7c1928b8057c969"
+  resolved "https://registry.yarnpkg.com/ttf2woff/-/ttf2woff-2.0.1.tgz#871832240024b09db9570904c7c1928b8057c969"
   integrity sha1-hxgyJAAksJ25VwkEx8GSi4BXyWk=
   dependencies:
     argparse "^1.0.6"
@@ -647,7 +647,7 @@ util.promisify@~1.0.0:
 
 woff2@^0.2.2:
   version "0.2.2"
-  resolved "https://npm-registry.longtailvideo.com/woff2/-/woff2-0.2.2.tgz#f1cc339f8fd60e6b687658187ad65b3052710977"
+  resolved "https://registry.yarnpkg.com/woff2/-/woff2-0.2.2.tgz#f1cc339f8fd60e6b687658187ad65b3052710977"
   integrity sha1-8cwzn4/WDmtodlgYetZbMFJxCXc=
   dependencies:
     bindings "^1.2.1"
