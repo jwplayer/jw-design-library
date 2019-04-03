@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 02 Apr 2019 17:06:03 GMT
+ * Generated on Thu, 04 Apr 2019 17:08:15 GMT
  */
 
 export const dsColorSystemBlack = "#000000";
@@ -10,3 +10,4 @@ export const dsColorSystemGreen = "#0aac29"; // affirmative
 export const dsColorSystemOrange = "#ffba43"; // medium risk
 export const dsColorSystemRed = "#ff0000"; // destructive - high risk
 export const dsColorSystemWhite = "#ffffff";
+export const dsColorSystemWhiteAlphaFade = "rgba(255, 255, 255, 0.3)";

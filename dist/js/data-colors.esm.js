@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 02 Apr 2019 17:06:03 GMT
+ * Generated on Thu, 04 Apr 2019 17:08:15 GMT
  */
 
 export const dsColorRampDataHueBlue3 = ["#0073b3","#62b4d9","#bef5ff"];
