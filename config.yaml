@@ -42,6 +42,17 @@ platforms:
             category: global
             type: font
 
+  components:
+    prefix: ds
+    buildPath: dist/less/component/
+    transformGroup: less
+    files:
+      - destination: button.less
+        format: less/variables
+        filter:
+          attributes:
+            category: button
+
   font-face:
     buildPath: dist/css/
     transforms:
