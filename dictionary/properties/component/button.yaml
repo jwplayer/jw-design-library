@@ -1,0 +1,112 @@
+button:
+  border:
+    radius:
+      value: 3px
+
+  cursor:
+    static:
+      value: pointer
+
+    disabled:
+      value: not-allowed
+      comment: This value specifically matches the `not-allowed` CSS value.
+
+  font:
+    line-height:
+      value: 1
+
+    family:
+      value: '{global.font.family.custom.value}'
+
+    size:
+      value: 0.8125rem
+
+    weight:
+      value: '{global.font.weight.custom.semibold.value}'
+
+  height:
+    value: 2rem
+
+  opacity:
+    disabled:
+      value: 0.3
+
+  padding:
+    value: 0.75rem 1.5rem
+
+  primary:
+    color:
+      background:
+        static:
+          value: '{color.brand.dahlia.value}'
+
+        hover:
+          value: '{color.brand.dahlia-dark.value}'
+
+        pressed:
+          value: '{color.brand.dahlia-darker.value}'
+
+      text:
+        value: '{color.system.white.value}'
+
+  secondary:
+    color:
+      background:
+        static:
+          light:
+            value: transparent
+
+          dark:
+            value: transparent
+
+        hover:
+          light:
+            value: '{color.brand.abyss.value}'
+
+          dark:
+            value: '{color.system.white.value}'
+
+        pressed:
+          light:
+            value: '{color.brand.abyss-dark.value}'
+
+          dark:
+            value: '{color.brand.fog.value}'
+
+        disabled:
+          light:
+            value: transparent
+
+          dark:
+            value: transparent
+
+      border:
+        static:
+          light:
+            value: '{color.brand.abyss.value}'
+
+          dark:
+            value: '{color.system.white.value}'
+
+      text:
+        static:
+          light:
+            value: '{color.brand.abyss.value}'
+
+          dark:
+            value: '{color.system.white.value}'
+
+        hover:
+          light:
+            value: '{color.system.white.value}'
+
+          dark:
+            value: '{color.brand.abyss.value}'
+
+    border:
+      radius:
+        value: 3px
+
+      width:
+        value: 1px
+        comment: Applies to static and hover only
