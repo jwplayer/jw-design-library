@@ -23,3 +23,6 @@ color:
 
     white:
       value: '#FFFFFF'
+
+    white-alpha-fade:
+      value: '#FFFFFF4D'
