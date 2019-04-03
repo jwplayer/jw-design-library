@@ -15,7 +15,7 @@ global:
 
     size:
       base:
-        value: 15px
+        value: 0.9375rem
 
     weight:
       custom:
