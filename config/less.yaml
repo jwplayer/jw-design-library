@@ -1,0 +1,40 @@
+platforms:
+  less:
+    prefix: ds
+    buildPath: dist/less/
+    transformGroup: less
+    files:
+      - destination: brand-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: brand
+
+      - destination: data-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: ramp
+
+      - destination: system-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: system
+
+      - destination: code-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: code
+
+      - destination: fonts.less
+        format: less/variables
+        filter:
+          attributes:
+            category: global
+            type: font

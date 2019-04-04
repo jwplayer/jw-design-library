@@ -1,0 +1,32 @@
+platforms:
+  sprites:
+    buildPath: dist/sprites/
+    prefix: ds
+    transforms:
+      - attribute/cti
+      - name/cti/kebab
+
+    files:
+      - destination: sprites-dashboard.svg
+        format: svg/sprites
+        id: sprites-dashboard
+        filter:
+          attributes:
+            category: icon
+            type: dashboard
+
+      - destination: sprites-player.svg
+        format: svg/sprites
+        id: sprites-player
+        filter:
+          attributes:
+            category: icon
+            type: player
+
+      - destination: sprites-logos.svg
+        format: svg/sprites
+        id: sprites-logo
+        filter:
+          attributes:
+            category: icon
+            type: logo
