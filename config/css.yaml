@@ -1,0 +1,46 @@
+platforms:
+  css:
+    prefix: ds
+    buildPath: dist/css/
+    transformGroup: css
+    files:
+      - destination: brand-colors.css
+        format: css/variables
+        filter:
+          attributes:
+            category: color
+            type: brand
+
+      - destination: system-colors.css
+        format: css/variables
+        filter:
+          attributes:
+            category: color
+            type: system
+
+      - destination: code-colors.css
+        format: css/variables
+        filter:
+          attributes:
+            category: color
+            type: code
+
+      - destination: font-vars.css
+        format: css/variables
+        filter:
+          attributes:
+            category: global
+            type: font
+
+  font-face:
+    buildPath: dist/css/
+    transforms:
+    - attribute/cti
+
+    files:
+      - destination: fonts.css
+        format: font-face
+        filter:
+          attributes:
+            category: asset
+            type: font

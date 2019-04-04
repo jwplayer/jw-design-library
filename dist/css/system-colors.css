@@ -1,0 +1,15 @@
+/**
+ * Do not edit directly
+ * Generated on Thu, 04 Apr 2019 20:59:31 GMT
+ */
+
+:root {
+ --ds-color-system-black: #000000;
+ --ds-color-system-blue: #0a75e3;
+ --ds-color-system-blue-shadow: rgba(11, 126, 244, 0.9);
+ --ds-color-system-green: #0aac29; /* affirmative */
+ --ds-color-system-orange: #ffba43; /* medium risk */
+ --ds-color-system-red: #ff0000; /* destructive - high risk */
+ --ds-color-system-white: #ffffff;
+ --ds-color-system-white-alpha-fade: rgba(255, 255, 255, 0.3);
+}
