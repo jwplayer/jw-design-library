@@ -1,0 +1,4 @@
+system:
+  config:
+    cssUrlPrefix:
+      value: '../fonts'

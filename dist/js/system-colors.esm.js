@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 08 Apr 2019 16:07:14 GMT
+ * Generated on Mon, 08 Apr 2019 16:15:50 GMT
  */
 
 export const dsColorSystemBlack = "#000000";

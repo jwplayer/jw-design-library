@@ -31,16 +31,3 @@ platforms:
           attributes:
             category: global
             type: font
-
-  font-face:
-    buildPath: dist/css/
-    transforms:
-    - attribute/cti
-
-    files:
-      - destination: fonts.css
-        format: font-face
-        filter:
-          attributes:
-            category: asset
-            type: font
