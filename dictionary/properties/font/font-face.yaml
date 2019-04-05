@@ -1,112 +1,87 @@
 asset:
   font:
-    inconsolata:
-      regular:
-        value: dictionary/assets/fonts/inconsolata/inconsolata-regular
-        family: Inconsolata
-        style: normal
-        weight: 400
-        formats:
-        - woff2
-        - woff
+    Inconsolata:
+      400:
+        normal:
+          value: dictionary/assets/fonts/inconsolata/inconsolata-regular
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/inconsolata/inconsolata-regular.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/inconsolata/inconsolata-regular.woff'
 
-      bold:
-        value: dictionary/assets/fonts/inconsolata/inconsolata-bold
-        family: Inconsolata
-        style: normal
-        weight: 700
-        formats:
-        - woff2
-        - woff
+      700:
+        normal:
+          value: dictionary/assets/fonts/inconsolata/inconsolata-bold
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/inconsolata/inconsolata-bold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/inconsolata/inconsolata-bold.woff'
 
-    open-sans:
-      light:
-        value: dictionary/assets/fonts/open-sans/opensans-light
-        family: Open Sans
-        style: normal
-        weight: 300
-        formats:
-        - woff2
-        - woff
+    Open Sans:
+      300:
+        normal:
+          value: dictionary/assets/fonts/open-sans/opensans-light
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-light.woff2'
+            woff:  '{system.config.cssUrlPrefix.value}/open-sans/opensans-light.woff'
 
-      regular:
-        value: dictionary/assets/fonts/open-sans/opensans-regular
-        family: Open Sans
-        style: normal
-        weight: 400
-        formats:
-        - woff2
-        - woff
+      400:
+        normal:
+          value: dictionary/assets/fonts/open-sans/opensans-regular
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-regular.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-regular.woff'
 
-      italic:
-        value: dictionary/assets/fonts/open-sans/opensans-italic
-        family: Open Sans
-        style: italic
-        weight: 400
-        formats:
-        - woff2
-        - woff
+        italic:
+          value: dictionary/assets/fonts/open-sans/opensans-italic
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-italic.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-italic.woff'
 
-      semibold:
-        value: dictionary/assets/fonts/open-sans/opensans-semibold
-        family: Open Sans
-        style: normal
-        weight: 600
-        formats:
-        - woff2
-        - woff
+      600:
+        normal:
+          value: dictionary/assets/fonts/open-sans/opensans-semibold
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-semibold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-semibold.woff'
 
-      bold:
-        value: dictionary/assets/fonts/open-sans/opensans-bold
-        family: Open Sans
-        style: normal
-        weight: 700
-        formats:
-        - woff2
-        - woff
+      700:
+        normal:
+          value: dictionary/assets/fonts/open-sans/opensans-bold
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-bold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-bold.woff'
 
-      extrabold:
-        value: dictionary/assets/fonts/open-sans/opensans-extrabold
-        family: Open Sans
-        style: normal
-        weight: 800
-        formats:
-        - woff2
-        - woff
+      800:
+        normal:
+          value: dictionary/assets/fonts/open-sans/opensans-extrabold
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-extrabold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-extrabold.woff'
 
-    lato:
-      light:
-        value: dictionary/assets/fonts/lato/lato-light
-        family: Lato
-        style: normal
-        weight: 300
-        formats:
-        - woff2
-        - woff
+    Lato:
+      300:
+        normal:
+          value: dictionary/assets/fonts/lato/lato-light
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/lato/lato-light.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/lato/lato-light.woff'
 
-      regular:
-        value: dictionary/assets/fonts/lato/lato-regular
-        family: Lato
-        style: normal
-        weight: 400
-        formats:
-        - woff2
-        - woff
+      400:
+        normal:
+          value: dictionary/assets/fonts/lato/lato-regular
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/lato/lato-regular.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/lato/lato-regular.woff'
 
-      bold:
-        value: dictionary/assets/fonts/lato/lato-bold
-        family: Lato
-        style: normal
-        weight: 700
-        formats:
-        - woff2
-        - woff
+      700:
+        normal:
+          value: dictionary/assets/fonts/lato/lato-bold
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/lato/lato-bold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/lato/lato-bold.woff'
 
-      black:
-        value: dictionary/assets/fonts/lato/lato-black
-        family: Lato
-        style: normal
-        weight: 900
-        formats:
-        - woff2
-        - woff
+      900:
+        normal:
+          value: dictionary/assets/fonts/lato/lato-black
+          formats:
+            woff2: '{system.config.cssUrlPrefix.value}/lato/lato-black.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/lato/lato-black.woff'
