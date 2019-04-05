@@ -7,6 +7,7 @@ const argv = require('yargs').argv;
 const svgSpriteFormat = require('./scripts/formatters/svg-sprite');
 const fontFace = require('./scripts/formatters/font-face');
 const contentArrayToList = require('./scripts/transformers/content-array-to-list');
+const attributeFont = require('./scripts/transformers/attribute-font');
 const contentListToJsArray = require('./scripts/transformers/content-list-to-js-array');
 const jsTransformGroup = require('./scripts/transform-groups/js-transform-group');
 const lessTransformGroup = require('./scripts/transform-groups/less-transform-group');
@@ -15,6 +16,7 @@ require('./scripts/utils/mock-require'); // must load before style-dictionary
 const StyleDictionary = require('style-dictionary');
 
 StyleDictionary.registerTransform(contentArrayToList);
+StyleDictionary.registerTransform(attributeFont);
 StyleDictionary.registerTransform(contentListToJsArray);
 StyleDictionary.registerTransformGroup(lessTransformGroup);
 StyleDictionary.registerTransformGroup(jsTransformGroup);
