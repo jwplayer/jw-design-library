@@ -22,17 +22,16 @@ const formatter = ({ allProperties }) => allProperties.reduce((fonts, prop) => {
 	const { attributes: { family, weight, style }, formats, value } = prop;
 	const baseName = path.basename(value, '.ttf');
 	const fileSlug = family.toLowerCase().replace(/\s+/g,'-');
-	const destFile = path.resolve(cwd, 'dist/fonts', fileSlug, baseName);
-	debugger;
+	const fullDestPath = path.resolve(cwd, 'dist/fonts', fileSlug, baseName);
 
 	const exts = Object.keys(formats);
 	const ttfFile = fs.readFileSync(value);
 
-	fs.mkdirp(path.dirname(destFile), () => {
+	fs.mkdirp(path.dirname(fullDestPath), () => {
 		exts.forEach(ext => {
 			// draw the dot
-			const thisDestFile = `${destFile}.${ext}`;
-			process.stdout.write(`Processing Fonts... ${fileSlug}.${ext}`);
+			const thisDestFile = `${fullDestPath}.${ext}`;
+			process.stdout.write(`Processing Fonts... ${baseName}.${ext}`);
 			fs.writeFileSync(thisDestFile, convertFont(ext, ttfFile));
 			readline.clearLine(process.stdout);
 			readline.cursorTo(process.stdout, 0);

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 08 Apr 2019 16:24:41 GMT
+ * Generated on Mon, 08 Apr 2019 16:29:36 GMT
  */
 
 export const dsColorCodeBackground = "#2f3542";
