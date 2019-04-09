@@ -18,10 +18,10 @@ The `dist` directory contains various files you can reference in your project:
 To use the tagged Github releases:
 ```bash
 # with yarn
-yarn add jwplayer/jw-design-library#v5.0.3
+yarn add jwplayer/jw-design-library#v5.1.0
 
 # with npm
-npm install jwplayer/jw-design-library#v5.0.3
+npm install jwplayer/jw-design-library#v5.1.0
 ```
 
 ### Use with Less
