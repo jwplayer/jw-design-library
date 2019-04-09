@@ -1,4 +1,4 @@
-system:
+system: # not to be confused with the `color.system` properties
   config:
     cssUrlPrefix:
-      value: '../fonts'
+      value: '..'
