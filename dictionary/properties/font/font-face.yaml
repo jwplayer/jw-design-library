@@ -5,83 +5,83 @@ asset:
         normal:
           value: dictionary/assets/fonts/inconsolata/inconsolata-regular.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/inconsolata/inconsolata-regular.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/inconsolata/inconsolata-regular.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/inconsolata/inconsolata-regular.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/inconsolata/inconsolata-regular.woff'
 
       700:
         normal:
           value: dictionary/assets/fonts/inconsolata/inconsolata-bold.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/inconsolata/inconsolata-bold.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/inconsolata/inconsolata-bold.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/inconsolata/inconsolata-bold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/inconsolata/inconsolata-bold.woff'
 
     Open Sans:
       300:
         normal:
           value: dictionary/assets/fonts/open-sans/opensans-light.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-light.woff2'
-            woff:  '{system.config.cssUrlPrefix.value}/open-sans/opensans-light.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-light.woff2'
+            woff:  '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-light.woff'
 
       400:
         normal:
           value: dictionary/assets/fonts/open-sans/opensans-regular.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-regular.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-regular.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-regular.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-regular.woff'
 
         italic:
           value: dictionary/assets/fonts/open-sans/opensans-italic.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-italic.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-italic.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-italic.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-italic.woff'
 
       600:
         normal:
           value: dictionary/assets/fonts/open-sans/opensans-semibold.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-semibold.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-semibold.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-semibold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-semibold.woff'
 
       700:
         normal:
           value: dictionary/assets/fonts/open-sans/opensans-bold.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-bold.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-bold.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-bold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-bold.woff'
 
       800:
         normal:
           value: dictionary/assets/fonts/open-sans/opensans-extrabold.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/open-sans/opensans-extrabold.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/open-sans/opensans-extrabold.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-extrabold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-extrabold.woff'
 
     Lato:
       300:
         normal:
           value: dictionary/assets/fonts/lato/lato-light.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/lato/lato-light.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/lato/lato-light.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/lato/lato-light.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/lato/lato-light.woff'
 
       400:
         normal:
           value: dictionary/assets/fonts/lato/lato-regular.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/lato/lato-regular.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/lato/lato-regular.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/lato/lato-regular.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/lato/lato-regular.woff'
 
       700:
         normal:
           value: dictionary/assets/fonts/lato/lato-bold.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/lato/lato-bold.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/lato/lato-bold.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/lato/lato-bold.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/lato/lato-bold.woff'
 
       900:
         normal:
           value: dictionary/assets/fonts/lato/lato-black.ttf
           formats:
-            woff2: '{system.config.cssUrlPrefix.value}/lato/lato-black.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/lato/lato-black.woff'
+            woff2: '{system.config.cssUrlPrefix.value}/fonts/lato/lato-black.woff2'
+            woff: '{system.config.cssUrlPrefix.value}/fonts/lato/lato-black.woff'
