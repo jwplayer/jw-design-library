@@ -50,6 +50,10 @@ const config = merge(
 
 const styleDictionary = StyleDictionary.extend(config);
 
+if (argv.cssUrlPrefix) {
+	styleDictionary.properties.system.config.cssUrlPrefix.value = argv.cssUrlPrefix;
+}
+
 if (argv.platform) {
 	if (config.platforms[argv.platform]) {
 		styleDictionary.buildPlatform(argv.platform);

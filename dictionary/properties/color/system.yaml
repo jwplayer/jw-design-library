@@ -1,5 +1,5 @@
 color:
-  system:
+  system: # Not to be confused with the `system.config` properties
     black:
       value: '#000000'
 
