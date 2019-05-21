@@ -7,9 +7,9 @@ platforms:
       - destination: brand-colors.esm.js
         format: javascript/es6
         filter:
-            attributes:
-              category: color
-              type: brand
+          attributes:
+            category: color
+            type: brand
 
       - destination: system-colors.esm.js
         format: javascript/es6
