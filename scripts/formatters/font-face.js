@@ -19,7 +19,7 @@ const convertFont = (ext, input) => {
 }
 
 const formatter = ({ allProperties }) => allProperties.reduce((fonts, prop) => {
-	const { attributes: { family, weight, style }, formats, value } = prop;
+	const { attributes: { family, weight, style }, formats = {}, value } = prop;
 	const baseName = path.basename(value, '.ttf');
 	const fileSlug = family.toLowerCase().replace(/\s+/g,'-');
 	const fullDestPath = path.resolve(cwd, 'dist/fonts', fileSlug, baseName);

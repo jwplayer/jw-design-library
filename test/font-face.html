@@ -8,12 +8,13 @@
 	<link rel="stylesheet" href="/dist/css/fonts.css">
 	<style>
 		div {
+			display: inline-block;
 			font-style: normal;
 			font-weight: 400;
 			font-family: monospace;
 			font-size: 16px;
-			line-height: 1.5;
 			margin: 10px;
+			padding: 10px;
 		}
 
 		[class^=inconsolata] {
@@ -28,9 +29,8 @@
 			font-family: "Open Sans";
 		}
 
-		[class*=regular] {
-			font-style: normal;
-			font-weight: 400;
+		[class^=overpass] {
+			font-family: "Overpass";
 		}
 
 		[class*=italic] {
@@ -41,16 +41,25 @@
 			font-weight: 100;
 		}
 
+		[class*=extralight] {
+			font-weight: 200;
+		}
+
 		[class*=light] {
 			font-weight: 300;
 		}
 
-		[class*=bold] {
-			font-weight: 700;
+		[class*=regular] {
+			font-style: normal;
+			font-weight: 400;
 		}
 
 		[class*=semibold] {
 			font-weight: 600;
+		}
+
+		[class*=bold] {
+			font-weight: 700;
 		}
 
 		[class*=extrabold] {
@@ -118,10 +127,29 @@
 	<div class="lato-bold">Lato Bold</div>
 	<div class="lato-light">Lato Light</div>
 	<div class="lato-regular">Lato Regular</div>
+	<hr>
 	<div class="opensans-bold">Open Sans Bold</div>
 	<div class="opensans-extrabold">Open Sans Extrabold</div>
 	<div class="opensans-light">Open Sans light</div>
 	<div class="opensans-regular">Open Sans Regular</div>
 	<div class="opensans-semibold">Open Sans Semibold</div>
+	<hr>
+	<div class="overpass-thin">Overpass thin</div>
+	<div class="overpass-thin">Overpass Thin</div>
+	<div class="overpass-thinitalic">Overpass Thin Italic</div>
+	<div class="overpass-extralight">Overpass Extralight</div>
+	<div class="overpass-extralightitalic">Overpass Extralight Italic</div>
+	<div class="overpass-light">Overpass Light</div>
+	<div class="overpass-lightitalic">Overpass Light Italic</div>
+	<div class="overpass-regular">Overpass Regular</div>
+	<div class="overpass-italic">Overpass Italic</div>
+	<div class="overpass-semibold">Overpass Semibold</div>
+	<div class="overpass-semibolditalic">Overpass Semibold Italic</div>
+	<div class="overpass-bold">Overpass Bold</div>
+	<div class="overpass-bolditalic">Overpass Bold Italic</div>
+	<div class="overpass-extrabold">Overpass Extrabold</div>
+	<div class="overpass-extrabolditalic">Overpass Extrabold Italic</div>
+	<div class="overpass-black">Overpass Black</div>
+	<div class="overpass-blackitalic">Overpass Black Italic</div>
 </body>
 </html>

@@ -2,7 +2,7 @@ platforms:
   font-face:
     buildPath: dist/css/
     transforms:
-    - attribute/font
+      - attribute/font
 
     files:
       - destination: fonts.css
