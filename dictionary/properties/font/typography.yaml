@@ -18,7 +18,7 @@ typography:
       dark:
         value: '{color.system.white.value}'
   
-  heading-1:
+  h1:
     font:
       size: 
         value: 31px
@@ -29,7 +29,7 @@ typography:
       margin: 
         value: '{layout.spacing.large.value}'
 
-  heading-2:
+  h2:
     font:
       size: 
         value: 25px
@@ -40,7 +40,7 @@ typography:
       margin: 
         value: '{layout.spacing.large.value}'
 
-  heading-3:
+  h3:
     font:
       size: 
         value: 19px
@@ -51,7 +51,7 @@ typography:
       margin: 
         value: '{layout.spacing.medium.value}'
 
-  heading-4:
+  h4:
     font:
       size: 
         value: 15px
@@ -62,7 +62,7 @@ typography:
       margin: 
         value: '{layout.spacing.medium.value}'
 
-  heading-5:
+  h5:
     font:
       size: 
         value: 13px
