@@ -1,0 +1,126 @@
+textinput:
+  border:
+    radius:
+      value: 3px
+
+    style:
+      value: solid
+
+    width:
+      value: 1px
+
+  color:
+    background:
+      static:
+        value: '{color.system.white.value}'
+
+      disabled:
+        value: '{color.brand.fog-alpha-fade.value}'
+
+    border:
+      static:
+        value: '{color.brand.fog-dark.value}'
+
+      error:
+        value: '{color.system.red.value}'
+
+      hover:
+        value: '{color.system.blue.value}'
+
+      focus:
+        value: '{color.system.blue.value}'
+
+    placeholder:
+      static:
+        value: '{color.brand.fog-dark.value}'
+
+      focus:
+        value: '{color.brand.fog.value}'
+
+    text:
+      static:
+        value: '{color.brand.abyss.value}'
+
+      error:
+        value: '{color.system.red.value}'
+
+  font:
+    family:
+      value: '{global.font.family.custom.value}'
+
+    size:
+      value: 13px
+
+  size:
+    height:
+      value: 36px
+
+    margin:
+      top:
+        value: 8px
+
+      right:
+        value: 0
+
+      bottom:
+        value: 8px
+
+      left:
+        value: 0
+
+    padding:
+        value: 8px
+
+    width:
+      value: 240px
+
+  hint:
+    color:
+      text:
+        static:
+          value: '{color.brand.fog-dark.value}'
+
+        error:
+          value: '{color.system.red.value}'
+
+    font:
+      family:
+        value: '{global.font.family.custom.value}'
+
+      size:
+        value: 0.6875rem
+
+      weight:
+        static:
+          value: '{global.font.weight.custom.regular.value}'
+
+        error:
+          value: '{global.font.weight.custom.semibold.value}'
+
+  label:
+    font:
+      size:
+        value: 15px
+
+      line-height:
+        value: 1
+
+      family:
+        value: '{global.font.family.custom.value}'
+
+    size:
+      margin:
+        top:
+          horizontal:
+            value: 20px
+
+        right:
+          value: 8px
+
+        bottom:
+          horizontal:
+            value: auto
+
+        left:
+          horizontal:
+            value: 0
