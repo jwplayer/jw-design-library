@@ -36,9 +36,9 @@ colors, and data visualization value lists for gradients and color stops.
 In your stylesheet, you can import the color variables like this:
 ```less
 
-@import (reference) "jw-design-library/dist/less/brand-colors.less";
-@import (reference) "jw-design-library/dist/less/data-colors.less";
-@import (reference) "jw-design-library/dist/less/system-colors.less";
+@import (reference) "@design/jw-design-library/dist/less/brand-colors.less";
+@import (reference) "@design/jw-design-library/dist/less/data-colors.less";
+@import (reference) "@design/jw-design-library/dist/less/system-colors.less";
 
 .my-cool-icon {
     fill: @ds-color-brand-dahlia;
@@ -64,7 +64,7 @@ resolve the paths for the font files (`dist/fonts/`), or things won't work!
 
 To include this file as a Less file, use it like this:
 ```less
-@import (less) "jw-design-library/dist/css/fonts.css";
+@import (less) "@design/jw-design-library/dist/css/fonts.css";
 ```
 
 ### Use with JavaScript

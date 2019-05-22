@@ -14,6 +14,7 @@ const lessTransformGroup = require('./scripts/transform-groups/less-transform-gr
 
 require('./scripts/utils/mock-require'); // must load before style-dictionary
 const StyleDictionary = require('style-dictionary');
+const nameCtiKebab = require("./scripts/transformers/name-cti-kebab");
 
 StyleDictionary.registerTransform(contentArrayToList);
 StyleDictionary.registerTransform(attributeFont);
@@ -22,6 +23,7 @@ StyleDictionary.registerTransformGroup(lessTransformGroup);
 StyleDictionary.registerTransformGroup(jsTransformGroup);
 StyleDictionary.registerFormat(svgSpriteFormat);
 StyleDictionary.registerFormat(fontFace);
+StyleDictionary.registerTransform(nameCtiKebab);
 
 const components = fs.readdirSync(path.resolve(__dirname, 'dictionary/properties/component')).map(c => {
 	const component = path.basename(c, '.yaml');

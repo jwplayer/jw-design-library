@@ -38,3 +38,15 @@ platforms:
           attributes:
             category: global
             type: font
+
+      - destination: layout.less
+        format: less/variables
+        filter:
+          attributes:
+            category: layout
+
+      - destination: page.less
+        format: less/variables
+        filter:
+          attributes:
+            category: page

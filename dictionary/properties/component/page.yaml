@@ -1,0 +1,104 @@
+page: 
+  size:
+    max-width:
+      value: 1200px
+
+  base:
+    font:
+      size:
+        value: 13px
+      
+      weight:
+        value: '{global.font.weight.custom.regular.value}'
+
+      line-height:
+        value: 1.54
+
+  color:
+    text:
+      light:
+        value: '{color.brand.abyss.value}'
+      
+      dark:
+        value: '{color.system.white.value}'
+  
+  h1:
+    font:
+      size: 
+        value: 31px
+      
+      weight:
+        value: '{global.font.weight.custom.semibold.value}'
+
+      margin: 
+        value: '{layout.size.large.value}'
+
+  h2:
+    font:
+      size: 
+        value: 25px
+      
+      weight:
+        value: '{global.font.weight.custom.semibold.value}'
+
+      margin: 
+        value: '{layout.size.large.value}'
+
+  h3:
+    font:
+      size: 
+        value: 19px
+      
+      weight:
+        value: '{global.font.weight.custom.regular.value}'
+
+      margin: 
+        value: '{layout.size.medium.value}'
+
+  h4:
+    font:
+      size: 
+        value: 15px
+      
+      weight:
+        value: '{global.font.weight.custom.semibold.value}'
+
+      margin: 
+        value: '{layout.size.medium.value}'
+
+  h5:
+    font:
+      size: 
+        value: 13px
+      
+      weight:
+        value: '{global.font.weight.custom.semibold.value}'
+
+      margin: 
+        value: '{layout.size.medium.value}'
+
+  p:
+    font:
+      size: 
+        value: 13px
+      
+      weight:
+        value: '{global.font.weight.custom.regular.value}'
+
+      margin: 
+        value: '{layout.size.medium.value}'
+
+  a:
+    color:
+      base:
+        value: '{color.system.blue.value}'
+        
+    font:
+      size: 
+        value: 13px
+      
+      weight:
+        value: '{global.font.weight.custom.semibold.value}'
+
+      margin: 
+        value: '{layout.size.medium.value}'
