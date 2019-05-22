@@ -18,10 +18,10 @@ The `dist` directory contains various files you can reference in your project:
 To use the tagged Github releases:
 ```bash
 # with yarn
-yarn add jwplayer/jw-design-library#v5.1.0
+yarn add @design/jw-design-library@github:jwplayer/jw-design-library#<version>
 
 # with npm
-npm install jwplayer/jw-design-library#v5.1.0
+npm install @design/jw-design-library@github:jwplayer/jw-design-library#<version>
 ```
 
 ### Use with Less
@@ -58,14 +58,15 @@ In your stylesheet, you can import the color variables like this:
   to shorten import paths.
 
 #### Fonts
-Font face blocks are provided in a CSS file since there's no Less-specific
-content in the output. If you use `dist/css/fonts.css` then you must copy or
-resolve the paths for the font files (`dist/fonts/`), or things won't work!
-
-To include this file as a Less file, use it like this:
-```less
-@import (less) "@design/jw-design-library/dist/css/fonts.css";
+It's highly recommended to use the CDN route for fonts as an HTML link:
+```html
+<link href="https://hook.jwplayer.com/jw-design-library/<version>/css/fonts.css" rel="stylesheet" />
 ```
+Then use the font family variables as usual. This way you're not duplicating the
+font files into your project.
+
+If you use `dist/css/fonts.css` then you must copy or resolve the paths for the
+font files (`dist/fonts/`), or things won't work!
 
 ### Use with JavaScript
 Color variables are available as exports (`dist/js/`). Brand and system colors
