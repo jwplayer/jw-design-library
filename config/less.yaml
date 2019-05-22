@@ -44,9 +44,3 @@ platforms:
         filter:
           attributes:
             category: layout
-
-      - destination: page.less
-        format: less/variables
-        filter:
-          attributes:
-            category: page
