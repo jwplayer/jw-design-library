@@ -45,8 +45,8 @@ platforms:
           attributes:
             category: layout
 
-      - destination: typography.less
+      - destination: page.less
         format: less/variables
         filter:
           attributes:
-            category: typography
+            category: page

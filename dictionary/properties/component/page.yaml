@@ -1,4 +1,8 @@
-typography: 
+page: 
+  size:
+    max-width:
+      value: 1200px
+
   base:
     font:
       size:
@@ -27,7 +31,7 @@ typography:
         value: '{global.font.weight.custom.semibold.value}'
 
       margin: 
-        value: '{layout.spacing.large.value}'
+        value: '{layout.size.large.value}'
 
   h2:
     font:
@@ -38,7 +42,7 @@ typography:
         value: '{global.font.weight.custom.semibold.value}'
 
       margin: 
-        value: '{layout.spacing.large.value}'
+        value: '{layout.size.large.value}'
 
   h3:
     font:
@@ -49,7 +53,7 @@ typography:
         value: '{global.font.weight.custom.regular.value}'
 
       margin: 
-        value: '{layout.spacing.medium.value}'
+        value: '{layout.size.medium.value}'
 
   h4:
     font:
@@ -60,7 +64,7 @@ typography:
         value: '{global.font.weight.custom.semibold.value}'
 
       margin: 
-        value: '{layout.spacing.medium.value}'
+        value: '{layout.size.medium.value}'
 
   h5:
     font:
@@ -71,7 +75,7 @@ typography:
         value: '{global.font.weight.custom.semibold.value}'
 
       margin: 
-        value: '{layout.spacing.medium.value}'
+        value: '{layout.size.medium.value}'
 
   p:
     font:
@@ -82,7 +86,7 @@ typography:
         value: '{global.font.weight.custom.regular.value}'
 
       margin: 
-        value: '{layout.spacing.medium.value}'
+        value: '{layout.size.medium.value}'
 
   a:
     color:
@@ -97,4 +101,4 @@ typography:
         value: '{global.font.weight.custom.semibold.value}'
 
       margin: 
-        value: '{layout.spacing.medium.value}'
+        value: '{layout.size.medium.value}'

@@ -1,6 +1,5 @@
-layout:
-
-  spacing:
+layout: 
+  size:
     small:
       value: 8px
     
@@ -12,9 +11,3 @@ layout:
 
     extra-large:
       value: 32px
-
-  
-  page:
-    fixed:
-      max-width:
-        value: 1200px
