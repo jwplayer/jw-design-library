@@ -1,0 +1,96 @@
+radioinput:
+  border:
+    radius:
+      value: 100%
+
+    style:
+      value: solid
+
+    width:
+      value: 1px
+
+  color:
+    background:
+      unchecked:
+        value: '{color.system.white.value}'
+
+      checked:
+        static:
+          value: '{color.system.blue.value}'
+
+        disabled:
+          value: '{color.brand.fog.value}'
+
+    border:
+      unchecked:
+        static:
+          value: '{color.brand.fog-dark.value}'
+
+        hover:
+          value: '{color.brand.abyss.value}'
+
+        disabled:
+          value: '{color.brand.fog.value}'
+
+      checked:
+        static:
+          value: '{color.system.blue.value}'
+
+        disabled:
+          value: '{color.system.'
+
+  cursor:
+    static:
+      value: pointer
+
+    disabled:
+      value: not-allowed
+
+  size:
+    height:
+      value: 16px
+
+    width:
+      value: 16px
+
+  field:
+    margin:
+      bottom:
+        value: 16px
+
+  label:
+    color:
+      text:
+        disabled:
+          value: '{color.brand.fog.value}'
+
+    font:
+      size:
+        value: 13px
+
+      line-height:
+        value: 1.4
+
+      family:
+        value: '{global.font.family.custom.value}'
+
+    size:
+      padding:
+        top:
+          value: 0
+
+        right:
+          value: 16px # To avoid collisions with nearby elements
+
+        bottom:
+          value: 0
+
+        left:
+          value: 8px
+
+  indicator:
+    color:
+      value: '{color.system.white.value}'
+
+    radius:
+      value: 3px
