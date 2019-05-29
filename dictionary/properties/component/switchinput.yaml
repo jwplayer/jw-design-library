@@ -1,0 +1,94 @@
+switchinput:
+  color:
+    background:
+      static:
+        value: '{color.brand.fog-dark.value}'
+
+      checked:
+        value: '{color.system.blue.value}'
+
+      disabled:
+        value: '{color.brand.fog.value}'
+
+  border:
+    radius:
+      value: 10px
+
+  content:
+    checked:
+      value: '"ON"'
+
+    unchecked:
+      value: '"OFF"'
+
+  cursor:
+    static:
+      value: pointer
+
+    disabled:
+      value: not-allowed
+
+  font:
+    family:
+      value: '{global.font.family.custom.value}'
+
+    line-height:
+      value: 1
+
+    size:
+      value: 11px
+
+    text-indent:
+      value: 100%
+
+    weight:
+      value: 600
+
+  size:
+    height:
+      value: 20px
+
+    width:
+      value: 45px
+
+  label:
+    color:
+      text:
+        value: '{color.brand.abyss.value}'
+
+    font:
+      family:
+        value: '{global.font.family.custom.value}'
+
+      size:
+        value: 13px
+
+    size:
+      padding:
+        value: 8px
+
+  knob:
+    border:
+      radius:
+        value: 50%
+
+      width:
+        value: 1px
+
+    color:
+      background:
+        value: '{color.system.white.value}'
+
+      border:
+        static:
+          value: '{color.brand.fog-dark.value}'
+
+        checked:
+          value: '{color.system.blue.value}'
+
+    size:
+      height:
+        value: 20px
+
+      width:
+        value: 20px

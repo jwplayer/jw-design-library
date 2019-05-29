@@ -36,9 +36,6 @@ radioinput:
         static:
           value: '{color.system.blue.value}'
 
-        disabled:
-          value: '{color.system.'
-
   cursor:
     static:
       value: pointer
