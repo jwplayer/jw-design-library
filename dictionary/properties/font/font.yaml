@@ -4,6 +4,9 @@ global:
       base:
         value: Arial, sans-serif
 
+      brand:
+        value: '"Overpass", "Lato", Arial, sans-serif'
+
       code:
         value: '"Inconsolata", monospace'
 
@@ -18,6 +21,16 @@ global:
         value: 0.9375rem
 
     weight:
+      brand:
+        light:
+          value: 300
+
+        regular:
+          value: 400
+
+        extrabold:
+          value: 800
+
       custom:
         light:
           value: 300
