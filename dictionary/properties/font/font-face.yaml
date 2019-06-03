@@ -87,44 +87,12 @@ asset:
             woff: '{system.config.cssUrlPrefix.value}/fonts/open-sans/opensans-extrabold.woff'
 
     Overpass:
-      100:
-        normal:
-          value: dictionary/assets/fonts/overpass/overpass-thin.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-thin.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-thin.woff'
-
-        italic:
-          value: dictionary/assets/fonts/overpass/overpass-thinitalic.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-thinitalic.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-thinitalic.woff'
-
-      200:
-        normal:
-          value: dictionary/assets/fonts/overpass/overpass-extralight.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-extralight.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-extralight.woff'
-
-        italic:
-          value: dictionary/assets/fonts/overpass/overpass-extralightitalic.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-extralightitalic.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-extralightitalic.woff'
-
       300:
         normal:
           value: dictionary/assets/fonts/overpass/overpass-light.ttf
           formats:
             woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-light.woff2'
             woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-light.woff'
-
-        italic:
-          value: dictionary/assets/fonts/overpass/overpass-lightitalic.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-lightitalic.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-lightitalic.woff'
 
       400:
         normal:
@@ -133,60 +101,9 @@ asset:
             woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-regular.woff2'
             woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-regular.woff'
 
-        italic:
-          value: dictionary/assets/fonts/overpass/overpass-italic.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-italic.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-italic.woff'
-
-      600:
-        normal:
-          value: dictionary/assets/fonts/overpass/overpass-semibold.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-semibold.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-semibold.woff'
-
-        italic:
-          value: dictionary/assets/fonts/overpass/overpass-semibolditalic.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-semibolditalic.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-semibolditalic.woff'
-
-      700:
-        normal:
-          value: dictionary/assets/fonts/overpass/overpass-bold.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-bold.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-bold.woff'
-
-        italic:
-          value: dictionary/assets/fonts/overpass/overpass-bolditalic.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-bolditalic.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-bolditalic.woff'
-
       800:
         normal:
           value: dictionary/assets/fonts/overpass/overpass-extrabold.ttf
           formats:
             woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-extrabold.woff2'
             woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-extrabold.woff'
-
-        italic:
-          value: dictionary/assets/fonts/overpass/overpass-extrabolditalic.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-extrabolditalic.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-extrabolditalic.woff'
-
-      900:
-        normal:
-          value: dictionary/assets/fonts/overpass/overpass-black.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-black.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-black.woff'
-
-        italic:
-          value: dictionary/assets/fonts/overpass/overpass-blackitalic.ttf
-          formats:
-            woff2: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-blackitalic.woff2'
-            woff: '{system.config.cssUrlPrefix.value}/fonts/overpass/overpass-blackitalic.woff'

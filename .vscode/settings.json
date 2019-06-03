@@ -1,4 +1,5 @@
 {
-	"files.eol": "\n",
-	"files.insertFinalNewline": true
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": false
 }
