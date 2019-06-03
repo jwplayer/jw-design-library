@@ -39,7 +39,7 @@ page:
         value: 25px
       
       weight:
-        value: '{global.font.weight.custom.semibold.value}'
+        value: '{global.font.weight.custom.regular.value}'
 
       margin: 
         value: '{layout.size.large.value}'
