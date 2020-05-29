@@ -1,0 +1,46 @@
+platforms:
+  scss:
+    prefix: ds
+    buildPath: dist/scss/
+    transformGroup: scss
+    files:
+      - destination: brand-colors.scss
+        format: scss/variables
+        filter:
+          attributes:
+            category: color
+            type: brand
+
+      - destination: data-colors.scss
+        format: scss/variables
+        filter:
+          attributes:
+            category: color
+            type: ramp
+
+      - destination: system-colors.scss
+        format: scss/variables
+        filter:
+          attributes:
+            category: color
+            type: system
+
+      - destination: code-colors.scss
+        format: scss/variables
+        filter:
+          attributes:
+            category: color
+            type: code
+
+      - destination: fonts.scss
+        format: scss/variables
+        filter:
+          attributes:
+            category: global
+            type: font
+
+      - destination: layout.scss
+        format: scss/variables
+        filter:
+          attributes:
+            category: layout

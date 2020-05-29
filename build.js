@@ -11,6 +11,7 @@ const attributeFont = require('./scripts/transformers/attribute-font');
 const contentListToJsArray = require('./scripts/transformers/content-list-to-js-array');
 const jsTransformGroup = require('./scripts/transform-groups/js-transform-group');
 const lessTransformGroup = require('./scripts/transform-groups/less-transform-group');
+const scssTransformGroup = require('./scripts/transform-groups/scss-transform-group');
 
 require('./scripts/utils/mock-require'); // must load before style-dictionary
 const StyleDictionary = require('style-dictionary');
@@ -20,6 +21,7 @@ StyleDictionary.registerTransform(contentArrayToList);
 StyleDictionary.registerTransform(attributeFont);
 StyleDictionary.registerTransform(contentListToJsArray);
 StyleDictionary.registerTransformGroup(lessTransformGroup);
+StyleDictionary.registerTransformGroup(scssTransformGroup);
 StyleDictionary.registerTransformGroup(jsTransformGroup);
 StyleDictionary.registerFormat(svgSpriteFormat);
 StyleDictionary.registerFormat(fontFace);
