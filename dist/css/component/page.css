@@ -1,0 +1,35 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 29 May 2020 10:14:39 GMT
+ */
+
+:root {
+ --ds-page-size-max-width: 1200px;
+ --ds-page-base-font-size: 13px;
+ --ds-page-base-font-weight: 400;
+ --ds-page-base-font-line-height: 1.54;
+ --ds-page-color-text-light: #2f3542;
+ --ds-page-color-text-dark: #ffffff;
+ --ds-page-h1-font-size: 31px;
+ --ds-page-h1-font-weight: 600;
+ --ds-page-h1-font-margin: 24px;
+ --ds-page-h2-font-size: 25px;
+ --ds-page-h2-font-weight: 400;
+ --ds-page-h2-font-margin: 24px;
+ --ds-page-h3-font-size: 19px;
+ --ds-page-h3-font-weight: 400;
+ --ds-page-h3-font-margin: 16px;
+ --ds-page-h4-font-size: 15px;
+ --ds-page-h4-font-weight: 600;
+ --ds-page-h4-font-margin: 16px;
+ --ds-page-h5-font-size: 13px;
+ --ds-page-h5-font-weight: 600;
+ --ds-page-h5-font-margin: 16px;
+ --ds-page-p-font-size: 13px;
+ --ds-page-p-font-weight: 400;
+ --ds-page-p-font-margin: 16px;
+ --ds-page-a-color-base: #0a75e3;
+ --ds-page-a-font-size: 13px;
+ --ds-page-a-font-weight: 600;
+ --ds-page-a-font-margin: 16px;
+}
