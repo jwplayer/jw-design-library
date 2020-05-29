@@ -1,0 +1,37 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 29 May 2020 10:14:39 GMT
+ */
+
+:root {
+ --ds-button-border-radius: 3px;
+ --ds-button-cursor-static: pointer;
+ --ds-button-cursor-disabled: not-allowed; /* This value specifically matches the `not-allowed` CSS value. */
+ --ds-button-font-line-height: 1;
+ --ds-button-font-family: "Open Sans", Arial, sans-serif;
+ --ds-button-font-size: 0.8125rem;
+ --ds-button-font-weight: 600;
+ --ds-button-height: 2rem;
+ --ds-button-opacity-disabled: 0.3;
+ --ds-button-padding: 0.75rem 1.5rem;
+ --ds-button-primary-color-background-static: #ec0041;
+ --ds-button-primary-color-background-hover: #bd0034;
+ --ds-button-primary-color-background-pressed: #a5002e;
+ --ds-button-primary-color-text: #ffffff;
+ --ds-button-secondary-color-background-static-light: transparent;
+ --ds-button-secondary-color-background-static-dark: transparent;
+ --ds-button-secondary-color-background-hover-light: #2f3542;
+ --ds-button-secondary-color-background-hover-dark: #ffffff;
+ --ds-button-secondary-color-background-pressed-light: #262a35;
+ --ds-button-secondary-color-background-pressed-dark: #d8dde6;
+ --ds-button-secondary-color-background-disabled-light: transparent;
+ --ds-button-secondary-color-background-disabled-dark: transparent;
+ --ds-button-secondary-color-border-static-light: #2f3542;
+ --ds-button-secondary-color-border-static-dark: #ffffff;
+ --ds-button-secondary-color-text-static-light: #2f3542;
+ --ds-button-secondary-color-text-static-dark: #ffffff;
+ --ds-button-secondary-color-text-hover-light: #ffffff;
+ --ds-button-secondary-color-text-hover-dark: #2f3542;
+ --ds-button-secondary-border-radius: 3px;
+ --ds-button-secondary-border-width: 1px; /* Applies to static and hover only */
+}

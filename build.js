@@ -31,13 +31,43 @@ const components = fs.readdirSync(path.resolve(__dirname, 'dictionary/properties
 	const component = path.basename(c, '.yaml');
 	return ({
 		platforms: {
-			components: {
+			'less/components': {
 				prefix: 'ds',
 				buildPath: 'dist/less/component/',
 				transformGroup: 'less',
 				files: [{
 					destination: `${component}.less`,
 					format: 'less/variables',
+					filter: { attributes: { category: `${component}` } }
+				}]
+			},
+			'css/components': {
+				prefix: 'ds',
+				buildPath: 'dist/css/component/',
+				transformGroup: 'css',
+				files: [{
+					destination: `${component}.css`,
+					format: 'css/variables',
+					filter: { attributes: { category: `${component}` } }
+				}]
+			},
+			'scss/components': {
+				prefix: 'ds',
+				buildPath: 'dist/scss/component/',
+				transformGroup: 'scss',
+				files: [{
+					destination: `${component}.scss`,
+					format: 'scss/variables',
+					filter: { attributes: { category: `${component}` } }
+				}]
+			},
+			'js/components': {
+				prefix: 'ds',
+				buildPath: 'dist/js/component/',
+				transformGroup: 'js',
+				files: [{
+					destination: `${component}.esm.js`,
+					format: 'javascript/es6',
 					filter: { attributes: { category: `${component}` } }
 				}]
 			}

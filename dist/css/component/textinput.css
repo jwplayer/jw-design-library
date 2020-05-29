@@ -1,0 +1,42 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 29 May 2020 10:14:39 GMT
+ */
+
+:root {
+ --ds-textinput-border-radius: 3px;
+ --ds-textinput-border-style: solid;
+ --ds-textinput-border-width: 1px;
+ --ds-textinput-color-background-static: #ffffff;
+ --ds-textinput-color-background-disabled: rgba(216, 221, 230, 0.3);
+ --ds-textinput-color-border-static: #a0acc2;
+ --ds-textinput-color-border-error: #ff0000;
+ --ds-textinput-color-border-hover: #0a75e3;
+ --ds-textinput-color-border-focus: #0a75e3;
+ --ds-textinput-color-placeholder-static: #a0acc2;
+ --ds-textinput-color-placeholder-focus: #d8dde6;
+ --ds-textinput-color-text-static: #2f3542;
+ --ds-textinput-color-text-error: #ff0000;
+ --ds-textinput-font-family: "Open Sans", Arial, sans-serif;
+ --ds-textinput-font-size: 13px;
+ --ds-textinput-size-height: 36px;
+ --ds-textinput-size-margin-top: 8px;
+ --ds-textinput-size-margin-right: 0;
+ --ds-textinput-size-margin-bottom: 8px;
+ --ds-textinput-size-margin-left: 0;
+ --ds-textinput-size-padding: 8px;
+ --ds-textinput-size-width: 240px;
+ --ds-textinput-hint-color-text-static: #a0acc2;
+ --ds-textinput-hint-color-text-error: #ff0000;
+ --ds-textinput-hint-font-family: "Open Sans", Arial, sans-serif;
+ --ds-textinput-hint-font-size: 0.6875rem;
+ --ds-textinput-hint-font-weight-static: 400;
+ --ds-textinput-hint-font-weight-error: 600;
+ --ds-textinput-label-font-size: 15px;
+ --ds-textinput-label-font-line-height: 1;
+ --ds-textinput-label-font-family: "Open Sans", Arial, sans-serif;
+ --ds-textinput-label-size-margin-top-horizontal: 20px;
+ --ds-textinput-label-size-margin-right: 8px;
+ --ds-textinput-label-size-margin-bottom-horizontal: auto;
+ --ds-textinput-label-size-margin-left-horizontal: 0;
+}
