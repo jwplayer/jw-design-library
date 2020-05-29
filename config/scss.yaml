@@ -44,3 +44,9 @@ platforms:
         filter:
           attributes:
             category: layout
+
+      - destination: theme.scss
+        format: scss/variables
+        filter:
+          attributes:
+            category: theme

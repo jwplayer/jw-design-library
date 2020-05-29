@@ -1,8 +1,8 @@
-layout: 
+layout:
   size:
     small:
       value: 8px
-    
+
     medium:
       value: 16px
 
@@ -11,3 +11,7 @@ layout:
 
     extra-large:
       value: 32px
+
+  grid-base:
+    value: 8px;
+
