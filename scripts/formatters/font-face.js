@@ -43,7 +43,8 @@ const formatter = ({ allProperties }) => allProperties.reduce((fonts, prop) => {
 		`font-family: "${family}";`,
 		`src:${exts.map(x => ` url("${formats[x]}") format("${x}")`)};`,
 		`font-weight: ${weight};`,
-		`font-style: ${style}`
+		`font-style: ${style};`,
+		'font-display: fallback;'
 	].filter(Boolean).join('\n\t').concat('\n}\n'));
 
 	return fonts;
