@@ -31,3 +31,9 @@ platforms:
           attributes:
             category: global
             type: font
+
+      - destination: theme.css
+        format: css/variables
+        filter:
+          attributes:
+            category: theme

@@ -31,3 +31,22 @@ platforms:
           attributes:
             category: color
             type: code
+
+      - destination: fonts.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: global
+            type: font
+
+      - destination: layout.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: layout
+
+      - destination: theme.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: theme

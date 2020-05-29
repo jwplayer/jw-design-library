@@ -1,0 +1,12 @@
+theme:
+  light:
+    bg:
+      value: '{color.system.white.value}'
+    fg:
+      value: '{color.brand.abyss.value}'
+
+  dark:
+    bg:
+      value: '{color.brand.abyss.value}'
+    fg:
+      value: '{color.system.white.value}'
