@@ -79,7 +79,7 @@ body {
 **Note:** if you choose to use `dist/css/fonts.css` instead, then you must copy or resolve the paths for the font files (`dist/fonts/`), or things won't work!
 
 ### Icons
-Icons can be imported directly from Hook, but we 🚨**strongly recommend using [WUI components](https://stg-wui.jwplayer.com/component/icon) for this approach!🚨** 
+Icons can be imported directly from Hook, but we **🚨  strongly recommend using [WUI components](https://stg-wui.jwplayer.com/component/icon) for this approach!🚨** 
 ```js
 import download from '@design/jw-design-library/dist/icon/dashboard/download.svg';
 ```
@@ -117,6 +117,14 @@ To remove the `/dist` folder completely:
 ```bash
 yarn clean
 ```
+
+### Adding/Updating Icons
+1. If adding new icons, pull the desired SVG files into the `dictionary/assets/icons/` folder for the appropriate product (dashboard, player or logos)
+2. In `/dictionary/properties/icons`, locate the product yaml config and add the name of your new icon in alphabetical order, along with its path (be sure to follow the existing spacing protocol -- yamls are fussy about tabs and spaces)
+3. Run `yarn build`. If the command succeeds, you should see your new icons in the `/dist` folder.
+4. You **must** note 💥 breaking changes 💥  in your PR so projects that depend on Hook are updated appropriately
+
+Take the same approach when updating colors.
 
 That's it! Reach out to the Design or Front End teams for Github access or any questions/concerns.
 
