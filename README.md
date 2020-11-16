@@ -3,7 +3,7 @@
 ![owners](https://img.shields.io/badge/owners-Design--Team-brightgreen.svg)
 ![contributors](https://img.shields.io/badge/contributors-Portal--NL-yellow.svg)
 
-> Hook is the single source of truth for global colors, icons & styles used in JW Player products, built with 
+> Hook is the single source of truth for global colors, icons & styles used in JW Player products. Built with 
 [Amazon Style Dictionary](https://github.com/amzn/style-dictionary/).
 
 * #### [Hook CDN Link](https://hook.jwplayer.com/)
@@ -23,10 +23,10 @@ yarn add @design/jw-design-library@github:jwplayer/jw-design-library#<version>
 ```
 
 ## Getting Started
-To use Hook's variables, simply import them from their namespaced directories in `/dist`. You can find plain CSS, SCSS and Less in their respective folders.
+To use Hook's variables, simply import them from the CSS/Less/SCSS directories in `/dist`.
 
 ### Colors
-In your CSS/SCSS/Less stylesheet, import the color variables and apply them like this:
+Import the color variables and apply them in your stylesheet like this:
 
 ```scss
 @import (reference) "@design/jw-design-library/dist/scss/brand-colors.scss";
@@ -46,8 +46,8 @@ In your CSS/SCSS/Less stylesheet, import the color variables and apply them like
 }
 ```
 
-### Use in JavaScript
-You can also import colors in JS (`dist/js/`) for use with a libraries like [tinycolor](https://github.com/typectrl/tinycolor) and D3.
+### JavaScript Variables
+You can also import colors in JS (`dist/js/`) for use with a libraries like [tinycolor](https://github.com/typectrl/tinycolor) and [D3](https://d3js.org/).
 
 #### Example
 ```js
@@ -58,12 +58,14 @@ const color = new TinyColor(dsColorSystemRed);
 ```
 
 ### Fonts
-We recommend referencing the CDN route in your HTML (so you're not duplicating the
-font files into your project):
+We recommend referencing the CDN route in your HTML (so you're not duplicating the font files into your project).
+
 ```html
 <link href="https://hook.jwplayer.com/jw-design-library/<version>/css/fonts.css" rel="stylesheet" />
 ```
-Then use the `font-family` variables as usual:
+
+Then apply the `font-family` variables:
+
 ```scss
 body {
     font-family: $ds-global-font-family-brand;
@@ -83,7 +85,7 @@ import download from '@design/jw-design-library/dist/icon/dashboard/download.svg
 ```
 
 #### SVG Sprites
-If you'd rather reference our icons from a simple SVG sprite, include your spritesheet somewhere in the body of your HTML and reference the `symbol` you need by ID (`{ds-icon-{dashboard/player/logo}-{icon_name}`).
+If you'd rather reference icons from a simple SVG sprite, include your spritesheet somewhere in the body of your HTML and reference the `symbol` you need by ID (`{ds-icon-{dashboard/player/logo}-{icon_name}`).
 
 ```html
 <!-- The sprite -->
@@ -104,11 +106,14 @@ To build this project locally, ensure you're using **Node v10** and run:
 ```bash
 yarn install
 ```
+
 To build the `/dist` folder with your new updates:
+
 ```bash
 yarn build
 ```
 To remove the `/dist` folder completely:
+
 ```bash
 yarn clean
 ```
