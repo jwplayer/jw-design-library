@@ -102,6 +102,12 @@ icon:
     home:
       value: dictionary/assets/icons/dashboard/home.svg
 
+    jump-to-bottom:
+      value: dictionary/assets/icons/dashboard/jump-to-bottom.svg
+
+    jump-to-top:
+      value: dictionary/assets/icons/dashboard/jump-to-top.svg
+
     key:
       value: dictionary/assets/icons/dashboard/key.svg
 
@@ -135,8 +141,11 @@ icon:
     play:
       value: dictionary/assets/icons/dashboard/play.svg
 
-    preview:
-      value: dictionary/assets/icons/dashboard/preview.svg
+    preview-off:
+      value: dictionary/assets/icons/dashboard/preview-off.svg
+
+    preview-on:
+      value: dictionary/assets/icons/dashboard/preview-on.svg
 
     publish:
       value: dictionary/assets/icons/dashboard/publish.svg
