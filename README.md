@@ -3,81 +3,53 @@
 ![owners](https://img.shields.io/badge/owners-Design--Team-brightgreen.svg)
 ![contributors](https://img.shields.io/badge/contributors-Portal--NL-yellow.svg)
 
-> This repository contains a reference for global styles & icons used in
-> JW Player products. Usage guidelines and code snippets for the following can
-> be found on the [JW Design Site](https://design.jwplayer.com/docs/#/).
+> Hook is the single source of truth for global colors, icons & styles used in JW Player products, built with 
+[Amazon Style Dictionary](https://github.com/amzn/style-dictionary/).
 
-## Use Hook in Your Project
+* #### [Hook CDN Link](https://hook.jwplayer.com/)
+* #### [Hook CDN repo](https://github.com/jwplayer/hook)
+* #### [Neverland Visual Docs / Usage](https://design.jwplayer.com/docs/#/)
 
-The `dist` directory contains various files you can reference in your project:
+## Install
 
-* Less variable stylesheets for `@import`ing
-* JavaScript/ES6 exports
-* SVG `<symbol>` spritesheets for use with `<use>` tags
-
-To use the tagged Github releases:
+Via the [JW Player NPM registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library) **(recommended)**:
 ```bash
-# with yarn
-yarn add @design/jw-design-library@github:jwplayer/jw-design-library#<version>
-
-# with npm
-npm install @design/jw-design-library@github:jwplayer/jw-design-library#<version>
+yarn add @design/jw-design-library
 ```
 
-### Use with Less
-We provide various files that contain namespaced Less variables to use in your
-project (`dist/less/`). It's recommended to use these files by reference/import
-instead of integrating them directly, to avoid using stale properties.
+... or from a specific GitHub tagged version:
+```bash
+yarn add @design/jw-design-library@github:jwplayer/jw-design-library#<version>
+```
 
-Currently, this set includes JW Player brand-specific colors, global system
-colors, and data visualization value lists for gradients and color stops.
+## Getting Started
+To use Hook's variables, simply import them from their namespaced directories in `/dist`. You can find plain CSS, SCSS and Less in their respective folders.
 
-#### Example
-In your stylesheet, you can import the color variables like this:
-```less
+### Colors
+In your CSS/SCSS/Less stylesheet, import the color variables and apply them like this:
 
-@import (reference) "@design/jw-design-library/dist/less/brand-colors.less";
-@import (reference) "@design/jw-design-library/dist/less/data-colors.less";
-@import (reference) "@design/jw-design-library/dist/less/system-colors.less";
+```scss
+@import (reference) "@design/jw-design-library/dist/scss/brand-colors.scss";
+@import (reference) "@design/jw-design-library/dist/scss/data-colors.scss";
+@import (reference) "@design/jw-design-library/dist/scss/system-colors.scss";
 
 .my-cool-icon {
-    fill: @ds-color-brand-dahlia;
+    fill: $ds-color-brand-dahlia;
 }
 
-.example-gradient {
-    background-image: linear-gradient(to right, @ds-color-ramp-data-scale-mango-7);
+.system-status-success {
+    color: $ds-color-system-green;
+}
+
+.mango-gradient {
+    background-image: linear-gradient(to right, $ds-color-ramp-data-scale-mango-7);
 }
 ```
 
-#### Notes on using Less variables:
-* If you're using `webpack/less-loader`, make sure to read
-  [this section](https://github.com/webpack-contrib/less-loader#imports) of the
-  README.
-* To keep things DRY, you can use
-  [variables](http://lesscss.org/features/#variables-feature-import-statements)
-  to shorten import paths.
-
-#### Fonts
-It's highly recommended to use the CDN route for fonts as an HTML link:
-```html
-<link href="https://hook.jwplayer.com/jw-design-library/<version>/css/fonts.css" rel="stylesheet" />
-```
-Then use the font family variables as usual. This way you're not duplicating the
-font files into your project.
-
-If you use `dist/css/fonts.css` then you must copy or resolve the paths for the
-font files (`dist/fonts/`), or things won't work!
-
-### Use with JavaScript
-Color variables are available as exports (`dist/js/`). Brand and system colors
-are individual strings that can be used with a library like
-[tinycolor](https://github.com/typectrl/tinycolor).
-
-Data colors are arrays of color values as strings intended for use with data
-visualization frameworks like D3.
+### Use in JavaScript
+You can also import colors in JS (`dist/js/`) for use with a libraries like [tinycolor](https://github.com/typectrl/tinycolor) and D3.
 
 #### Example
-In your module, you can import any of the color variables like this:
 ```js
 import { TinyColor } from '@ctrl/tinycolor';
 import { dsColorSystemRed } from 'jw-design-library/dist/js/system-colors.js';
@@ -85,46 +57,68 @@ import { dsColorSystemRed } from 'jw-design-library/dist/js/system-colors.js';
 const color = new TinyColor(dsColorSystemRed);
 ```
 
-### SVG Sprites
-SVG sprites are available as raw SVG files, intended to be used with "The 'New'
-Way" (https://css-tricks.com/svg-symbol-good-choice-icons/#article-header-id-1)
-to render SVG sprite icons. Here's an example:
+### Fonts
+We recommend referencing the CDN route in your HTML (so you're not duplicating the
+font files into your project):
 ```html
-<style> /* clearly rendered via Less variables from the design library ;) */
-  .my-cool-icon { fill: #ec0041 }
-  .my-blue-icon { fill: #0a75e3 }
-</style>
-<!-- The *contents* of the spritesheet need to be included somewhere in the
-body, but only once - we're working with IDs here! -->
-<svg xmlns="http://www.w3.org/2000/svg" id="ds-sprites-dashboard" style="display:none">
-  <symbol viewBox="0 0 24 24" id="ds-icon-dashboard-play"><path d="M20.11 10.34l-12-8A2 2 0 0 0 5 4v16a2 2 0 0 0 3.11 1.66l12-8a2 2 0 0 0 0-3.32z"/></symbol>
-  <!-- more <symbols>... -->
+<link href="https://hook.jwplayer.com/jw-design-library/<version>/css/fonts.css" rel="stylesheet" />
+```
+Then use the `font-family` variables as usual:
+```scss
+body {
+    font-family: $ds-global-font-family-brand;
+}
+
+.code-snippet {
+    font-family: $ds-global-font-family-code;
+}
+```
+
+**Note:** if you choose to use `dist/css/fonts.css` instead, then you must copy or resolve the paths for the font files (`dist/fonts/`), or things won't work!
+
+### Icons
+Icons can be imported directly from Hook, but we 🚨**strongly recommend using [WUI components](https://stg-wui.jwplayer.com/component/icon) for this approach!🚨** 
+```js
+import download from '@design/jw-design-library/dist/icon/dashboard/download.svg';
+```
+
+#### SVG Sprites
+If you'd rather reference our icons from a simple SVG sprite, include your spritesheet somewhere in the body of your HTML and reference the `symbol` you need by ID (`{ds-icon-{dashboard/player/logo}-{icon_name}`).
+
+```html
+<!-- The sprite -->
+<svg>
+    <use xmlns:xlink="https://hook.jwplayer.com/jw-design-library/5.3.0/sprites/sprites-dashboard.svg"></use>
 </svg>
 
-<!-- icons can be styled independently of each other -->
+<!-- Your SVG -->
 <svg class="my-cool-icon"><use href="#ds-icon-dashboard-play" /></svg>
-<svg class="my-blue-icon"><use href="#ds-icon-dashboard-play" /></svg>
 ```
 
-## Contributing
 
-### Building
-To build this project on your machine:
+## Contribute to Hook
+
+### Install & Build
+To build this project locally, ensure you're using **Node v10** and run:
 
 ```bash
-# install the dependencies
 yarn install
-
-# Remove the `dist` folder completely
-yarn clean
-
-# Run the build script
+```
+To build the `/dist` folder with your new updates:
+```bash
 yarn build
 ```
+To remove the `/dist` folder completely:
+```bash
+yarn clean
+```
 
-### Build Script
-The file `build.js` imports various modules from `scripts/` to build the full
-style-dictionary config. Here's a really quick rundown:
+That's it! Reach out to the Design or Front End teams for Github access or any questions/concerns.
+
+---
+
+#### How Hook Works (Under the Hood)
+The file `build.js` imports various modules from `scripts/` to build the full style-dictionary config. Here's a really quick rundown:
 
 * `formatters/svg-sprite` runs each matched icon through SVGO, then converts the
   SVG into a `<symbol>`. After all icons in the group are optimized, a wrapper is
@@ -166,21 +160,3 @@ or resolve the paths for the font files, or things won't work!
   represents a sprite that has been "synchronously" optimized by SVGO.
 
 
-### Dictionary
-This project is built with Amazon's fantastic
-[Style Dictionary](https://github.com/amzn/style-dictionary/) project.
-Documentation for the base project can be found
-[here](https://amzn.github.io/style-dictionary/).
-
-This repository is first and foremost a collection of key-value pairs.
-
-## Contribute to Hook
-Have a feature request? Feel free to open a PR and assign it to
-[Kim Hart](https://github.com/kimhart),
-[Monica Parra](https://github.com/monibons), or
-[John Kreitlow](https://github.com/radium-v). Follow the guidelines below to
-contribute:
-### Branch Namespacing
-- **Feature work in progress:** `wip.DES-100.feature-name`
-- **Feature work QA-ed and ready for release:** `release.DES-100.feature-name`
-- **Bug fixes / minor updates:** `patch.DES-101.bug-fix-description`
