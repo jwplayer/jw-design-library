@@ -86,6 +86,9 @@ icon:
 
     external-link:
       value: dictionary/assets/icons/dashboard/external-link.svg
+    
+    filter:
+      value: dictionary/assets/icons/dashboard/filter.svg
 
     full-screen-off:
       value: dictionary/assets/icons/dashboard/full-screen-off.svg
@@ -134,6 +137,9 @@ icon:
 
     more:
       value: dictionary/assets/icons/dashboard/more.svg
+
+    order:
+      value: dictionary/assets/icons/dashboard/order.svg
 
     phone:
       value: dictionary/assets/icons/dashboard/phone.svg
