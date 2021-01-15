@@ -121,14 +121,14 @@ yarn clean
 ### Adding/Updating Icons
 1. Create a feature branch from `master`
 2. Pull the new SVG files into the `dictionary/assets/icons` folder for the appropriate product
-2. In `/dictionary/properties/icons`, locate the product `yaml` config, add the name of your new icon in alphabetical order along with its path. Be sure to follow the existing spacing protocol — yamls are fussy about tabs and spaces.
+2. In `/dictionary/properties/icons`, locate the product `yaml` config, add the name of your new icon in alphabetical order along with its path
 3. Run `yarn build`. If the build succeeds, you should see your new icons in the `/dist` folder.
 4. Open a PR against `master`. You **must** note 💥 breaking changes 💥 in your PR so projects that depend on Hook are updated appropriately
+5. Once merged, bump the version # and relase to the npm registry from `master`
 
 Take the same approach when updating colors.
 
 That's it! Reach out to the Design team for Github access or any questions/concerns.
-
 
 ---
 
