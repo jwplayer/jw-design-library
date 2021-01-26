@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 26 Jan 2021 18:31:39 GMT
+ * Generated on Tue, 26 Jan 2021 19:31:45 GMT
  */
 
 export const dsGlobalFontFamilyBase = "Arial, sans-serif";
