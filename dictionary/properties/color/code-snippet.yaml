@@ -12,17 +12,20 @@ color:
     text-inline:
       value: '{color.brand.abyss.value}'
 
+    comment:
+      value: '{color.brand.fog-darker.value}'
+
     green:
-      value: '#98C379'
+      value: '#ADE087'
 
     purple:
-      value: '#C678DD'
+      value: '#ECADFF'
 
     blue:
-      value: '#61AFEF'
+      value: '#6CBDFF'
 
     pink:
-      value: '#E06C75'
+      value: '#FF949C'
 
     orange:
-      value: '#D19A66'
+      value: '#E5A970'
