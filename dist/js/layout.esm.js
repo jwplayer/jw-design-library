@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 15 Jan 2021 20:08:19 GMT
+ * Generated on Tue, 26 Jan 2021 18:31:39 GMT
  */
 
 export const dsLayoutSizeSmall = "8px";
