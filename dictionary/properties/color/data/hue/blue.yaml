@@ -7,51 +7,22 @@ color:
         2:
           value: '#2E8DC3'
         3:
-          value: '#3794C7'
-        4:
-          value: '#459FCD'
-        5:
           value: '#51A7D2'
-        6:
-          value: '#62B4D9'
-        7:
+        4:
           value: '#74C1E0'
-        8:
-          value: '#80CAE5'
-        9:
-          value: '#8FD5EB'
-        10:
+        5:
           value: '#98DBEF'
-        11:
+        6:
           value: '#BEF5FF'
 
   ramp:
     data:
       hue:
         blue:
-          3:
-            value:
-            - '{color.data.hue.blue.1.value}'
-            - '{color.data.hue.blue.6.value}'
-            - '{color.data.hue.blue.11.value}'
-          4:
-            value:
-            - '{color.data.hue.blue.1.value}'
-            - '{color.data.hue.blue.4.value}'
-            - '{color.data.hue.blue.8.value}'
-            - '{color.data.hue.blue.11.value}'
-          5:
-            value:
-            - '{color.data.hue.blue.1.value}'
-            - '{color.data.hue.blue.3.value}'
-            - '{color.data.hue.blue.6.value}'
-            - '{color.data.hue.blue.9.value}'
-            - '{color.data.hue.blue.11.value}'
-          6:
-            value:
-            - '{color.data.hue.blue.1.value}'
-            - '{color.data.hue.blue.2.value}'
-            - '{color.data.hue.blue.5.value}'
-            - '{color.data.hue.blue.7.value}'
-            - '{color.data.hue.blue.10.value}'
-            - '{color.data.hue.blue.11.value}'
+          value:
+          - '{color.data.hue.blue.1.value}'
+          - '{color.data.hue.blue.2.value}'
+          - '{color.data.hue.blue.3.value}'
+          - '{color.data.hue.blue.4.value}'
+          - '{color.data.hue.blue.5.value}'
+          - '{color.data.hue.blue.6.value}'

@@ -5,39 +5,21 @@ color:
         1:
           value: '#04367C'
         2:
-          value: '#7469A4'
-        3:
           value: '#9A85B9'
-        4:
-          value: '#BDA4CF'
-        5:
+        3:
           value: '#FFE8FF'
-        6:
-          value: '#E2A5CB'
-        7:
+        4:
           value: '#D584AC'
-        8:
-          value: '#C7618B'
-        9:
+        5:
           value: '#A40444'
 
   ramp:
     data:
       scale:
         raspberry:
-          5:
-            value:
-            - '{color.data.scale.raspberry.1.value}'
-            - '{color.data.scale.raspberry.3.value}'
-            - '{color.data.scale.raspberry.5.value}'
-            - '{color.data.scale.raspberry.7.value}'
-            - '{color.data.scale.raspberry.9.value}'
-          7:
-            value:
-            - '{color.data.scale.raspberry.1.value}'
-            - '{color.data.scale.raspberry.2.value}'
-            - '{color.data.scale.raspberry.4.value}'
-            - '{color.data.scale.raspberry.5.value}'
-            - '{color.data.scale.raspberry.6.value}'
-            - '{color.data.scale.raspberry.8.value}'
-            - '{color.data.scale.raspberry.9.value}'
+          value:
+          - '{color.data.scale.raspberry.1.value}'
+          - '{color.data.scale.raspberry.2.value}'
+          - '{color.data.scale.raspberry.3.value}'
+          - '{color.data.scale.raspberry.4.value}'
+          - '{color.data.scale.raspberry.5.value}'

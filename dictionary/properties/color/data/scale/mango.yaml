@@ -5,39 +5,21 @@ color:
         1:
           value: '#1C7464'
         2:
-          value: '#5FA27C'
-        3:
           value: '#81B987'
-        4:
-          value: '#A4D093'
-        5:
+        3:
           value: '#F1FEAF'
-        6:
-          value: '#E9CF71'
-        7:
+        4:
           value: '#E7B657'
-        8:
-          value: '#E49D41'
-        9:
+        5:
           value: '#DC6428'
 
   ramp:
     data:
       scale:
         mango:
-          5:
-            value:
-            - '{color.data.scale.mango.1.value}'
-            - '{color.data.scale.mango.3.value}'
-            - '{color.data.scale.mango.5.value}'
-            - '{color.data.scale.mango.7.value}'
-            - '{color.data.scale.mango.9.value}'
-          7:
-            value:
-            - '{color.data.scale.mango.1.value}'
-            - '{color.data.scale.mango.2.value}'
-            - '{color.data.scale.mango.4.value}'
-            - '{color.data.scale.mango.5.value}'
-            - '{color.data.scale.mango.6.value}'
-            - '{color.data.scale.mango.8.value}'
-            - '{color.data.scale.mango.9.value}'
+          value:
+          - '{color.data.scale.mango.1.value}'
+          - '{color.data.scale.mango.2.value}'
+          - '{color.data.scale.mango.3.value}'
+          - '{color.data.scale.mango.4.value}'
+          - '{color.data.scale.mango.5.value}'
