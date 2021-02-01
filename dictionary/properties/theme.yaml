@@ -7,6 +7,6 @@ theme:
 
   dark:
     bg:
-      value: '{color.brand.abyss.value}'
+      value: '{color.brand.abyss-darker.value}'
     fg:
       value: '{color.system.white.value}'
