@@ -4,7 +4,7 @@ color:
       value: '{color.brand.abyss.value}'
 
     background-inline:
-      value: '{color.brand.fog.value}'
+      value: '{color.brand.fog-fade.value}'
 
     text:
       value: '{color.system.white.value}'

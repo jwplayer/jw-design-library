@@ -86,7 +86,7 @@ icon:
 
     external-link:
       value: dictionary/assets/icons/dashboard/external-link.svg
-    
+
     filter:
       value: dictionary/assets/icons/dashboard/filter.svg
 
@@ -141,6 +141,9 @@ icon:
     order:
       value: dictionary/assets/icons/dashboard/order.svg
 
+    pause:
+      value: dictionary/assets/icons/dashboard/pause.svg
+
     phone:
       value: dictionary/assets/icons/dashboard/phone.svg
 
@@ -191,6 +194,15 @@ icon:
 
     upload:
       value: dictionary/assets/icons/dashboard/upload.svg
+
+    volume-0:
+      value: dictionary/assets/icons/dashboard/volume-0.svg
+
+    volume-50:
+      value: dictionary/assets/icons/dashboard/volume-50.svg
+
+    volume-100:
+      value: dictionary/assets/icons/dashboard/volume-100.svg
 
     warning:
       value: dictionary/assets/icons/dashboard/warning.svg

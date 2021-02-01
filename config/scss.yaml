@@ -16,7 +16,7 @@ platforms:
         filter:
           attributes:
             category: color
-            type: ramp
+            type: data
 
       - destination: system-colors.scss
         format: scss/variables

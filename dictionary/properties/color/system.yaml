@@ -6,23 +6,41 @@ color:
     blue:
       value: '#0A75E3'
 
-    blue-shadow:
-      value: '#0B7EF4E6'
+    blue-dark:
+      value: '#07529F'
+
+    blue-light:
+      value: '#D2EBFF'
 
     green:
-      value: '#0AAC29'
+      value: '#1F9B85'
       comment: affirmative
 
+    green-dark:
+      value: '#166C5D'
+
+    green-light:
+      value: '#CCF5EB'
+
     orange:
-      value: '#FFBA43'
+      value: '#DC7C24'
       comment: medium risk
 
+    orange-dark:
+      value: '#9A5719'
+
+    orange-light:
+      value: '#FFE6C8'
+
     red:
-      value: '#FF0000'
+      value: '#E02929'
       comment: destructive - high risk
+
+    red-dark:
+      value: '#9D1D1D'
+
+    red-light:
+      value: '#FFE1E8'
 
     white:
       value: '#FFFFFF'
-
-    white-alpha-fade:
-      value: '#FFFFFF4D'
