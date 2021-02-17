@@ -7,58 +7,32 @@
 [Amazon Style Dictionary](https://github.com/amzn/style-dictionary/).
 
 * #### [Hook CDN Link](https://hook.jwplayer.com/)
-* #### [Hook CDN repo](https://github.com/jwplayer/hook)
-* #### [Neverland Visual Docs / Usage](https://design.jwplayer.com/docs/#/)
+* #### [Hook CDN Repo](https://github.com/jwplayer/hook)
+* #### [Neverland Site](https://design.jwplayer.com/docs/#/)
 
 ## Install
 
-Via the [JW Player NPM registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library) **(recommended)**:
+Via the [JW Player NPM registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library):
 ```bash
 yarn add @design/jw-design-library
 ```
 
-... or from a specific GitHub tagged version:
-```bash
-yarn add @design/jw-design-library@github:jwplayer/jw-design-library#<version>
-```
-
 ## Getting Started
-To use Hook's variables, simply import them from the CSS/Less/SCSS directories in `/dist`.
+To use Hook's variables, import them from the CSS/Less/SCSS directories in `/dist`.
 
 ### Colors
 Import the color variables and apply them in your stylesheet like this:
 
 ```scss
 @import (reference) "@design/jw-design-library/dist/scss/brand-colors.scss";
-@import (reference) "@design/jw-design-library/dist/scss/data-colors.scss";
-@import (reference) "@design/jw-design-library/dist/scss/system-colors.scss";
 
-.my-cool-icon {
-    fill: $ds-color-brand-dahlia;
+p {
+    color: $ds-color-brand-midnight;
 }
-
-.system-status-success {
-    color: $ds-color-system-green;
-}
-
-.mango-gradient {
-    background-image: linear-gradient(to right, $ds-color-ramp-data-scale-mango-7);
-}
-```
-
-### JavaScript Variables
-You can also import colors in JS (`dist/js/`) for use with a libraries like [tinycolor](https://github.com/typectrl/tinycolor) and [D3](https://d3js.org/).
-
-#### Example
-```js
-import { TinyColor } from '@ctrl/tinycolor';
-import { dsColorSystemRed } from 'jw-design-library/dist/js/system-colors.js';
-
-const color = new TinyColor(dsColorSystemRed);
 ```
 
 ### Fonts
-We recommend referencing the CDN route in your HTML (so you're not duplicating the font files into your project).
+To use our fonts, reference the CDN route in your HTML:
 
 ```html
 <link href="https://hook.jwplayer.com/jw-design-library/<version>/css/fonts.css" rel="stylesheet" />
@@ -76,8 +50,6 @@ body {
 }
 ```
 
-**Note:** if you choose to use `dist/css/fonts.css` instead, then you must copy or resolve the paths for the font files (`dist/fonts/`), or things won't work!
-
 ### Icons
 Icons can be imported directly from Hook, but we **🚨  strongly recommend using [WUI components](https://stg-wui.jwplayer.com/component/icon) for this approach!🚨** 
 ```js
@@ -94,7 +66,7 @@ If you'd rather reference icons from a simple SVG sprite, include your spriteshe
 </svg>
 
 <!-- Your SVG -->
-<svg class="my-cool-icon"><use href="#ds-icon-dashboard-play" /></svg>
+<svg><use href="#ds-icon-dashboard-play" /></svg>
 ```
 
 
@@ -118,7 +90,7 @@ To remove the `/dist` folder completely:
 yarn clean
 ```
 
-### Updating Hook
+### Update Hook
 1. Create a feature branch from `master`
 2. Pull in any new SVG files into the `dictionary/assets` folder
 3. In `/dictionary/properties`, locate the `yaml` config of choice and add new names/values in accordance with file structure
