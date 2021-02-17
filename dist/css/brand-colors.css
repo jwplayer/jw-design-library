@@ -1,27 +1,23 @@
 /**
  * Do not edit directly
- * Generated on Wed, 17 Feb 2021 19:06:29 GMT
+ * Generated on Wed, 17 Feb 2021 19:41:22 GMT
  */
 
 :root {
  --ds-color-brand-dahlia: #ec0041;
  --ds-color-brand-dahlia-fade: #fbccd9;
- --ds-color-brand-dahlia-alpha-fade: rgba(236, 0, 65, 0.3);
  --ds-color-brand-dahlia-dark: #bd0034;
  --ds-color-brand-dahlia-darker: #a5002e;
  --ds-color-brand-fog: #d8dde6;
  --ds-color-brand-fog-fade: #f3f5f8;
- --ds-color-brand-fog-alpha-fade: rgba(216, 221, 230, 0.3);
  --ds-color-brand-fog-dark: #a0acc2;
  --ds-color-brand-fog-darker: #8797b2;
  --ds-color-brand-midnight: #475470;
  --ds-color-brand-midnight-fade: #dadde2;
- --ds-color-brand-midnight-alpha-fade: rgba(71, 84, 112, 0.3);
  --ds-color-brand-midnight-dark: #39435a;
  --ds-color-brand-midnight-darker: #323b4e;
  --ds-color-brand-abyss: #2f3542;
  --ds-color-brand-abyss-fade: #d5d7d9;
- --ds-color-brand-abyss-alpha-fade: rgba(47, 53, 66, 0.3);
  --ds-color-brand-abyss-dark: #262a35;
  --ds-color-brand-abyss-darker: #21252e;
 }
