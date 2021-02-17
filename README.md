@@ -118,19 +118,34 @@ To remove the `/dist` folder completely:
 yarn clean
 ```
 
-### Adding/Updating Icons
+### Updating Hook
 1. Create a feature branch from `master`
-2. Pull the new SVG files into the `dictionary/assets/icons` folder for the appropriate product
-2. In `/dictionary/properties/icons`, locate the product `yaml` config, add the name of your new icon in alphabetical order along with its path
-3. Run `yarn build`. If the build succeeds, you should see your new icons in the `/dist` folder.
-4. Open a PR against `master`. You **must** note 💥 breaking changes 💥 in your PR so projects that depend on Hook are updated appropriately
-5. Once merged, bump the version # and release to the npm registry from `master`
+2. Pull in any new SVG files into the `dictionary/assets` folder
+3. In `/dictionary/properties`, locate the `yaml` config of choice and add new names/values in accordance with file structure
+4. Run `yarn build`. If the build succeeds, you should see your changes in the `/dist` folder.
+5. Bump the version # accordingly to align with [semantic versioning](https://semver.org/)
+6. Open a PR against `master`. You **must** note 💥 breaking changes 💥 in your PR so projects that depend on Hook are updated appropriately
 
-Take the same approach when updating colors.
 
-That's it! Reach out to the Design team for Github access or any questions/concerns.
+### Publish to NPM
+Hook (@design/jw-design-library) is published on [JW Player's internal npm registry](https://npm-registry.longtailvideo.com/#/). 
 
----
+1. Set your local npm config to the internal registry ([npmrc](https://docs.npmjs.com/cli/v7/configuring-npm/npmrc) is recommended for setting multiple configs)
+```
+npm set registry https://npm-registry.longtailvideo.com
+```
+2. Checkout `master` and pull in the latest
+```
+git checkout master && git pull
+```
+3. Double check that your local `master` branch contains everything you need in the `dist` folder
+4. Double check that your new version number is correct
+5. If all is well, publish it:
+```
+npm publish
+```
+6. Your updated package should appear [here](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library) when complete
+7. Draft a release with any updates and 💥 breaking changes💥 in this repo.
 
 
 ### How Hook Works (Under the Hood)
