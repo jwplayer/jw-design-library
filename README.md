@@ -3,12 +3,11 @@
 ![owners](https://img.shields.io/badge/owners-Design--Team-brightgreen.svg)
 ![contributors](https://img.shields.io/badge/contributors-Portal--NL-yellow.svg)
 
-> Hook is the single source of truth for global colors, icons & styles used in JW Player products. Built with 
+> Design library for colors, icons & styles used in JW Player products. Built with 
 [Amazon Style Dictionary](https://github.com/amzn/style-dictionary/).
 
-* #### [Hook CDN Link](https://hook.jwplayer.com/)
-* #### [Hook CDN Repo](https://github.com/jwplayer/hook)
-* #### [Neverland Site](https://design.jwplayer.com/docs/#/)
+#### For usage guidelines, check out [:sparkles:  Neverland Design System](https://design.jwplayer.com/docs/#/)
+
 
 ## Install
 
@@ -109,6 +108,7 @@ yarn clean
 <hr>
 
 ## Under the Hood
+
 The file `build.js` imports various modules from `scripts/` to build the full style-dictionary config. Here's a really quick rundown:
 
 * `formatters/svg-sprite` runs each matched icon through SVGO, then converts the
@@ -150,4 +150,7 @@ or resolve the paths for the font files, or things won't work!
   synchronous. You may notice the dots when `icons` are being built - each dot
   represents a sprite that has been "synchronously" optimized by SVGO.
 
+## Related Links
 
+* #### [Hook CDN Link](https://hook.jwplayer.com/)
+* #### [Hook CDN Repo](https://github.com/jwplayer/hook)
