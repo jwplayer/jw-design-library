@@ -12,7 +12,7 @@
 
 ## Install
 
-Via the [JW Player NPM registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library):
+Set your npm config to the [JW Player NPM registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library) and run:
 ```bash
 yarn add @design/jw-design-library
 ```
@@ -41,6 +41,8 @@ To use our fonts, reference the CDN route in your HTML:
 Then apply the `font-family` variables:
 
 ```scss
+@import '@design/jw-design-library/dist/scss/fonts.scss';
+
 body {
     font-family: $ds-global-font-family-brand;
 }
@@ -72,8 +74,8 @@ If you'd rather reference icons from a simple SVG sprite, include your spriteshe
 
 ## Contribute to Hook
 
-### Install & Build
-To build this project locally, ensure you're using **Node v10** and run:
+### Local Development
+Ensure you're using **Node v10** and run:
 
 ```bash
 yarn install
@@ -100,27 +102,14 @@ yarn clean
 
 
 ### Publish to NPM
-Hook (@design/jw-design-library) is published on [JW Player's internal npm registry](https://npm-registry.longtailvideo.com/#/). 
+1. Set your local npm config to the [internal registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library)
+2. Checkout master and pull in the latest: `git checkout master && git pull`
+3. Ensure that your local `/dist` folder and version # are correct
+5. If all is well: `npm publish`
+6. `@design/jw-design-library` will reflect the new version [here](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library)
+7. Draft a release in this repo & note updates and breaking changes
 
-1. Set your local npm config to the internal registry ([npmrc](https://docs.npmjs.com/cli/v7/configuring-npm/npmrc) is recommended for setting multiple configs)
-```
-npm set registry https://npm-registry.longtailvideo.com
-```
-2. Checkout `master` and pull in the latest
-```
-git checkout master && git pull
-```
-3. Double check that your local `master` branch contains everything you need in the `dist` folder
-4. Double check that your new version number is correct
-5. If all is well, publish it:
-```
-npm publish
-```
-6. Your updated package should appear [here](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library) when complete
-7. Draft a release with any updates and 💥 breaking changes💥 in this repo.
-
-
-### How Hook Works (Under the Hood)
+### How Hook Works
 The file `build.js` imports various modules from `scripts/` to build the full style-dictionary config. Here's a really quick rundown:
 
 * `formatters/svg-sprite` runs each matched icon through SVGO, then converts the
