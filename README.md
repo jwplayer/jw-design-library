@@ -17,7 +17,7 @@ Set your npm config to the [JW Player NPM registry](https://npm-registry.longtai
 yarn add @design/jw-design-library
 ```
 
-## Getting Started
+## Usage
 To use Hook's variables, import them from the CSS/Less/SCSS directories in `/dist`.
 
 ### Colors
@@ -35,46 +35,43 @@ p {
 To use our fonts, reference the CDN route in your HTML:
 
 ```html
-<link href="https://hook.jwplayer.com/jw-design-library/<version>/css/fonts.css" rel="stylesheet" />
+<link href="https://hook.jwplayer.com/jw-design-library/5.3.0/css/fonts.css" rel="stylesheet" />
 ```
 
-Then apply the `font-family` variables:
+Then apply the `font-family` and `font-weight` variables:
 
 ```scss
 @import '@design/jw-design-library/dist/scss/fonts.scss';
 
-body {
-    font-family: $ds-global-font-family-brand;
+p {
+    font-family: $ds-global-font-family-custom;
+    font-weight: $ds-global-font-weight-custom-semibold;
 }
 
-.code-snippet {
+code, pre {
     font-family: $ds-global-font-family-code;
 }
 ```
 
 ### Icons
-Icons can be imported directly from Hook, but we **🚨  strongly recommend using [WUI components](https://stg-wui.jwplayer.com/component/icon) for this approach!🚨** 
+We **recommend using [WUI components](https://stg-wui.jwplayer.com/component/icon) if you're working with a lot of icons,** but you can also import the SVGs directly:
 ```js
 import download from '@design/jw-design-library/dist/icon/dashboard/download.svg';
 ```
 
-#### SVG Sprites
-If you'd rather reference icons from a simple SVG sprite, include your spritesheet somewhere in the body of your HTML and reference the `symbol` you need by ID (`{ds-icon-{dashboard/player/logo}-{icon_name}`).
-
+Or use an SVG sprite:
 ```html
-<!-- The sprite -->
+<!-- The sprite, somewhere in your HTML -->
 <svg>
-    <use xmlns:xlink="https://hook.jwplayer.com/jw-design-library/5.3.0/sprites/sprites-dashboard.svg"></use>
+    <use xmlns:xlink="https://hook.jwplayer.com/jw-design-library/{version#}/sprites/sprites-dashboard.svg"></use>
 </svg>
 
-<!-- Your SVG -->
+<!-- Target the ID of the required icon in your HTML -->
 <svg><use href="#ds-icon-dashboard-play" /></svg>
 ```
 
 
 ## Contribute to Hook
-
-### Local Development
 Ensure you're using **Node v10** and run:
 
 ```bash
@@ -92,13 +89,13 @@ To remove the `/dist` folder completely:
 yarn clean
 ```
 
-### Update Hook
+### Add & Update Features
 1. Create a feature branch from `master`
 2. Pull in any new SVG files into the `dictionary/assets` folder
 3. In `/dictionary/properties`, locate the `yaml` config of choice and add new names/values in accordance with file structure
 4. Run `yarn build`. If the build succeeds, you should see your changes in the `/dist` folder.
 5. Bump the version # accordingly to align with [semantic versioning](https://semver.org/)
-6. Open a PR against `master`. You **must** note 💥 breaking changes 💥 in your PR so projects that depend on Hook are updated appropriately
+6. Open a PR against `master`
 
 
 ### Publish to NPM
@@ -109,7 +106,9 @@ yarn clean
 6. `@design/jw-design-library` will reflect the new version [here](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library)
 7. Draft a release in this repo & note updates and breaking changes
 
-### How Hook Works
+<hr>
+
+## Under the Hood
 The file `build.js` imports various modules from `scripts/` to build the full style-dictionary config. Here's a really quick rundown:
 
 * `formatters/svg-sprite` runs each matched icon through SVGO, then converts the
