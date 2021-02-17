@@ -6,7 +6,7 @@
 > Design library for colors, icons & styles used in JW Player products. Built with 
 [Amazon Style Dictionary](https://github.com/amzn/style-dictionary/).
 
-#### For usage guidelines, check out [:sparkles:  Neverland Design System](https://design.jwplayer.com/docs/#/)
+#### For visual docs, check out [:sparkles:  Neverland Design System](https://design.jwplayer.com/docs/#/)
 
 
 ## Install
@@ -17,7 +17,7 @@ yarn add @design/jw-design-library
 ```
 
 ## Usage
-To use Hook's variables, import them from the CSS/Less/SCSS directories in `/dist`.
+Everything you'll need exists in Hook's `/dist` folder. Style variables are available in pure CSS, SCSS, and Less.
 
 ### Colors
 Import the color variables and apply them in your stylesheet like this:
@@ -31,13 +31,13 @@ p {
 ```
 
 ### Fonts
-To use our fonts, reference the CDN route in your HTML:
+To use our fonts, reference the CDN route in your HTML document `<head>`:
 
 ```html
 <link href="https://hook.jwplayer.com/jw-design-library/5.3.0/css/fonts.css" rel="stylesheet" />
 ```
 
-Then apply the `font-family` and `font-weight` variables:
+Then import the variables and apply the `font-family` and `font-weight` as needed:
 
 ```scss
 @import '@design/jw-design-library/dist/scss/fonts.scss';
@@ -53,20 +53,30 @@ code, pre {
 ```
 
 ### Icons
-We **recommend using [WUI components](https://stg-wui.jwplayer.com/component/icon) if you're working with a lot of icons,** but you can also import the SVGs directly:
-```js
-import download from '@design/jw-design-library/dist/icon/dashboard/download.svg';
+We recommend using our [WUI components](https://stg-wui.jwplayer.com/component/icon) if possible, but you can also import the SVGs individually. 
+
+In a `create-react-app` project, for example:
+
+```jsx
+import React from 'react';
+import { ReactComponent as DownloadIcon } from '@design/jw-design-library/dist/icon/dashboard/download.svg';
+
+const App = () => {
+  return (
+    <div className="App">
+      <DownloadIcon />
+    </div>
+  );
+}
+export default App;
 ```
 
-Or use an SVG sprite:
-```html
-<!-- The sprite, somewhere in your HTML -->
-<svg>
-    <use xmlns:xlink="https://hook.jwplayer.com/jw-design-library/{version#}/sprites/sprites-dashboard.svg"></use>
-</svg>
+If you prefer working with a sprite, you can import the sprite from `/dist/sprites` or download it directly from the Neverland docs.
 
-<!-- Target the ID of the required icon in your HTML -->
-<svg><use href="#ds-icon-dashboard-play" /></svg>
+```html
+<svg>
+  <use href="/path_to_hook/icons/sprite_name.svg#icon_name"></use>
+</svg>
 ```
 
 
@@ -103,7 +113,7 @@ yarn clean
 3. Ensure that your local `/dist` folder and version # are correct
 5. If all is well: `npm publish`
 6. `@design/jw-design-library` will reflect the new version [here](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library)
-7. Draft a release in this repo & note updates and breaking changes
+7. [Draft a release](https://github.com/jwplayer/jw-design-library/releases) with a changelog of updates and :boom: breaking changes
 
 <hr>
 
