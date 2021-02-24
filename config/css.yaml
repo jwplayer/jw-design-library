@@ -11,6 +11,13 @@ platforms:
             category: color
             type: brand
 
+      - destination: data-colors.css
+        format: css/variables
+        filter:
+          attributes:
+            category: color
+            type: data
+
       - destination: system-colors.css
         format: css/variables
         filter:
@@ -31,6 +38,12 @@ platforms:
           attributes:
             category: global
             type: font
+
+      - destination: layout.css
+        format: css/variables
+        filter:
+          attributes:
+            category: layout
 
       - destination: theme.css
         format: css/variables

@@ -4,9 +4,50 @@ platforms:
     transformGroup: js
     prefix: ds
     files:
+      - destination: brand-colors.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: brand
+
       - destination: data-colors.esm.js
         format: javascript/es6
         filter:
           attributes:
             category: color
-            type: ramp
+            type: data
+
+      - destination: system-colors.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: system
+
+      - destination: code-colors.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: code
+
+      - destination: font-vars.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: global
+            type: font
+
+      - destination: layout.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: layout
+
+      - destination: theme.esm.js
+        format: javascript/es6
+        filter:
+          attributes:
+            category: theme
+

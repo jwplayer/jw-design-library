@@ -1,14 +1,56 @@
 /**
  * Do not edit directly
- * Generated on Wed, 17 Feb 2021 20:57:06 GMT
+ * Generated on Wed, 24 Feb 2021 12:22:30 GMT
  */
 
-export const dsColorRampDataHueBlue = ["#0073b3","#2e8dc3","#51a7d2","#74c1e0","#98dbef","#bef5ff"];
-export const dsColorRampDataHueGreen = ["#459036","#64a652","#82bb6f","#9fd28c","#bce8aa","#daffc9"];
-export const dsColorRampDataHueRed = ["#cd3138","#da5550","#e57369","#ef8f84","#f8aba0","#ffc6bd"];
-export const dsColorRampDataPaletteApricot = ["#5a1d7e","#9d2076","#cb3e69","#e86a5c","#f69958","#f7c966"];
-export const dsColorRampDataPaletteLime = ["#131b60","#004a93","#0077ac","#00a3ac","#00cb9a","#a3ee87"];
-export const dsColorRampDataPalettePlum = ["#263995","#784496","#a85895","#ca7396","#e3949d","#f7bdad"];
-export const dsColorRampDataScaleMango = ["#1c7464","#81b987","#f1feaf","#e7b657","#dc6428"];
-export const dsColorRampDataScalePear = ["#c56077","#e7a491","#ffead0","#ecc188","#d49c44"];
-export const dsColorRampDataScaleRaspberry = ["#04367c","#9a85b9","#ffe8ff","#d584ac","#a40444"];
+export const dsColorDataHueBlue1 = "#0073b3";
+export const dsColorDataHueBlue2 = "#2e8dc3";
+export const dsColorDataHueBlue3 = "#51a7d2";
+export const dsColorDataHueBlue4 = "#74c1e0";
+export const dsColorDataHueBlue5 = "#98dbef";
+export const dsColorDataHueBlue6 = "#bef5ff";
+export const dsColorDataHueGreen1 = "#459036";
+export const dsColorDataHueGreen2 = "#64a652";
+export const dsColorDataHueGreen3 = "#82bb6f";
+export const dsColorDataHueGreen4 = "#9fd28c";
+export const dsColorDataHueGreen5 = "#bce8aa";
+export const dsColorDataHueGreen6 = "#daffc9";
+export const dsColorDataHueRed1 = "#cd3138";
+export const dsColorDataHueRed2 = "#da5550";
+export const dsColorDataHueRed3 = "#e57369";
+export const dsColorDataHueRed4 = "#ef8f84";
+export const dsColorDataHueRed5 = "#f8aba0";
+export const dsColorDataHueRed6 = "#ffc6bd";
+export const dsColorDataPaletteApricot1 = "#5a1d7e";
+export const dsColorDataPaletteApricot2 = "#9d2076";
+export const dsColorDataPaletteApricot3 = "#cb3e69";
+export const dsColorDataPaletteApricot4 = "#e86a5c";
+export const dsColorDataPaletteApricot5 = "#f69958";
+export const dsColorDataPaletteApricot6 = "#f7c966";
+export const dsColorDataPaletteLime1 = "#131b60";
+export const dsColorDataPaletteLime2 = "#004a93";
+export const dsColorDataPaletteLime3 = "#0077ac";
+export const dsColorDataPaletteLime4 = "#00a3ac";
+export const dsColorDataPaletteLime5 = "#00cb9a";
+export const dsColorDataPaletteLime6 = "#a3ee87";
+export const dsColorDataPalettePlum1 = "#263995";
+export const dsColorDataPalettePlum2 = "#784496";
+export const dsColorDataPalettePlum3 = "#a85895";
+export const dsColorDataPalettePlum4 = "#ca7396";
+export const dsColorDataPalettePlum5 = "#e3949d";
+export const dsColorDataPalettePlum6 = "#f7bdad";
+export const dsColorDataScaleMango1 = "#1c7464";
+export const dsColorDataScaleMango2 = "#81b987";
+export const dsColorDataScaleMango3 = "#f1feaf";
+export const dsColorDataScaleMango4 = "#e7b657";
+export const dsColorDataScaleMango5 = "#dc6428";
+export const dsColorDataScalePear1 = "#c56077";
+export const dsColorDataScalePear2 = "#e7a491";
+export const dsColorDataScalePear3 = "#ffead0";
+export const dsColorDataScalePear4 = "#ecc188";
+export const dsColorDataScalePear5 = "#d49c44";
+export const dsColorDataScaleRaspberry1 = "#04367c";
+export const dsColorDataScaleRaspberry2 = "#9a85b9";
+export const dsColorDataScaleRaspberry3 = "#ffe8ff";
+export const dsColorDataScaleRaspberry4 = "#d584ac";
+export const dsColorDataScaleRaspberry5 = "#a40444";

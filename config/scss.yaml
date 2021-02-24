@@ -32,7 +32,7 @@ platforms:
             category: color
             type: code
 
-      - destination: fonts.scss
+      - destination: font-vars.scss
         format: scss/variables
         filter:
           attributes:
