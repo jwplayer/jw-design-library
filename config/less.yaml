@@ -32,7 +32,7 @@ platforms:
             category: color
             type: code
 
-      - destination: fonts.less
+      - destination: font-vars.less
         format: less/variables
         filter:
           attributes:
