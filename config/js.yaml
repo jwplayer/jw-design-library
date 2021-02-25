@@ -16,7 +16,7 @@ platforms:
         filter:
           attributes:
             category: color
-            type: data
+            type: ramp
 
       - destination: system-colors.esm.js
         format: javascript/es6

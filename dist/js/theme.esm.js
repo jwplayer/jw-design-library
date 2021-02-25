@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 24 Feb 2021 12:22:30 GMT
+ * Generated on Thu, 25 Feb 2021 13:32:57 GMT
  */
 
 export const dsThemeLightBg = "#ffffff";
