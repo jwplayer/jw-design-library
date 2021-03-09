@@ -8,7 +8,7 @@ const SVGO = require('svgo');
 const svgoPlugins = [
 	{ cleanupAttrs: true },
 	{ cleanupEnableBackground: true },
-	{ cleanupIDs: true },
+	{ cleanupIDs: false },
 	{ cleanupNumericValues: true },
 	{ collapseGroups: true },
 	{ convertColors: true },
