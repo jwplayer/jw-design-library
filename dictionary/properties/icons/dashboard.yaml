@@ -149,6 +149,9 @@ icon:
 
     play:
       value: dictionary/assets/icons/dashboard/play.svg
+    
+    playlist:
+      value: dictionary/assets/icons/dashboard/playlist.svg
 
     preview-off:
       value: dictionary/assets/icons/dashboard/preview-off.svg
@@ -176,6 +179,9 @@ icon:
 
     split:
       value: dictionary/assets/icons/dashboard/split.svg
+
+    star:
+      value: dictionary/assets/icons/dashboard/star.svg
 
     thumbnail:
       value: dictionary/assets/icons/dashboard/thumbnail.svg
