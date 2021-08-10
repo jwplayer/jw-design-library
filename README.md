@@ -8,18 +8,49 @@
 
 #### For visual docs, check out [:sparkles:  Neverland Design System](https://design.jwplayer.com/docs/#/)
 
+## Development
 
-## Install
+Ensure you're using **Node v10** and run:
+
+```bash
+yarn install
+```
+
+### Adding Icons
+
+1. Create a feature branch from `master`
+2. Pull in any new SVG files into the `dictionary/assets` folder
+3. In `/dictionary/properties`, locate the `yaml` config of choice and add new names/values in accordance with file structure
+4. Run `yarn build`. If the build succeeds, you should see your changes in the `/dist` folder.
+5. Bump the version # accordingly to align with [semantic versioning](https://semver.org/)
+6. Open a PR against `master`
+
+### Releasing
+
+To release Hook, we need to publish it to NPM.
+
+1. Set your local npm config to the [internal registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library)
+2. Checkout master and pull in the latest: `git checkout master && git pull`
+3. Ensure that your local `/dist` folder and version # are correct
+4. Run `npm publish`
+5. `@design/jw-design-library` will reflect the new version [here](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library)
+6. [Draft a release](https://github.com/jwplayer/jw-design-library/releases) with a changelog of updates and :boom: breaking changes
+
+
+## Usage
+
+Everything you'll need exists in Hook's `/dist` folder. Style variables are available in pure CSS, SCSS, and Less.
+
+## Install in your project
 
 Set your npm config to the [JW Player NPM registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library) and run:
+
 ```bash
 yarn add @design/jw-design-library
 ```
 
-## Usage
-Everything you'll need exists in Hook's `/dist` folder. Style variables are available in pure CSS, SCSS, and Less.
-
 ### Colors
+
 Import the color variables and apply them in your stylesheet like this:
 
 ```scss
@@ -31,6 +62,7 @@ p {
 ```
 
 ### Fonts
+
 To use our fonts, reference the CDN route in your HTML document `<head>`:
 
 ```html
@@ -53,6 +85,7 @@ code, pre {
 ```
 
 ### Icons
+
 We recommend using our [WUI components](https://stg-wui.jwplayer.com/component/icon) if possible, but you can also import the SVGs individually. 
 
 In a `create-react-app` project, for example:
@@ -79,43 +112,6 @@ If you prefer working with a sprite, you can import the sprite from `/dist/sprit
 </svg>
 ```
 
-
-## Contribute to Hook
-Ensure you're using **Node v10** and run:
-
-```bash
-yarn install
-```
-
-To build the `/dist` folder with your new updates:
-
-```bash
-yarn build
-```
-To remove the `/dist` folder completely:
-
-```bash
-yarn clean
-```
-
-### Add & Update Features
-1. Create a feature branch from `master`
-2. Pull in any new SVG files into the `dictionary/assets` folder
-3. In `/dictionary/properties`, locate the `yaml` config of choice and add new names/values in accordance with file structure
-4. Run `yarn build`. If the build succeeds, you should see your changes in the `/dist` folder.
-5. Bump the version # accordingly to align with [semantic versioning](https://semver.org/)
-6. Open a PR against `master`
-
-
-### Publish to NPM
-1. Set your local npm config to the [internal registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library)
-2. Checkout master and pull in the latest: `git checkout master && git pull`
-3. Ensure that your local `/dist` folder and version # are correct
-5. If all is well: `npm publish`
-6. `@design/jw-design-library` will reflect the new version [here](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library)
-7. [Draft a release](https://github.com/jwplayer/jw-design-library/releases) with a changelog of updates and :boom: breaking changes
-
-<hr>
 
 ## Under the Hood
 
