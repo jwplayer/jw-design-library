@@ -4,9 +4,13 @@ theme:
       value: '{color.system.white.value}'
     fg:
       value: '{color.brand.abyss.value}'
+    fg-secondary:
+      value: '{color.brand.midnight.value}'
 
   dark:
     bg:
       value: '{color.brand.abyss-darker.value}'
     fg:
       value: '{color.system.white.value}'
+    fg-secondary:
+      value: '{color.brand.fog-darker.value}'
