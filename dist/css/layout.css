@@ -1,12 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Wed, 22 Sep 2021 15:39:51 GMT
+ * Generated on Mon, 09 May 2022 12:31:55 GMT
  */
 
 :root {
- --ds-layout-size-small: 8px;
- --ds-layout-size-medium: 16px;
- --ds-layout-size-large: 24px;
- --ds-layout-size-extra-large: 32px;
- --ds-layout-grid-base: 8px;;
+  --ds-layout-size-small: 8px;
+  --ds-layout-size-medium: 16px;
+  --ds-layout-size-large: 24px;
+  --ds-layout-size-extra-large: 32px;
+  --ds-layout-grid-base: 8px;;
 }
