@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 09 May 2022 12:56:04 GMT
+ * Generated on Mon, 09 May 2022 13:18:45 GMT
  */
 
 export const dsColorBrandDahlia : string;

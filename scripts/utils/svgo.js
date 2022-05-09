@@ -19,7 +19,6 @@ const svgoPlugins = [
 	{ mergePaths: true },
 	{ moveElemsAttrsToGroup: true },
 	{ moveGroupAttrsToElems: true },
-	{ removeAttrs: { attrs: '(stroke|fill)' } },
 	{ removeComments: true },
 	{ removeDesc: true },
 	{ removeDimensions: true },
@@ -54,7 +53,8 @@ module.exports = function() {
 						},
 					},
 				},
-				{ name: 'addAttributesToSVGElement', params: { attribute: `id="${id}"` } }
+				{ name: 'addAttributesToSVGElement', params: { attribute: `id="${id}"` } },
+				{ name: 'removeAttrs', params: { attrs: '(stroke|fill)' } }
 			]
 		}).data;
 	};
