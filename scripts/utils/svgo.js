@@ -54,7 +54,6 @@ module.exports = function() {
 					},
 				},
 				{ name: 'addAttributesToSVGElement', params: { attribute: `id="${id}"` } },
-				{ name: 'removeAttrs', params: { attrs: '(stroke|fill)' } }
 			]
 		}).data;
 	};
