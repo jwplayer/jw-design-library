@@ -3,7 +3,7 @@
  * side. I should probably look into how Grunt and Gulp handle SVGO...
  */
 
-const SVGO = require('svgo');
+const { optimize } = require('svgo');
 
 const svgoPlugins = [
 	{ cleanupAttrs: true },
@@ -44,12 +44,18 @@ const svgoPlugins = [
 
 module.exports = function() {
 	return ({ id, file }) => {
-		const svgo = new SVGO({
+		return optimize(file, {
 			plugins: [
-				...svgoPlugins,
-				{ addAttributesToSVGElement: { attribute: `id="${id}"` } }
+				{
+					name: 'preset-default',
+					params: {
+						overrides: {
+							...svgoPlugins
+						},
+					},
+				},
+				{ name: 'addAttributesToSVGElement', params: { attribute: `id="${id}"` } }
 			]
-		});
-		return svgo.optimize(file).then(({ data }) => data);
+		}).data;
 	};
 };
