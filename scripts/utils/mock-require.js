@@ -10,7 +10,7 @@ const fs = require('fs');
 Module.prototype.require = new Proxy(Module.prototype.require, {
 	apply(target, thisArg, argumentsList) {
 		if (/\.yaml/g.test(argumentsList[0])) {
-			return yaml.safeLoad(fs.readFileSync(argumentsList[0]));
+			return yaml.load(fs.readFileSync(argumentsList[0]));
 		}
 		return Reflect.apply(target, thisArg, argumentsList);
 	}
