@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 09 May 2022 13:18:45 GMT
+ * Generated on Mon, 09 May 2022 13:20:58 GMT
  */
 
 export const dsColorRampDataHueBlue : string[];
