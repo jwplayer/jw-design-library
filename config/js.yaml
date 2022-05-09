@@ -11,8 +11,22 @@ platforms:
             category: color
             type: brand
 
+      - destination: brand-colors.d.ts
+        format: typescript/es6-declarations
+        filter:
+          attributes:
+            category: color
+            type: brand
+
       - destination: data-colors.esm.js
         format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: ramp
+
+      - destination: data-colors.d.ts
+        format: typescript/es6-declarations
         filter:
           attributes:
             category: color
@@ -25,8 +39,22 @@ platforms:
             category: color
             type: system
 
+      - destination: system-colors.d.ts
+        format: typescript/es6-declarations
+        filter:
+          attributes:
+            category: color
+            type: system
+
       - destination: code-colors.esm.js
         format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: code
+
+      - destination: code-colors.d.ts
+        format: typescript/es6-declarations
         filter:
           attributes:
             category: color
@@ -39,14 +67,33 @@ platforms:
             category: global
             type: font
 
+      - destination: font-vars.d.ts
+        format: typescript/es6-declarations
+        filter:
+          attributes:
+            category: global
+            type: font
+
       - destination: layout.esm.js
         format: javascript/es6
         filter:
           attributes:
             category: layout
 
+      - destination: layout.d.ts
+        format: typescript/es6-declarations
+        filter:
+          attributes:
+            category: layout
+
       - destination: theme.esm.js
         format: javascript/es6
+        filter:
+          attributes:
+            category: theme
+
+      - destination: theme.d.ts
+        format: typescript/es6-declarations
         filter:
           attributes:
             category: theme
