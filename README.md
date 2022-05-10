@@ -3,14 +3,14 @@
 ![owners](https://img.shields.io/badge/owners-Design--Team-brightgreen.svg)
 ![contributors](https://img.shields.io/badge/contributors-Portal--NL-yellow.svg)
 
-> Design library for colors, icons & styles used in JW Player products. Built with 
+> Design library for colors, icons & styles used in JW Player products. Built with
 [Amazon Style Dictionary](https://github.com/amzn/style-dictionary/).
 
 #### For visual docs, check out [:sparkles:  Neverland Design System](https://design.jwplayer.com/docs/#/)
 
 ## Development
 
-Ensure you're using **Node v10** and run:
+Ensure you're using **Node v16** and run:
 
 ```bash
 yarn install
@@ -35,7 +35,6 @@ To release Hook, we need to publish it to NPM.
 4. Run `npm publish`
 5. `@design/jw-design-library` will reflect the new version [here](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library)
 6. [Draft a release](https://github.com/jwplayer/jw-design-library/releases) with a changelog of updates and :boom: breaking changes
-
 
 ## Usage
 
@@ -86,7 +85,7 @@ code, pre {
 
 ### Icons
 
-We recommend using our [WUI components](https://stg-wui.jwplayer.com/component/icon) if possible, but you can also import the SVGs individually. 
+We recommend using our [WUI components](https://stg-wui.jwplayer.com/component/icon) if possible, but you can also import the SVGs individually.
 
 In a `create-react-app` project, for example:
 
@@ -112,7 +111,6 @@ If you prefer working with a sprite, you can import the sprite from `/dist/sprit
 </svg>
 ```
 
-
 ## Under the Hood
 
 The file `build.js` imports various modules from `scripts/` to build the full style-dictionary config. Here's a really quick rundown:
@@ -126,6 +124,7 @@ dictionary are copied to `dist/fonts`. If you use `fonts.css` then you must copy
 or resolve the paths for the font files, or things won't work!
 * `transformers/content-array-to-list`: Converts property values into
   comma-separated lists. This is used to output data colors for Less.
+
   ```yaml
   prop:
     value:
@@ -133,16 +132,21 @@ or resolve the paths for the font files, or things won't work!
     - '#CCCCCC'
     - '#FFFFFF'
   ```
+
   The example above has this final output:
+
   ```less
   @prop: #000000, #cccccc, #ffffff;
   ```
+
 * `transformers/content-list-to-js-array`: Converts property values into
   bracketed arrays. This, combined with `content-array-to-list`, is used to
   output data colors for JS. The example above has this final output:
+
   ```js
   export const prop = ["#000000","#cccccc","#ffffff"];
   ```
+
 * `transform-groups/less-transform-group`: Overrides the built-in `less`
   transformGroup, to add `content/arrayList` and switch to `color/css` for rgba
   output.
@@ -159,4 +163,5 @@ or resolve the paths for the font files, or things won't work!
 ## Related Links
 
 * #### [Hook CDN Link](https://hook.jwplayer.com/)
+
 * #### [Hook CDN Repo](https://github.com/jwplayer/hook)
