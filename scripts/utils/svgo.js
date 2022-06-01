@@ -5,42 +5,6 @@
 
 const { optimize } = require('svgo');
 
-const svgoPlugins = [
-	{ cleanupAttrs: true },
-	{ cleanupEnableBackground: true },
-	{ cleanupIDs: false },
-	{ cleanupNumericValues: true },
-	{ collapseGroups: true },
-	{ convertColors: true },
-	{ convertPathData: true },
-	{ convertShapeToPath: true },
-	{ convertStyleToAttrs: true },
-	{ convertTransform: true },
-	{ mergePaths: true },
-	{ moveElemsAttrsToGroup: true },
-	{ moveGroupAttrsToElems: true },
-	{ removeComments: true },
-	{ removeDesc: true },
-	{ removeDimensions: true },
-	{ removeDoctype: true },
-	{ removeEditorsNSData: true },
-	{ removeEmptyAttrs: true },
-	{ removeEmptyContainers: true },
-	{ removeEmptyText: true },
-	{ removeHiddenElems: true },
-	{ removeMetadata: true },
-	{ removeNonInheritableGroupAttrs: true },
-	{ removeRasterImages: false },
-	{ removeTitle: true },
-	{ removeUnknownsAndDefaults: true },
-	{ removeUnusedNS: true },
-	{ removeUselessDefs: true },
-	{ removeUselessStrokeAndFill: true },
-	{ removeViewBox: false },
-	{ removeXMLProcInst: true },
-	{ sortAttrs: true }
-];
-
 module.exports = function() {
 	return ({ id, file }) => {
 		return optimize(file, {
@@ -49,7 +13,8 @@ module.exports = function() {
 					name: 'preset-default',
 					params: {
 						overrides: {
-							...svgoPlugins
+							mergePaths: false,
+							cleanupIDs: false,
 						},
 					},
 				},
