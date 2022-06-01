@@ -32,17 +32,11 @@ global:
           value: 800
 
       custom:
-        light:
-          value: 300
-
         regular:
           value: 400
 
         semibold:
           value: 600
-
-        bold:
-          value: 700
 
       data:
         regular:
@@ -50,6 +44,3 @@ global:
 
         bold:
           value: 700
-
-        black:
-          value: 900

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 01 Jun 2022 12:23:17 GMT
+ * Generated on Wed, 01 Jun 2022 15:13:01 GMT
  */
 
 export const dsGlobalFontFamilyBase = "Arial, sans-serif";
@@ -12,10 +12,7 @@ export const dsGlobalFontSizeBase = "0.9375rem";
 export const dsGlobalFontWeightBrandLight = 300;
 export const dsGlobalFontWeightBrandRegular = 400;
 export const dsGlobalFontWeightBrandExtrabold = 800;
-export const dsGlobalFontWeightCustomLight = 300;
 export const dsGlobalFontWeightCustomRegular = 400;
 export const dsGlobalFontWeightCustomSemibold = 600;
-export const dsGlobalFontWeightCustomBold = 700;
 export const dsGlobalFontWeightDataRegular = 400;
 export const dsGlobalFontWeightDataBold = 700;
-export const dsGlobalFontWeightDataBlack = 900;
