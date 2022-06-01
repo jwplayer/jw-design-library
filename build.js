@@ -5,7 +5,6 @@ const fs = require('fs');
 const path = require('path');
 const argv = require('yargs').argv;
 const svgSpriteFormat = require('./scripts/formatters/svg-sprite');
-const fontFace = require('./scripts/formatters/font-face');
 const contentArrayToList = require('./scripts/transformers/content-array-to-list');
 const attributeFont = require('./scripts/transformers/attribute-font');
 const contentListToJsArray = require('./scripts/transformers/content-list-to-js-array');
@@ -24,7 +23,6 @@ StyleDictionary.registerTransformGroup(lessTransformGroup);
 StyleDictionary.registerTransformGroup(scssTransformGroup);
 StyleDictionary.registerTransformGroup(jsTransformGroup);
 StyleDictionary.registerFormat(svgSpriteFormat);
-StyleDictionary.registerFormat(fontFace);
 StyleDictionary.registerTransform(nameCtiKebab);
 
 
