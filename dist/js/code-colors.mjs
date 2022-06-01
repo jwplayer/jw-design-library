@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 01 Jun 2022 15:13:01 GMT
+ * Generated on Wed, 01 Jun 2022 15:21:31 GMT
  */
 
 export const dsColorCodeBackground = "#2f3542";
