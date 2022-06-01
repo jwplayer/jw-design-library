@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 12 May 2022 12:25:34 GMT
+ * Generated on Wed, 01 Jun 2022 12:23:17 GMT
  */
 
 export const dsGlobalFontFamilyBase : string;
