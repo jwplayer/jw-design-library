@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Wed, 01 Jun 2022 15:21:31 GMT
- */
-
 export const dsGlobalFontFamilyBase = "Arial, sans-serif";
 export const dsGlobalFontFamilyBrand = "\"Overpass\", \"Lato\", Arial, sans-serif";
 export const dsGlobalFontFamilyCode = "\"Inconsolata\", monospace";

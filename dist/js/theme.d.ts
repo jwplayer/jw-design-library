@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Wed, 01 Jun 2022 15:21:31 GMT
- */
-
 export const dsThemeLightBg : string;
 export const dsThemeLightFg : string;
 export const dsThemeLightFgSecondary : string;

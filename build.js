@@ -32,6 +32,13 @@ const config = merge(
 	...fs.readdirSync(configDir).map(f => require(`${configDir}/${f}`))
 );
 
+// Disable file headers everywhere
+for (const platform in config.platforms) {
+	config.platforms[platform].files.forEach((file) => {
+		file.options = { showFileHeader: false };
+	})
+}
+
 const styleDictionary = StyleDictionary.extend(config);
 
 if (argv.cssUrlPrefix) {
