@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Wed, 01 Jun 2022 15:21:31 GMT
- */
-
 export const dsColorCodeBackground : string;
 export const dsColorCodeBackgroundInline : string;
 export const dsColorCodeText : string;

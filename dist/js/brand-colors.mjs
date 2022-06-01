@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Wed, 01 Jun 2022 15:21:31 GMT
- */
-
 export const dsColorBrandDahlia = "#ec0041";
 export const dsColorBrandDahliaFade = "#fbccd9";
 export const dsColorBrandDahliaDark = "#bd0034";
