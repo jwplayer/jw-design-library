@@ -1,5 +1,4 @@
 export const dsColorSystemBlack : string;
-export const dsColorSystemBlackLight : string;
 export const dsColorSystemBlue : string;
 export const dsColorSystemBlueDark : string;
 export const dsColorSystemBlueLight : string;
@@ -14,5 +13,3 @@ export const dsColorSystemRed : string; // destructive - high risk
 export const dsColorSystemRedDark : string;
 export const dsColorSystemRedLight : string;
 export const dsColorSystemWhite : string;
-export const dsColorSystemWhiteDark : string;
-export const dsColorSystemWhiteDarker : string;
