@@ -1,2 +1,2 @@
-export const dsColorMarketingLilac : string;
-export const dsColorMarketingNavy : string;
+export const dsColorMarketingPurple : string;
+export const dsColorMarketingBlue : string;
