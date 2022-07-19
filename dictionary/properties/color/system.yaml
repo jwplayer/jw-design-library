@@ -3,6 +3,9 @@ color:
     black:
       value: '#000000'
 
+    black-light:
+      value: '#1A1E25'
+
     blue:
       value: '#0A75E3'
 
@@ -11,6 +14,9 @@ color:
 
     blue-light:
       value: '#D2EBFF'
+
+    blue-lighter:
+      value: '#f1f8fe'
 
     green:
       value: '#1F9B85'
@@ -44,3 +50,9 @@ color:
 
     white:
       value: '#FFFFFF'
+
+    white-dark:
+      value: '#FCFCFC'
+
+    white-darker:
+      value: '#E6E6E6'
