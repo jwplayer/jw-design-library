@@ -1,2 +1,2 @@
-export const dsColorMarketingLilac = "#c2bdff";
-export const dsColorMarketingNavy = "#132041";
+export const dsColorMarketingPurple = "#c2bdff";
+export const dsColorMarketingBlue = "#132041";
