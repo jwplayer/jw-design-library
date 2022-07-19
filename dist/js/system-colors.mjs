@@ -1,7 +1,9 @@
 export const dsColorSystemBlack = "#000000";
+export const dsColorSystemBlackLight = "#1a1e25";
 export const dsColorSystemBlue = "#0a75e3";
 export const dsColorSystemBlueDark = "#07529f";
 export const dsColorSystemBlueLight = "#d2ebff";
+export const dsColorSystemBlueLighter = "#f1f8fe";
 export const dsColorSystemGreen = "#1f9b85"; // affirmative
 export const dsColorSystemGreenDark = "#166c5d";
 export const dsColorSystemGreenLight = "#ccf5eb";
@@ -12,3 +14,5 @@ export const dsColorSystemRed = "#e02929"; // destructive - high risk
 export const dsColorSystemRedDark = "#9d1d1d";
 export const dsColorSystemRedLight = "#ffe1e8";
 export const dsColorSystemWhite = "#ffffff";
+export const dsColorSystemWhiteDark = "#fcfcfc";
+export const dsColorSystemWhiteDarker = "#e6e6e6";

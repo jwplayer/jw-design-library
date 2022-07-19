@@ -46,6 +46,20 @@ platforms:
             category: color
             type: system
 
+      - destination: marketing-colors.mjs
+        format: javascript/es6
+        filter:
+          attributes:
+            category: color
+            type: marketing
+
+      - destination: marketing-colors.d.ts
+        format: typescript/es6-declarations
+        filter:
+          attributes:
+            category: color
+            type: marketing
+
       - destination: code-colors.mjs
         format: javascript/es6
         filter:

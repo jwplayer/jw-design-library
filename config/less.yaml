@@ -25,6 +25,13 @@ platforms:
             category: color
             type: system
 
+      - destination: marketing-colors.less
+        format: less/variables
+        filter:
+          attributes:
+            category: color
+            type: marketing
+
       - destination: code-colors.less
         format: less/variables
         filter:
