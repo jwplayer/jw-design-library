@@ -2,7 +2,6 @@ export const dsColorSystemBlack = "#000000";
 export const dsColorSystemBlue = "#0a75e3";
 export const dsColorSystemBlueDark = "#07529f";
 export const dsColorSystemBlueLight = "#d2ebff";
-export const dsColorSystemBlueLighter = "#f1f8fe";
 export const dsColorSystemGreen = "#1f9b85"; // affirmative
 export const dsColorSystemGreenDark = "#166c5d";
 export const dsColorSystemGreenLight = "#ccf5eb";

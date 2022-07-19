@@ -2,7 +2,6 @@ export const dsColorSystemBlack : string;
 export const dsColorSystemBlue : string;
 export const dsColorSystemBlueDark : string;
 export const dsColorSystemBlueLight : string;
-export const dsColorSystemBlueLighter : string;
 export const dsColorSystemGreen : string; // affirmative
 export const dsColorSystemGreenDark : string;
 export const dsColorSystemGreenLight : string;
