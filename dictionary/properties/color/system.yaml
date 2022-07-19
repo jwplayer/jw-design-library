@@ -12,9 +12,6 @@ color:
     blue-light:
       value: '#D2EBFF'
 
-    blue-lighter:
-      value: '#f1f8fe'
-
     green:
       value: '#1F9B85'
       comment: affirmative
