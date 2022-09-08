@@ -4,7 +4,7 @@ platforms:
     transformGroup: js
     prefix: ds
     files:
-      - destination: brand-colors.mjs
+      - destination: brand-colors.js
         format: javascript/es6
         filter:
           attributes:
@@ -18,7 +18,7 @@ platforms:
             category: color
             type: brand
 
-      - destination: data-colors.mjs
+      - destination: data-colors.js
         format: javascript/es6
         filter:
           attributes:
@@ -32,7 +32,7 @@ platforms:
             category: color
             type: ramp
 
-      - destination: system-colors.mjs
+      - destination: system-colors.js
         format: javascript/es6
         filter:
           attributes:
@@ -46,7 +46,7 @@ platforms:
             category: color
             type: system
 
-      - destination: marketing-colors.mjs
+      - destination: marketing-colors.js
         format: javascript/es6
         filter:
           attributes:
@@ -60,7 +60,7 @@ platforms:
             category: color
             type: marketing
 
-      - destination: code-colors.mjs
+      - destination: code-colors.js
         format: javascript/es6
         filter:
           attributes:
@@ -74,7 +74,7 @@ platforms:
             category: color
             type: code
 
-      - destination: font-vars.mjs
+      - destination: font-vars.js
         format: javascript/es6
         filter:
           attributes:
@@ -88,7 +88,7 @@ platforms:
             category: global
             type: font
 
-      - destination: layout.mjs
+      - destination: layout.js
         format: javascript/es6
         filter:
           attributes:
@@ -100,7 +100,7 @@ platforms:
           attributes:
             category: layout
 
-      - destination: theme.mjs
+      - destination: theme.js
         format: javascript/es6
         filter:
           attributes:
