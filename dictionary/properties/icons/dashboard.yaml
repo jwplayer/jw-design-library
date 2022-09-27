@@ -51,6 +51,9 @@ icon:
     copy:
       value: dictionary/assets/icons/dashboard/copy.svg
 
+    cue-point:
+      value: dictionary/assets/icons/dashboard/cue-point.svg
+
     credit-card:
       value: dictionary/assets/icons/dashboard/credit-card.svg
 
@@ -149,7 +152,7 @@ icon:
 
     play:
       value: dictionary/assets/icons/dashboard/play.svg
-    
+
     playlist:
       value: dictionary/assets/icons/dashboard/playlist.svg
 
