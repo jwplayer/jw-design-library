@@ -1,7 +1,6 @@
 # JW Design Library (Hook)
 
-![owners](https://img.shields.io/badge/owners-Design--Team-brightgreen.svg)
-![contributors](https://img.shields.io/badge/contributors-Portal--NL-yellow.svg)
+![owners](https://img.shields.io/badge/owners-Design/CX--Team-brightgreen.svg)
 
 > Design library for colors, icons & styles used in JW Player products. Built with
 [Amazon Style Dictionary](https://github.com/amzn/style-dictionary/).
