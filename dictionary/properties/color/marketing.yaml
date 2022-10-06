@@ -1,6 +1,8 @@
 color:
   marketing:
-    purple:
+    lilac:
       value: '#C2BDFF'
-    blue:
+    iris:
+      value: '#474F7A'
+    orchid:
       value: '#132041'
