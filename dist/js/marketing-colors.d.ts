@@ -1,2 +1,3 @@
-export const dsColorMarketingPurple : string;
-export const dsColorMarketingBlue : string;
+export const dsColorMarketingLilac : string;
+export const dsColorMarketingIris : string;
+export const dsColorMarketingOrchid : string;

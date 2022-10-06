@@ -84,3 +84,4 @@ typings/
 .dynamodb/
 
 */.DS_Store
+.DS_Store
