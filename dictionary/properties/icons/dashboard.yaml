@@ -81,6 +81,9 @@ icon:
     drag:
       value: dictionary/assets/icons/dashboard/drag.svg
 
+    dynamic-star:
+      value: dictionary/assets/icons/dashboard/dynamic-star.svg
+
     edit:
       value: dictionary/assets/icons/dashboard/edit.svg
 
@@ -134,6 +137,9 @@ icon:
 
     mail:
       value: dictionary/assets/icons/dashboard/mail.svg
+    
+    manual-arrow:
+      value: dictionary/assets/icons/dashboard/manual-arrow.svg
 
     monetize:
       value: dictionary/assets/icons/dashboard/monetize.svg
@@ -194,6 +200,9 @@ icon:
 
     trash:
       value: dictionary/assets/icons/dashboard/trash.svg
+
+    trending:
+      value: dictionary/assets/icons/dashboard/trending.svg
 
     trim:
       value: dictionary/assets/icons/dashboard/trim.svg
