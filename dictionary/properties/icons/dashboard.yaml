@@ -59,6 +59,9 @@ icon:
 
     cue-point:
       value: dictionary/assets/icons/dashboard/cue-point.svg
+    
+    cursor:
+      value: dictionary/assets/icons/dashboard/cursor.svg
 
     customize:
       value: dictionary/assets/icons/dashboard/customize.svg
@@ -80,9 +83,6 @@ icon:
 
     drag:
       value: dictionary/assets/icons/dashboard/drag.svg
-
-    sparkles:
-      value: dictionary/assets/icons/dashboard/sparkles.svg
 
     edit:
       value: dictionary/assets/icons/dashboard/edit.svg
@@ -138,9 +138,6 @@ icon:
     mail:
       value: dictionary/assets/icons/dashboard/mail.svg
     
-    cursor:
-      value: dictionary/assets/icons/dashboard/cursor.svg
-
     monetize:
       value: dictionary/assets/icons/dashboard/monetize.svg
 
@@ -185,6 +182,9 @@ icon:
 
     sort:
       value: dictionary/assets/icons/dashboard/sort.svg
+    
+    sparkles:
+      value: dictionary/assets/icons/dashboard/sparkles.svg
 
     split:
       value: dictionary/assets/icons/dashboard/split.svg
