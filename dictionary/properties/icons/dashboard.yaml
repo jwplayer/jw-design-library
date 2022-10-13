@@ -81,8 +81,8 @@ icon:
     drag:
       value: dictionary/assets/icons/dashboard/drag.svg
 
-    dynamic-star:
-      value: dictionary/assets/icons/dashboard/dynamic-star.svg
+    sparkles:
+      value: dictionary/assets/icons/dashboard/sparkles.svg
 
     edit:
       value: dictionary/assets/icons/dashboard/edit.svg
@@ -138,8 +138,8 @@ icon:
     mail:
       value: dictionary/assets/icons/dashboard/mail.svg
     
-    manual-arrow:
-      value: dictionary/assets/icons/dashboard/manual-arrow.svg
+    cursor:
+      value: dictionary/assets/icons/dashboard/cursor.svg
 
     monetize:
       value: dictionary/assets/icons/dashboard/monetize.svg
