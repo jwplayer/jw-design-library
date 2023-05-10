@@ -1,5 +1,5 @@
 {
-  "version": "9.1.0",
+  "version": "9.2.0",
   "name": "@design/jw-design-library",
   "description": "A design library of global styles and icons for JW Player products",
   "license": "ISC",
@@ -9,12 +9,12 @@
     "/dist"
   ],
   "devDependencies": {
-    "cheerio": "^1.0.0-rc.10",
+    "cheerio": "^1.0.0-rc.12",
     "js-yaml": "^4.1.0",
     "merge-deep": "^3.0.3",
     "node-fs-extra": "^0.8.2",
-    "style-dictionary": "^3.7.0",
-    "svgo": "^2.8.0",
+    "style-dictionary": "^3.8.0",
+    "svgo": "^3.0.2",
     "sync-rpc": "^1.3.6",
     "ttf2woff": "^3.0.0",
     "woff2": "^1.0.0",

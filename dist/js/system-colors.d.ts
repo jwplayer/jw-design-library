@@ -2,13 +2,16 @@ export const dsColorSystemBlack : string;
 export const dsColorSystemBlue : string;
 export const dsColorSystemBlueDark : string;
 export const dsColorSystemBlueLight : string;
-export const dsColorSystemGreen : string; // affirmative
+/** affirmative */
+export const dsColorSystemGreen : string;
 export const dsColorSystemGreenDark : string;
 export const dsColorSystemGreenLight : string;
-export const dsColorSystemOrange : string; // medium risk
+/** medium risk */
+export const dsColorSystemOrange : string;
 export const dsColorSystemOrangeDark : string;
 export const dsColorSystemOrangeLight : string;
-export const dsColorSystemRed : string; // destructive - high risk
+/** destructive - high risk */
+export const dsColorSystemRed : string;
 export const dsColorSystemRedDark : string;
 export const dsColorSystemRedLight : string;
 export const dsColorSystemWhite : string;

@@ -48,6 +48,9 @@ icon:
     collapse-expand:
       value: dictionary/assets/icons/dashboard/collapse-expand.svg
 
+    controls:
+      value: dictionary/assets/icons/dashboard/controls.svg
+
     copy:
       value: dictionary/assets/icons/dashboard/copy.svg
 
@@ -192,8 +195,14 @@ icon:
     star:
       value: dictionary/assets/icons/dashboard/star.svg
 
+    text:
+      value: dictionary/assets/icons/dashboard/text.svg
+
     thumbnail:
       value: dictionary/assets/icons/dashboard/thumbnail.svg
+
+    title:
+      value: dictionary/assets/icons/dashboard/title.svg
 
     tool:
       value: dictionary/assets/icons/dashboard/tool.svg
