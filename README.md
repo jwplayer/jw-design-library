@@ -12,7 +12,7 @@
 Ensure you're using **Node v16** and run:
 
 ```bash
-yarn install
+npm install
 ```
 
 ### Adding Icons
@@ -20,7 +20,7 @@ yarn install
 1. Create a feature branch from `master`
 2. Pull in any new SVG files into the `dictionary/assets` folder
 3. In `/dictionary/properties`, locate the `yaml` config of choice and add new names/values in accordance with file structure
-4. Run `yarn build`. If the build succeeds, you should see your changes in the `/dist` folder.
+4. Run `npm run build`. If the build succeeds, you should see your changes in the `/dist` folder.
 5. Bump the version # accordingly to align with [semantic versioning](https://semver.org/)
 6. Open a PR against `master`
 
@@ -44,7 +44,7 @@ Everything you'll need exists in Hook's `/dist` folder. Style variables are avai
 Set your npm config to the [JW Player NPM registry](https://npm-registry.longtailvideo.com/-/web/detail/@design/jw-design-library) and run:
 
 ```bash
-yarn add @design/jw-design-library
+npm install @design/jw-design-library
 ```
 
 ### Colors

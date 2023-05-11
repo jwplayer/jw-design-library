@@ -21,7 +21,7 @@
     "yargs": "^17.4.1"
   },
   "scripts": {
-    "prebuild": "yarn clean",
+    "prebuild": "npm run clean",
     "build": "node build.js",
     "clean": "rm -rf dist"
   }

@@ -14,7 +14,7 @@ module.exports = function() {
 					params: {
 						overrides: {
 							mergePaths: false,
-							cleanupIDs: false,
+							cleanupIds: false,
 						},
 					},
 				},
